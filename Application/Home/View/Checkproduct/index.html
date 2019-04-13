@@ -1,0 +1,43 @@
+<layout name="footer"/>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>产品验真</title>
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/reset.css"/>
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/aa.css"/>
+    <script type="text/javascript" src="<?php echo HomeJsUrl;?>/jquery-3.1.1.min.js"></script>
+
+    <style>
+    	.check_logo{
+            background-image: url(/Application/Home/public/Images/checkproindex.jpeg);
+        }
+
+        @media only screen and (min-width: 768px) {
+            input {
+                margin-top: 5px;
+            }
+
+            .check_logo {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+	<div class="check_logo"></div>
+    <h5 class="warnmsg" style="text-align: center;">提示:请根据实际需求进行查询</h5>
+    <div class="container-btn">
+    	<button id="protrue" class="grey-btn"><a href="__CONTROLLER__/checkproduct.html">产品验真</a></button>
+    	<button id="prodesc" class="grey-btn"><a href="__CONTROLLER__/proDesc.html">产品说明书查询</a></button>
+    </div>
+</div>
+	
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+</body>
+</html>

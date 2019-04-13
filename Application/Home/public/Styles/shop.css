@@ -1,0 +1,18 @@
+.shopKind1,.shopKind2{
+    padding-left: 5px;
+}
+.shopName{
+    font-size: 17px;
+    padding-left: 5%;
+}
+.shopKind1 ul li{
+    margin-top: 20px;
+}
+.shopAddr{
+    font-size: 15px;
+    padding-left: 5%;
+    color: gray;
+}
+.shopKind2 ul li{
+    margin-top:20px;
+}

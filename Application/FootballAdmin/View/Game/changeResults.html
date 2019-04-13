@@ -1,0 +1,24 @@
+<layout name="layout"/>
+<div class="div_from_aoto" style="width: 500px;">
+            <div class="control-group">
+                <label class="laber_from">比赛结果<sup style="color: red;">*</sup></label>
+               <input type="hidden" value="{$id}">
+                <div class="controls">
+                    <select name="results">
+                        <option value="unknown"<?php if($data['type_id']=='unknown')echo 'selected';?>>未揭晓</option>
+                        <option value="home_win"<?php if($data['type_id']=='home_win')echo 'selected';?>>主胜</option>
+                        <option value="flat"<?php if($data['type_id']=='flat')echo 'selected';?>>平</option>
+                        <option value="guest_win"<?php if($data['type_id']=='guest_win')echo 'selected';?>>客胜</option>
+                    </select>
+                </div>
+            </div>
+</div>
+<div class="control-group">
+    <button onclick="change()">设置比赛结果</button>
+</div>
+
+<script>
+    function change() {
+    alert()
+    }
+</script>

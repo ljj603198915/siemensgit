@@ -1,0 +1,95 @@
+<layout name="layout" />
+<!-- 搜索 -->
+
+<div class="form-div search_form_div">
+    <div class="form-contain">
+        <form action="__ACTION__" method="GET" name="search_form">
+            <div class="form-group">
+                <label class="laber_from">产品编号</label>
+                <input class="input_from" type="text" name="product_name" size="30" value="<?php echo I('get.product_name'); ?>" />
+            </div>
+            <div class="form-group">
+                <label class="laber_from">系列</label>
+                <?php buildSelect(series,series_id,id,series_name,I('get.series_id'));?>
+            </div>
+            <div class="form-group">
+                <label class="laber_from">颜色</label>
+                <select name="color_id" class='input_select '>
+                    <option value="">请选择</option>
+                    <foreach name="color_data" item="v">
+                    <option value="{$v.id}" <?php if(I('get.color_id')==$v['id']) echo 'selected';?>>{$v.color_name}</option>
+                    </foreach>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="laber_from">材质</label>
+                <?php buildSelect(material,material_id,id,material_name,I('get.material_id'));?>
+            </div>
+            <div class="form-group">
+                <label class="laber_from">类型</label>
+                <?php buildSelect(type,type_id,id,type_name,I('get.type_id'));?>
+            </div>
+            <div class="center form-group">
+                <input type="submit" value=" 搜索 " class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<!-- 列表 -->
+<table class="table">
+    <tr>
+        <th width="8%">产品编号</th>
+        <th class="width-10">产品描述</th>
+        <th class="width-5">系列</th>
+        <th class="width-5">具体颜色</th>
+        <th class="width-10">开关插座/配电产分类名称</th>
+        <th class="width-5">材质</th>
+        <th class="width-5">图片</th>
+        <th class="width-5">类型</th>
+        <th class="width-10">指示灯</th>
+        <th class="width-10">是否带usb</th>
+        <th class="width-8">第一分类</th>
+        <th class="width-8">第二分类</th>
+        <th class="width-5">是否显示</th>
+        <th  class="width-10">操作</th>
+    </tr>
+    <foreach name="data" item="v">
+    <tr class="tron">
+        <td>{$v.product_name} </td>
+        <td>{$v.product_desc}</td>
+        <td>{$v.series_name}</td>
+        <td>{$v.color_name}</td>
+        <td>{$v.cat_name} </td>
+        <td>{$v.material_name}</td>
+        <td><img src="/Public/Uploads/{$v.product_image}"></td>
+        <td>{$v.type_name}</td>
+        <td>{$v.light_name} </td>
+        <td><if condition=" $v['is_usb'] eq 4 ">不带USB充电插口<elseif condition=" $v['is_usb'] eq 3 "/>带USB充电插口</if> </td>
+        <td>{$v.first_cat_name}</td>
+        <td>{$v.second_cat_name} </td>
+        <td><if condition=" $v['is_zz_xx'] eq 1 "> 了解产品不显示
+                <elseif condition=" $v['is_zz_xx'] eq 2 "/>自助选型不显示
+                <elseif condition=" $v['is_zz_xx'] eq 3 "/>都不显示
+                <elseif condition=" $v['is_zz_xx'] eq 4 "/>都显示
+                <else />
+            </if>
+
+        </td>
+        <td align="center" style="white-space: nowrap;">
+            <a href="<?php echo U('show?id='.$v['id'].'&p='.I('get.p')); ?>" title="查看">查看</a> |
+            <a href="<?php echo U('edit?id='.$v['id'].'&p='.I('get.p')); ?>" title="编辑">编辑</a> |
+            <a href="<?php echo U('delete?id='.$v['id'].'&p='.I('get.p')); ?>" onclick="return confirm('确定要删除吗？');" title="移除">移除</a>
+        </td>
+    </tr>
+    </foreach>
+
+    <tr>
+        <td align="right" nowrap="true" colspan="99" height="30">
+          {$page}
+        </td>
+    </tr>
+
+</table>
+<script>
+</script>

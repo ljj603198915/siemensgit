@@ -1,0 +1,110 @@
+<layout name="layout" />
+
+<!-- 搜索 -->
+<div class="form-div search_form_div">
+	<div class="form-div search_form_div">
+		<div class="form-contain" style="width: 90%;">
+			<form action="__ACTION__" method="GET" name="search_form">
+				<div style="display: inline-block;width:40%;vertical-align: top"><p class="center">
+					<input type="text" class="input_from inp-date" name="" id="dateImg" style="margin-bottom: 10px;"/><br>
+					<button class="btn btn-primary getData">拉取数据</button>
+				</p>
+				</div>
+				<div style="display: inline-block;width:45%;" class="center">
+					<p class="" style="display:inline-block;">
+						<label for="" class="form-label">图文消息ID</label>
+						<input type="text" name="msgid" size="30" value="<?php echo I('get.msgid'); ?>" />
+					</p>
+					<p style="white-space: nowrap;display:inline-block;">
+						<label for="" class="form-label">图文消息标题</label>
+						<input type="text" name="title" size="30" value="<?php echo I('get.title'); ?>" />
+					</p>
+					<p class="center">
+						<input type="submit" value=" 搜索 " class="btn btn-primary" />
+					</p>
+				</div>
+
+				<!--<div class="center form-group">-->
+
+			
+				
+                
+
+
+		</form>
+		</div>
+
+	</div>
+
+</div>
+</div>
+<!--<label>拉取数据：</label>
+<div class="form-group center">
+	<input type="text" class="input_from inp-date" name="" id="from" />
+	<button class="btn btn-primary getData">拉取数据</button>
+</div>-->
+<!-- 列表 -->
+<div class="list-div" id="listDiv">
+	<table class="table" cellpadding="3" cellspacing="1">
+		<tr>
+			<th>图文消息ID</th>
+			<th>图文消息标题</th>
+			<th>图文页的阅读次数</th>
+			<th>图文分享次数</th>
+			<!--<th>图文统计截止日期</th>-->
+			<th width="60">操作</th>
+		</tr>
+		<foreach name="data" item="v">
+
+
+			<tr class="tron">
+				<td>{$v.msgid}</td>
+				<td>{$v.title}</td>
+				<td>{$v.int_page_read_count}</td>
+				<td>{$v.share_count}</td>
+				<!--<td>{$v.datetime}</td>-->
+				<td align="center">
+					<a href="<?php echo U('delete?id='.$v['id'].'&p='.I('get.p')); ?>" onclick="return confirm('确定要删除吗？');" title="移除">移除</a>
+				</td>
+			</tr>
+		</foreach>
+					<tr>
+						<td align="right" nowrap="true" colspan="99" height="30"> <?php if(preg_match('/\d/', $page)) echo $page; ?>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<script type="text/javascript" src="<?php echo AdminJsUrl;?>jquery.min.js"></script>
+<!-- echarts -->
+<script src="<?php echo AdminJsUrl;?>echarts.simple.min.js"></script>
+<script src="<?php echo AdminJsUrl;?>myEcharts.js"></script>
+<!-- datepicker -->
+<script type="text/javascript" src="<?php echo AdminJsUrl;?>jquery-ui.min.js"></script>
+
+<!-- public -->
+<script type="text/javascript" src="<?php echo AdminJsUrl;?>index.js"></script>
+<script>
+	$(function() {
+		var dateImg='';
+//        dataInfo_update();
+        $("#dateImg").datepicker({
+            // minDate: "-30D",
+             maxDate: "-1",
+            dateFormat: "yy-mm-dd",
+            changeMonth: true,
+            numberOfMonths: 1,
+            onClose: function(selectedDate) {
+                dateImg=selectedDate;
+            }
+        });
+        
+        $('button.getData').click(function(){
+          return dataInfo_getData(dateImg);
+        });
+//        $('button.update').click(function(){
+//          return dataInfo_update();
+//        })
+        
+    })
+</script>

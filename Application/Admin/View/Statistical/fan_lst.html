@@ -1,0 +1,56 @@
+<layout name="layout" />
+
+<!-- 搜索 -->
+<div class="form-div search_form_div">
+    <div class="form-contain">
+    <form action="__ACTION__" method="GET" name="search_form">
+        <p>
+            昵称
+            <input type="text" name="nickname" size="30" value="<?php echo I('get.nickname'); ?>" />
+        </p>
+        <p>
+            性别
+            <select name="sex">
+                <option value="" >请选择</option>
+                <option value="1" <?php if(I('get.sex')==1) echo 'selected';?>>男性</option>
+                <option value="2" <?php if(I('get.sex')==2) echo 'selected';?>>女性</option>
+                <option value="3" <?php if(I('get.sex')==3) echo 'selected';?>>未知</option>
+            </select>
+        </p>
+
+        <p><input type="submit" value=" 搜索 " class="button btn-primary" /></p>
+    </form>
+    </div>
+</div>
+<!-- 列表 -->
+<div class="list-div" id="listDiv">
+    <table class="table" cellpadding="3" cellspacing="1" width="100%">
+        <tr>
+            <th >昵称</th>
+            <th >头像</th>
+            <th >性别</th>
+            <th >国家</th>
+            <th >省份/直辖市</th>
+            <th >城市/直辖市行政区县</th>
+            <th >是否关注</th>
+            <th >取/关注时间</th>
+        </tr>
+        <foreach name="data" item="v">
+        <tr class="tron">
+            <td>{$v.nickname}</td>
+            <td><img style="width: 60px;height: 60px;" src="{$v.headimgurl}"></td>
+            <td><?php if($v['sex']==1) echo '男性';elseif($v['sex']==2) echo '女性'; elseif($v['sex']==3) echo '未知';?></td>
+            <td>{$v.country}</td>
+            <td>{$v.province}</td>
+            <td>{$v.city}</td>
+            <td><?php if($v['subscribe']==0) echo '未关注';elseif($v['subscribe']==1) echo '已关注';;?></td>
+            <td>{$v.datetime}</td>
+
+        </tr>
+       </foreach>
+
+        <tr><td align="right" nowrap="true" colspan="99" height="30">{$page}</td></tr>
+
+    </table>
+</div>
+

@@ -1,0 +1,107 @@
+<layout name="layout" />
+<style>
+    .control-group .controls{
+        min-height: 35px;
+        line-height: 35px;
+    }
+    .laber_from{
+        text-align: right;
+    }
+    .controls{
+        text-align: left;
+        padding-left: 180px;
+    }
+</style>
+<div class="div_from_aoto" style="width: 450px;">
+    <div class="control-group" style="clear: both;">
+        <label class="laber_from">类型</label>
+        <DIV  class="controls" >{$data['type_name']}</DIV>
+    </div>
+    <div class="control-group" style="clear: both;">
+        <label class="laber_from">图片</label>
+        <DIV  class="controls" ><img width="100px"height="100px" src="/Public/Uploads/{$data['product_desc']} "></DIV>
+    </div>
+    <div class="control-group" style="clear: both;">
+        <label class="laber_from">产品型号</label>
+        <DIV  class="controls" >{$data['product_name']} </DIV>
+    </div>
+    <div class="control-group" style="clear: both;">
+        <label class="laber_from">产品描述(全称)</label>
+        <DIV  class="controls" >{$data['product_show_desc']}</DIV>
+    </div>
+    <if condition=" $data['type_id'] eq 1 ">
+        <div class="control-group" style="clear: both;">
+            <label class="laber_from">系列</label>
+            <DIV  class="controls" >{$data['series_name']}</DIV>
+        </div>
+        <!--是否为地插系列开始-->
+        <if condition=" $data['series_id'] neq 8 ">
+            <div class="control-group" style="clear: both;">
+                <label class="laber_from">产品描述(简称)</label>
+                <DIV  class="controls" >{$data['product_desc']} </DIV>
+            </div>
+
+            <div class="control-group" style="clear: both;">
+                <label class="laber_from">具体颜色</label>
+                <DIV  class="controls" >{$data['color_name']}</DIV>
+            </div>
+            <div class="control-group" style="clear: both;">
+                <label class="laber_from">分类</label>
+                <DIV  class="controls" >{$data['cat_name']} </DIV>
+            </div>
+            <div class="control-group" style="clear: both;">
+                <label class="laber_from">材质</label>
+                <DIV  class="controls" >{$data['material_name']} </DIV>
+            </div>
+            <div class="control-group" style="clear: both;">
+                <label class="laber_from">指示灯</label>
+                <DIV  class="controls" >{$data['light_name']} </DIV>
+            </div>
+
+            <!--是否为地插系列结束-->
+        </if>
+
+        <div class="control-group" style="clear: both;">
+            <label class="laber_from">是否显示</label>
+            <DIV  class="controls" >
+                <if condition=" $data['is_zz_xx'] eq 1 "> 了解产品不显示<elseif condition=" $data['is_zz_xx'] eq 2 "/>自助选型不显示
+                    <elseif condition=" $data['is_zz_xx'] eq 3 "/>都不显示<elseif condition=" $data['is_zz_xx'] eq 4 "/>都显示  <else /> </if>
+            </DIV>
+        </div>
+        <!--移动式插座开始-->
+        <elseif condition=" $data['type_id'] eq 2 "/>
+        <div class="control-group" style="clear: both;">
+            <label class="laber_from">系列</label>
+            <DIV  class="controls" >{$data['series_name']}</DIV>
+        </div>
+        <div class="control-group" style="clear: both;">
+            <label class="laber_from">具体颜色</label>
+            <DIV  class="controls" >{$data['color_name']} </DIV>
+        </div>
+        <div class="control-group" style="clear: both;">
+            <label class="laber_from">是否带usb</label>
+            <DIV  class="controls" ><?php if($data['is_usb']==4)echo '不带USB充电插口'; elseif($data['is_usb']==3 ) echo '带USB充电插口';?> </DIV>
+        </div>
+        <!--移动式插座结束-->
+        <!--低压终端配电产品开始-->
+        <elseif condition=" $data['type_id'] eq 3 "/>
+        <div class="control-group" style="clear: both;">
+            <label class="laber_from">第一分类</label>
+            <DIV  class="controls" >{$data['first_cat_name']} </DIV>
+        </div>
+        <div class="control-group" style="clear: both;">
+            <label class="laber_from">第二分类</label>
+            <DIV  class="controls" >{$data['second_cat_name']} </DIV>
+        </div>
+        <!--低压终端配电产品结束-->
+        <elseif condition=" $data['type_id'] eq 4 "/>
+        <div class="control-group" style="clear: both;">
+            <label class="laber_from">分类</label>
+            <DIV  class="controls" >{$data['cat_name']} </DIV>
+        </div>
+    </if>
+    <div class="center form-group">
+        <a href="<?php echo U('edit?id='.$data['id'].'&p='.I('get.p')); ?>" title="编辑" class="btn btn-primary">去编辑</a>
+    </div>
+
+</div>

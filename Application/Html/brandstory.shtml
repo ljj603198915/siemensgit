@@ -1,0 +1,53 @@
+<!--  内容  -->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>品牌故事</title>
+		<link rel="stylesheet" href="/Application/Home/public/Styles/reset.css" />
+		<link rel="stylesheet" href="/Application/Home/public/Styles/aa.css" />
+		
+	</head>
+
+	<body background="/Application/Home/public/Images/b_1.png"style="background-repeat:no-repeat;background-size:100% 92%;background-attachment: fixed;">
+		<div class="container">
+			<div class="logo"><img src="/Application/Home/public/Images/SIEMENS.png"></div>
+			<div class="list">
+				<ul>
+					<li><a href="./story_1.html"><img src="/Application/Home/public/Images/brandstory_1.png"></a> </li>
+					<li><a href="./story_2.html"><img src="/Application/Home/public/Images/brandstory_2.png"></a></li>
+					<li><a href="./story_3.html"><img src="/Application/Home/public/Images/brandstory_3.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--底部tab-->
+
+	</body>
+</html>
+<div class="footer">
+    <ul>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Product/ssy_product"><img src="/Application/Home/public/Images/product.png">
+                <br />了解产品</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Select/select_lst"><img src="/Application/Home/public/Images/heart.png">
+                <br />自助选型</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Checkproduct/index"><img src="/Application/Home/public/Images/glass.png">
+                <br />产品验真</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Onshop/onshop"><img src="/Application/Home/public/Images/fenzhi.png">
+                <br />在线购买</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Nearshop/shop"><img src="/Application/Home/public/Images/position.png">
+                <br />附近店铺</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,518 @@
+html {
+    font-size: 62.5%
+}
+
+.page-contain {
+    /*padding-top: 14.9rem;*/
+    /*padding-bottom: 60px;*/
+    position: relative;
+    padding-top: 1px;
+    margin-top: -1px;
+    /*height: 100%;*/
+}
+
+.hide {
+    display: none;
+}
+
+/*swiper*/
+.swiper-series {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-series img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.swiper-series .swiper-button-next,
+.swiper-series .swiper-button-prev {
+    height: 50px;
+    width: 50px;
+    /*margin-top: -11px;*/
+}
+
+.swiper-pagination-bullet {
+    border: none;
+    display: inline-block;
+    border-radius: 100%;
+    background: none;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet::selection {
+    background-color: none;
+}
+
+/*end swiper*/
+
+/*nearPro header*/
+
+/*iphone5及iphone5以下*/
+@media screen and (max-width: 320px) {
+    header {
+        position: fixed;
+        top: 0;
+        height: 14rem;
+        background-color: #fff;
+        z-index: 199497;
+    }
+
+    section {
+        margin-top: 14rem;
+        margin-bottom: 60px;
+        height: calc(100% - 20rem);
+        position: relative;
+        overflow: auto;
+    }
+
+    .sec-d-hasColor .pro-contain .one-pro > p,
+    .sec-dianjing .pro-contain .one-pro > p {
+        height: 10%;
+        font-size: 12px;
+    }
+
+    .sec-d-noColor .pro-contain .one-pro > p {
+        height: 5%;
+        font-size: 12px;
+    }
+
+    .color-switches {
+        background-size: 100% 100%;
+        height: 100%;
+        padding-top: 6.1%;
+        box-sizing: border-box;
+    }
+}
+
+/*iphone5以上*/
+@media screen and (min-width: 321px) {
+    header {
+        position: fixed;
+        top: 0;
+        height: 15rem;
+        background-color: #fff;
+        z-index: 199497;
+    }
+
+    section {
+        margin-top: 15rem;
+        margin-bottom: 60px;
+        height: calc(100% - 21rem);
+        position: relative;
+        overflow: auto;
+    }
+
+    .sec-d-hasColor .pro-contain .one-pro > p,
+    .sec-dianjing .pro-contain .one-pro > p {
+        height: 10%;
+        /*line-height: 20px;*/
+        font-size: 1.2rem;
+    }
+
+    .sec-d-noColor .pro-contain .one-pro > p {
+        height: 20px;
+        /*line-height: 20px;*/
+        font-size: 1.2rem;
+    }
+
+    .color-switches {
+        background-size: 100% 100%;
+        height: 100%;
+        padding-top: 6.9%;
+        box-sizing: border-box;
+    }
+}
+
+
+div.logo {
+    height: 36px;
+    box-sizing: border-box;
+    padding: 8px 10px;
+}
+
+div.logo img {
+    width: 30%;
+}
+
+.nav-nearPro {
+    /*height: 7rem;*/
+}
+
+.nav-nearPro ul {
+    margin-top: 1rem;
+}
+
+nav .li-nearPro {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+    /*height: 6rem;*/
+    opacity: 0.5;
+}
+
+nav .li-nearPro.active {
+    opacity: 1;
+}
+
+nav .li-nearPro > img {
+    width: 100%;
+    height: 90%;
+}
+
+/*选择分类按钮*/
+
+nav .li-select {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    opacity: 0.5;
+}
+
+nav .li-select.active {
+    opacity: 1;
+}
+
+nav .li-select:before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #eee;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+nav .li-select > img {
+    width: 100%;
+    height: 90%;
+}
+
+/*选择分类按钮结束*/
+
+.types {
+    height: 3rem;
+    border: 0.2rem solid rgba(90, 87, 87, 0.4);
+    position: relative;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border-radius: 3px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    background-color: #fff;
+    outline: none;
+}
+
+.types::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: .2rem solid rgba(90, 87, 87, 0.4);
+    border-left: .2rem solid rgba(90, 87, 87, 0.4);
+    background-color: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: -8px;
+    right: calc(10% - 4px);
+}
+
+.span-types {
+    font-family: "幼圆";
+    color: rgba(90, 87, 87, 0.4);
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.span-youbing-active {
+    font-family: "幼圆";
+    color: rgba(90, 87, 87, 1);
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    display: inline-block;
+}
+
+.span-types.active {
+    color: rgba(90, 87, 87, 1);
+}
+
+/*end nearPro header*/
+
+/*开关插座*/
+
+.sec-index .bac-img {
+    width: 100%;
+    height: 100%;
+}
+
+.sec-index .bac-img-1 {
+    width: 100%;
+}
+
+.sec-index .bac-img img {
+    width: 100%;
+}
+
+.sec-index .bac-img-1 img {
+    width: 100%;
+}
+
+.switches {
+    background: url(/Application/Home/public/img/transparent.png);
+    background-size: 100% 100%;
+    height: 30rem;
+}
+
+.switch-contain {
+    float: left;
+    width: 25%;
+    text-align: center;
+    height: 10rem;
+    line-height: 10rem;
+}
+
+.switch-contain img {
+    width: 70%;
+    vertical-align: middle;
+}
+
+.dColor-contain {
+    height: 3rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+.d-color {
+    display: block;
+    /* height: 4rem; */
+    line-height: 3rem;
+    text-align: center;
+    padding: 0rem 1rem;
+    /* box-sizing: border-box; */
+    font-size: 1.4rem;
+    color: rgba(90, 87, 87, 0.4);
+    background-color: #F6F7F7;
+    border-radius: 10px;
+}
+
+.msg-error {
+    height: 3rem;
+    /*line-height: 3rem;*/
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    color: rgba(90, 87, 87, 1);
+    border-radius: 10px;
+}
+
+.d-color.active {
+    color: rgba(90, 87, 87, 1);
+}
+
+.sec-d-hasColor .pro-contain, .sec-dianjing .pro-contain {
+    margin-top: 1rem;
+    height: calc(100% - 4rem);
+    position: relative;
+}
+
+.sec-d-noColor .pro-contain {
+    margin-top: 1rem;
+    height: 100%;
+    position: relative;
+}
+
+.pro-contain .switch-kind {
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+    width: calc(100% - 1rem);
+    height: calc(100% - 14rem);
+}
+
+.sec-d-noColor .pro-contain .switch-kind img {
+    width: 90%;
+}
+
+.h3-switch {
+    height: 3rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    background-color: #F6F7F7;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0 .5rem .5rem .5rem;
+    border-radius: 10px;
+    color: #747171;
+    position: relative;
+}
+
+.h3-switch img {
+    position: absolute;
+    height: 1.4rem;
+    right: 1rem;
+    top: 50%;
+    margin-top: -.7rem;
+    transition: all .4s;
+}
+
+
+
+.color-switches .switch-col {
+    display: inline-block;
+    width: 33.3333333%;
+    text-align: center;
+    height: 27.8%;
+    line-height: 10rem;
+    margin-top: 2.13%;
+    position: relative;
+}
+
+.switch-col img {
+    width: 52%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.material-switches {
+    background-size: 100% 100%;
+    height: 100%;
+    /*padding-top: 2.1rem;*/
+    box-sizing: border-box;
+
+}
+
+.material-switches .switch-col {
+    display: inline-block;
+    width: 33.3333333%;
+    text-align: center;
+    height: 24.5%;
+    /*line-height: 10rem;*/
+    margin-top: 3.2%;
+    position: relative;
+}
+
+.sec-d-hasColor .pro-contain .one-pro,
+.sec-dianjing  .pro-contain .one-pro{
+     text-align: center;
+     color: #3e3a39;
+     font-size: 100%;
+     height: 100%;
+     width: 100%;
+ }
+.sec-d-noColor .pro-contain .one-pro{
+    text-align: center;
+    color: #3e3a39;
+    font-size: 100%;
+    /*height: 100%;*/
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sec-d-hasColor .pro-contain .one-pro img {
+    max-width: 100%;
+    height: 75%;
+}
+
+.sec-dianjing .pro-contain .one-pro img {
+    /*width: 90%;*/
+    height: 75%;
+}
+
+.sec-d-noColor .pro-contain .one-pro img {
+    width: 90%;
+    /*height: 70%;*/
+}
+
+
+.sec-d-noColor .pro-contain {
+    text-align: center;
+}
+
+/*end 开关插座*/
+
+/**底部footer开始**/
+
+.footer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    z-index: 100;
+}
+
+.footer ul {
+    list-style: none;
+    font-size: 8px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+
+.footer ul li {
+    float: left;
+    width: 20%;
+    height: 70px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer ul li img {
+}
+
+/**底部footer结束**/
+
+/*sec-1-1开始*/
+
+.sec-1-1 > div {
+    height: 100%;
+}
+
+/*sec-1-1结束*/
+
+/*应对选颜色或材料页图标过多超出页面开始*/
+.sec-1-2 > div {
+    overflow: auto;
+}
+.sec-1-3 > div {
+    overflow: auto;
+}
+/*应对选颜色或材料页图标过多超出页面结束*/
+
+/*映彩其他*/
+.switch-change{
+	height: 100% !important;
+}
+.one-change{
+	height: 55% !important;
+}
+.img-change{
+	height: 74% !important;
+}

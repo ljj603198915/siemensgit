@@ -1,0 +1,196 @@
+<layout name="footer"/>
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>补充选择</title>
+		<link rel="stylesheet" href="<?php echo HomeCssUrl;?>/reset.css" />
+		<link rel="stylesheet" href="<?php echo HomeCssUrl;?>/aa.css" />
+		<script type="text/javascript" src="<?php echo HomeJsUrl;?>/jquery-3.1.1.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="product_logo"><img src="<?php echo HomeImgUrl;?>/SIEMENS.png"></div>
+			<div class="block">
+				<ul>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/choosehome_black.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_black.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/chooseele_black.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_black.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/addchoose_black.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_white.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/productsize_white.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_white.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/tablelist_white.png"></li>
+				</ul>
+			</div>
+			<div class="add_sel2">
+				&nbsp;
+				<p>&nbsp;&nbsp;您额外匹配五孔电源插座产品为：</p>
+				<br />
+				<ul class="usbs">
+					<li><img src="<?php echo HomeImgUrl;?>/Five_USB.png"><a class="usb">带USB的五孔插座</a><span class="add1"><button class="pr_bn1">-</button><input class="v1" value="1"><button class="bn1">+</button></span></li>
+					<li><img src="<?php echo HomeImgUrl;?>/NO_USB.png"><a class="usb">不带USB的五孔插座</a><span class="add2"><button class="pr_bn1">-</button><input class="v2" value="1"><button class="bn1">+</button></span></li>
+				</ul>
+			</div>
+			<div class="sel_btn">
+					<button><a href="{:U('Select/add_selection1')}">上一步</a></button>
+						&nbsp;&nbsp;
+					<button id="bns"><a href="{:U('Select/product_size')}">下一步</a></button>
+				
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script>
+		$(function(){
+				$('#bns').click(function(){
+					var usb='';
+			 				var usbArr=[];
+			 				var is_usb=$('.usb').eq(0).text();
+					 		var no_usb=$('.usb').eq(1).text();
+					 		var n=parseInt($('.v1').val());
+					 		var m=parseInt($('.v2').val());
+//			 				var data={
+//			 					"is_usb":n,
+//			 					"no_usb":m
+//			 					}
+//			 				usbData=JSON.stringify(data);
+//			 				localStorage.setItem("usb",usbData);
+					localStorage.setItem("is_usb",n);
+					localStorage.setItem("no_usb",m);
+				 })
+							
+
+//			 				var usbData={
+//			 					"USB":data
+//			 				}
+//			usbData=JSON.stringify(data);
+//                          console.log(usbData)
+//			localStorage.setItem("usb",usbData);
+			//获取房型
+			//var mat=localStorage.getItem("hometype");
+//			$.ajax({
+//				type:"post",
+//				url:"__CONTROLLER__/searchThree",
+//				data:{homeType:mat},
+//				async:true,
+//				dataType:'json',
+//				success:function(data){
+//						$('#bns').click(function(){
+////							event.preventDefault();
+//
+//
+//
+//					});
+//				}
+//			});
+				
+			//添加数量按钮
+			$('.bn1').click(function(){
+				var n=$(this).prev("input").val();
+				n++;
+				$(this).prev("input").val(n);
+			})
+			$('.pr_bn1').click(function(){
+				var n=$(this).next("input").val();
+				n--;
+				if(n<'0'){
+					n=0
+				}
+				$(this).next("input").val(n);
+			})
+
+
+		})
+		wx.config({
+			debug: false,
+			appId: 'wx7e38a14dfcd9328a',
+			timestamp: '<?php echo $sign_data["timestamp"];?>',
+			nonceStr: '<?php echo $sign_data["nonceStr"];?>',
+			signature: '<?php echo $sign_data["signature"];?>',
+			jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone']
+		});
+		wx.ready(function() {
+			wx.onMenuShareTimeline({
+				title: '西门子家居电气自助选型', // 分享标题
+				link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+				imgUrl: '/Application/Home/public/Images/SIEMENS.png', // 分享图标
+				success: function() {
+					//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/add_selection2'
+				},
+				cancel: function() {
+					//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/add_selection2'
+				}
+			});
+			wx.onMenuShareAppMessage({
+				title: '西门子家居电气自助选型', // 分享标题
+				desc: '西门子家居电气自助选型', // 分享描述
+				link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+				imgUrl: '', // 分享图标
+				type: '', // 分享类型,music、video或link，不填默认为link
+				dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+				success: function() {
+					//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/add_selection2';
+				},
+				cancel: function() {
+					//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/add_selection2';
+				}
+			});
+			//分享到qq
+			wx.onMenuShareQQ({
+				title: '西门子家居电气自助选型', // 分享标题
+				desc: '西门子家居电气自助选型', // 分享描述
+				link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+				imgUrl: '', // 分享图标
+				success: function () {
+					// 用户确认分享后执行的回调函数
+					//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/add_selection2';
+				},
+				cancel: function () {
+					// 用户取消分享后执行的回调函数
+					//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/add_selection2';
+				}
+			});
+			//分享到腾讯微博
+			wx.onMenuShareWeibo({
+				title: '西门子家居电气自助选型', // 分享标题
+				desc: '西门子家居电气自助选型', // 分享描述
+				link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+				imgUrl: '', // 分享图标
+				success: function () {
+					// 用户确认分享后执行的回调函数
+					//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/add_selection2';
+				},
+				cancel: function () {
+					// 用户取消分享后执行的回调函数
+					//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/add_selection2';
+				}
+			});
+			//分享到qq空间
+			wx.onMenuShareQZone({
+				title: '西门子家居电气自助选型', // 分享标题
+				desc: '西门子家居电气自助选型', // 分享描述
+				link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+				imgUrl: '', // 分享图标
+				success: function () {
+					// 用户确认分享后执行的回调函数
+					//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/add_selection2';
+				},
+				cancel: function () {
+					// 用户取消分享后执行的回调函数
+					//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/add_selection2';
+				}
+			});
+
+		});
+		wx.error(function(res) {
+			//	alert(res); // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+		});
+	</script>
+
+</html>

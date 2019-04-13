@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>后台模板</title>
+    <link rel="stylesheet" type="text/css" href="<?php echo AdminCssUrl;?>bootstrap.min.css">
+    <script type="text/javascript" src="<?php echo AdminJsUrl;?>jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo AdminJsUrl;?>index.js"></script>
+
+    <!--<link rel="stylesheet" href="<?php echo AdminCssUrl;?>add.css" type="text/css" media="screen" />-->
+    <!--<link rel="stylesheet" href="<?php echo AdminCssUrl;?>bootstrap.min.css" type="text/css" media="screen" />-->
+    <style type="text/css">
+body,
+html {
+    width: 100%;
+    height: 100%;
+    : 0;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+#l-map {
+    height: 500px;
+    width: 1000px;
+}
+.route_bg{
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+#r-result {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+#suggestId,#jingwei{
+    width:200px;
+    display: inline-block;
+    margin-right: 10px;
+}
+label{
+    font-weight: 500;
+}
+</style>
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HSm0N5y3kVjfazS2zZe04HK3lHf9sVPp"></script>
+</head>
+<body>
+<input type="hidden" name="shop_id" id="shop_id" value="<?php echo $shop_id; ?>">
+<div class="route_bg">
+    <span>管理中心地图</span>
+</div>
+<div id="r-result">
+    <label>请输入地址：</label><input type="text" id="suggestId" class="form-control" size="20" value="百度"/><input name="" class="btn btn-primary" id="sousuo" type="button" value="搜索">
+    <label>经纬度：</label><input name="" id="jingwei" class="form-control" type="text" value=""><input name="" class="btn btn-primary" id="baocun" type="button" value="保存">
+</div>
+
+<div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+<div id="l-map"></div>
+
+</body>
+</html>
+<script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+    // 百度地图API功能
+    function G(id) {
+        return document.getElementById(id);
+    }
+
+    var map = new BMap.Map("l-map");
+    map.centerAndZoom("北京",12);                   // 初始化地图,设置城市和地图级别。
+
+    var ac = new BMap.Autocomplete(    //建立一个自动完成的对象
+            {"input" : "suggestId"
+                ,"location" : map
+            });
+
+    ac.addEventListener("onhighlight", function(e) {  //鼠标放在下拉列表上的事件
+        var str = "";
+        var _value = e.fromitem.value;
+        var value = "";
+        if (e.fromitem.index > -1) {
+            value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+        }
+        str = "FromItem<br />index = " + e.fromitem.index + "<br />value = " + value;
+
+        value = "";
+        if (e.toitem.index > -1) {
+            _value = e.toitem.value;
+            value = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+        }
+        str += "<br />ToItem<br />index = " + e.toitem.index + "<br />value = " + value;
+        G("searchResultPanel").innerHTML = str;
+    });
+
+    var myValue;
+    ac.addEventListener("onconfirm", function(e) {    //鼠标点击下拉列表后的事件
+        var _value = e.item.value;
+        myValue = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+        G("searchResultPanel").innerHTML ="onconfirm<br />index = " + e.item.index + "<br />myValue = " + myValue;
+
+        setPlace();
+    });
+
+    function setPlace(){
+        map.clearOverlays();    //清除地图上所有覆盖物
+        function myFun(){
+            var pp = local.getResults().getPoi(0).point;    //获取第一个智能搜索的结果
+            map.centerAndZoom(pp, 18);
+            map.addOverlay(new BMap.Marker(pp));    //添加标注
+        }
+        var local = new BMap.LocalSearch(map, { //智能搜索
+            onSearchComplete: myFun
+        });
+        local.search(myValue);
+    }
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+    var local = new BMap.LocalSearch(map, {
+        renderOptions:{map: map}
+    });
+    //监听事件 经纬度
+    function showInfo(e){
+        //alert(e.point.lng + ", " + e.point.lat);
+        $("#jingwei").val(e.point.lng + ", " + e.point.lat);
+    }
+    map.addEventListener("click", showInfo);
+    $(function(){
+        $("#sousuo").click(function(){
+            local.search($("#suggestId").val());
+        })
+    });
+
+
+
+</script>
+<script>
+    $(function(){
+
+        $("#baocun").click(function(){
+            alert()
+            $.ajax({
+                url: "__CONTROLLER__/map",
+                type: 'POST',
+                data: {jingwei:$("#jingwei").val(),id:$("#shop_id").val()},
+                success: function(msg){
+                    if(msg=="success"){
+                        location.href="__CONTROLLER__/lst";
+                    }else{
+                        alert("保存失败");
+                    }
+                }
+            });
+            return false;
+        });
+    });
+
+</script>

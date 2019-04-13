@@ -1,0 +1,182 @@
+<layout name="footer"/>
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>自助选型</title>
+		<link rel="stylesheet" href="<?php echo HomeCssUrl;?>/reset.css" />
+		<link rel="stylesheet" href="<?php echo HomeCssUrl;?>/aa.css" />
+		<link rel="stylesheet" href="<?php echo HomeCssUrl;?>/swiper.min.css" />
+		<script type="text/javascript" src="<?php echo HomeJsUrl;?>/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="<?php echo HomeJsUrl;?>/swiper.min.js"></script>
+		<style>
+			@media only screen and (min-width:320px ) {
+				.alert_con p{
+					font-size: 16px;
+				}
+			}
+			@media only screen and (min-width: 768px) {
+				.block ul li {height: 78px;}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="alert_div"></div>
+			<div class="alert_con">
+				<span style="border-bottom: 1px dotted #3e3a39;width: 80%;height:35px;margin: auto;font-weight: 400;">温馨提示</span>
+				<p style="color: #3e3a39;">在了解产品之后,您的选型会更加准确并具有针对性</p>
+				<button class="close_btn">
+					<p style="font-size: 13px;">OK,我知道了</p>
+				</button>
+			</div>
+
+			<div class="product_logo"><img src="<?php echo HomeImgUrl;?>/SIEMENS.png"></div>
+			<div class="block">
+				<ul>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/choosehome_black.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_black.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/chooseele_white.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_white.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/addchoose_white.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_white.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/productsize_white.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_white.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/tablelist_white.png"></li>
+				</ul>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" ><img src="<?php echo HomeImgUrl;?>/1.png"><span>一室两厅一卫</span></div>
+					<div class="swiper-slide" ><img src="<?php echo HomeImgUrl;?>/2.png"><span>两室两厅一卫</span></div>
+					<div class="swiper-slide" ><img src="<?php echo HomeImgUrl;?>/3.png"><span>三室两厅两卫</span></div>
+				</div>
+				<!-- Add Pagination -->
+				<!--<div class="swiper-pagination"></div>-->
+				<!-- Add Arrows -->
+				<div class="swiper-button-next" style="right: 10px !important;"></div>
+				<div class="swiper-button-prev" style="left: 10px !important;"></div>
+			</div>
+			<br />
+			<div class="next_btn">
+				<a href="{:U('Select/eletrical_choose')}">下一步</a>
+			</div>
+			
+		</div>
+		<!-- Initialize Swiper -->
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				slidesPerView: 1,
+				paginationClickable: true,
+				spaceBetween: 30,
+			});
+			
+			//入口函数
+				$(function() {
+				$('.close_btn').click(function() {
+					$('.alert_con').fadeOut();
+					$('.alert_div').fadeOut();
+				})
+			//下一步按钮
+				$('.next_btn').click(function(){
+				  var mat=swiper.activeIndex + 1;
+				  localStorage.setItem("hometype",mat);
+				})
+			})
+			wx.config({
+				debug: false,
+				appId: 'wx7e38a14dfcd9328a',
+				timestamp: '<?php echo $sign_data["timestamp"];?>',
+				nonceStr: '<?php echo $sign_data["nonceStr"];?>',
+				signature: '<?php echo $sign_data["signature"];?>',
+				jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone']
+			});
+			wx.ready(function() {
+				wx.onMenuShareTimeline({
+					title: '西门子家居电气自助选型', // 分享标题
+					link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+					imgUrl: '/Application/Home/public/Images/SIEMENS.png', // 分享图标
+					success: function() {
+						//	window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst'
+					},
+					cancel: function() {
+						//	window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst'
+					}
+				});
+				wx.onMenuShareAppMessage({
+					title: '西门子家居电气自助选型', // 分享标题
+					desc: '西门子家居电气自助选型', // 分享描述
+					link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+					imgUrl: '', // 分享图标
+					type: '', // 分享类型,music、video或link，不填默认为link
+					dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+					success: function() {
+						//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst';
+					},
+					cancel: function() {
+						//	window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst';
+					}
+				});
+				//分享到qq
+				wx.onMenuShareQQ({
+					title: '西门子家居电气自助选型', // 分享标题
+					desc: '西门子家居电气自助选型', // 分享描述
+					link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+					imgUrl: '', // 分享图标
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						//	window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst';
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+						//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst';
+					}
+				});
+				//分享到腾讯微博
+				wx.onMenuShareWeibo({
+					title: '西门子家居电气自助选型', // 分享标题
+					desc: '西门子家居电气自助选型', // 分享描述
+					link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+					imgUrl: '', // 分享图标
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						//	window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst';
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+						//	window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst';
+					}
+				});
+				//分享到qq空间
+				wx.onMenuShareQZone({
+					title: '西门子家居电气自助选型', // 分享标题
+					desc: '西门子家居电气自助选型', // 分享描述
+					link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+					imgUrl: '', // 分享图标
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						//	window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst';
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+						//window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst';
+					}
+				});
+
+			});
+			wx.error(function(res) {
+				//	alert(res); // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+			});
+
+		</script>
+	</body>
+
+</html>

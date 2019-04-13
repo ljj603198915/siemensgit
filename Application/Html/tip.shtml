@@ -1,0 +1,54 @@
+<!--  内容  -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>家居小贴士</title>
+		<link rel="stylesheet" href="/Application/Home/public/Styles/reset.css" />
+		<link rel="stylesheet" href="/Application/Home/public/Styles/aa.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="banner_fire">
+				<ul>
+					<li><img src="/Application/Home/public/Images/tips3.png"></li>
+					<li><img src="/Application/Home/public/Images/tips1.png"></li>
+					<li><h1>可怕的电气火灾</h1><p>是什么原因导致电气火灾如此凶猛？虽然原因复杂多样，但归结起来不外乎几种</p></li>
+					<li><img src="/Application/Home/public/Images/tips2.png"></li>
+					<li>
+						<h1>家居用电安全</h1>
+						<p>家居用电安全我们首先要清楚在家居中电是如何分布的,断路由器和开关插座是家居安全的重要的节点</p>
+					</li>
+				</ul>
+				<div class="div_bottom"></div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<div class="footer">
+    <ul>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Product/ssy_product"><img src="/Application/Home/public/Images/product.png">
+                <br />了解产品</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Select/select_lst"><img src="/Application/Home/public/Images/heart.png">
+                <br />自助选型</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Checkproduct/checkproduct"><img src="/Application/Home/public/Images/glass.png">
+                <br />产品验真</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Onshop/onshop"><img src="/Application/Home/public/Images/fenzhi.png">
+                <br />在线购买</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Nearshop/shop"><img src="/Application/Home/public/Images/position.png">
+                <br />附近店铺</a>
+        </li>
+    </ul>
+</div>

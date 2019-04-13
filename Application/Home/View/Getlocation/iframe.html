@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+</head>
+<body>
+
+<h1>请点击左上角返回按钮</h1>
+<!--<a id="aaaa">点击</a>-->
+<div style="width: 500px;height:100px;background-image: url(/Application/Home/public/Images/SIEMENS.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			position: absolute;
+			left: calc(50% - 250px);
+			top: calc(50% - 50px);">
+
+</div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js "></script>
+<script>
+
+    wx.config({
+        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: 'wx7e38a14dfcd9328a', // 必填，公众号的唯一标识
+        timestamp:<?php echo $data['timestamp'];?> , // 必填，生成签名的时间戳
+    nonceStr:'<?php echo $data['nonceStr'];?>', // 必填，生成签名的随机串
+            signature:'<?php echo $data['signature'];?>',// 必填，签名，见附录1
+            jsApiList:['openLocation']
+    });
+
+    wx.ready(function(){
+//        alert('close')
+
+//        setTimeout(successMap,2000)
+        wx.openLocation({
+            latitude:<?php echo $lat;?>, // 纬度，浮点数，范围为90 ~ -90
+        longitude:<?php echo $lnt;?>, // 经度，浮点数，范围为180 ~ -180。
+        name: '西门子家具电气店铺导航 ', // 位置名
+                address: '点击右下方绿色按钮进行导航', // 地址详情说明
+                scale: 28, // 地图缩放级别,整形值,范围从1~28。默认为最大
+                infoUrl: 'www.baidu.com', // 在查看位置界面底部显示的超链接,可点击跳转经过测试无效
+                success:function () {
+
+            // history.go(-1)
+
+        }
+    });
+////        setTimeout(successMap,1000)
+//
+//        function successMap(){
+//            this.window.close();
+//            WeixinJSBridge.call('closeWindow');
+//        }
+
+    });
+    //    pushHistory();
+    //    window.addEventListener("popstate", function(e) {
+    //        alert("我监听到了浏览器的返回按钮事件啦");//根据自己的需求实现自己的功能
+    //    }, false);
+    //    function pushHistory() {
+    //        var state = {
+    //            title: "title",
+    //            url: "#"
+    //        };
+    //        window.history.pushState(state, "title", "#");
+    //    }
+
+</script>
+</html>

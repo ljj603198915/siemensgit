@@ -1,0 +1,78 @@
+<layout name="layout" />
+<div class="div_from_aoto" style="width: 500px;">
+    <form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data">
+        <input name="id" type="hidden" value="<?php echo $data['id'];?>">
+
+        <div class="control-group">
+            <label class="laber_from">店铺名称<sup style="color: red;">*</sup></label>
+            <input class="input_from"  name="shop_name" type='text' value="<?php echo $data['shop_name'];?>" ><P class=help-block></P>
+        </div>
+        <div class="form-group">
+            <label class="laber_from">省<sup style="color: red;">*</sup></label>
+            <SELECT class="input_select" name="province" id="province"></SELECT>
+
+        </div>
+        <div class="form-group">
+            <label class="laber_from">城市<sup style="color: red;">*</sup></label>
+            <SELECT class="input_select" name="city" id="city"></SELECT>
+        </div>
+
+        <div class="form-group">
+            <label class="laber_from">区县<sup style="color: red;">*</sup></label>
+            <SELECT class="input_select" name="district" id="district"></SELECT>
+        </div>
+        <div class="control-group">
+            <label class="laber_from">店铺详细地址<sup style="color: red;">*</sup></label>
+            <input class="input_from"  name="address" type='text' value="<?php echo $data['address'];?>"><P class=help-block></P></div>
+
+
+        <div class="form-group">
+            <label class="laber_from">店铺类型<sup style="color: red;">*</sup></label>
+
+                <select class="input_select" name="shop_type" >
+                    <option value="">请选择</option>
+                    <option value="1" <?php if($data['shop_type']==1) echo 'selected';?>>旗舰店</option>
+                    <option value="2" <?php if($data['shop_type']==2) echo 'selected';?>>专卖店</option>
+                </select>
+
+        </div>
+        <div class="form-group">
+            <label class="laber_from">营业状态<sup style="color: red;">*</sup></label>
+
+            <select class="input_select" name="on_sale" >
+                <option value="1" <?php if($data['on_sale']==1) echo 'selected';?>>营业</option>
+                <option value="2" <?php if($data['on_sale']==2) echo 'selected';?>>停业</option>
+            </select>
+
+        </div>
+        <div class="form-group">
+            <label class="laber_from">是否参加活动<sup style="color: red;">*</sup></label>
+
+            <select class="input_select" name="on_activity" >
+                <option value="1" <?php if($data['on_activity']==1) echo 'selected';?>>在活动</option>
+                <option value="2" <?php if($data['on_activity']==2) echo 'selected';?>>不在活动</option>
+            </select>
+
+        </div>
+        <DIV class="control-group">
+            <LABEL class="laber_from" ></LABEL>
+            <DIV class="controls" >
+                <button type="submit" class="btn btn-primary" value="确认">确认</button>
+                <button type="reset" class="btn btn-primary btn-reset" value="重置">重置</button>
+
+            </DIV>
+        </DIV>
+
+
+    </form>
+</div>
+<script type="text/javascript" src="<?php echo AdminJsUrl;?>region_select.js"></script>
+<script type="text/javascript">
+    new PCAS('province', 'city', 'district', "<?php echo $data['province'];?>", "<?php echo $data['city'];?>", "<?php echo $data['district'];?>");
+        $('.btn-reset').click(function() {
+            $('#city').empty();
+            $('#district').empty();
+            $('#city').append('<option value="市辖区">市辖区</option><option value="市辖县">市辖县</option>');
+            $('#district').append('<option value="东城区">东城区</option><option value="西城区">西城区</option><option value="崇文区">崇文区</option><option value="宣武区">宣武区</option><option value="朝阳区">朝阳区</option><option value="丰台区">丰台区</option><option value="石景山区">石景山区</option><option value="海淀区">海淀区</option><option value="门头沟区">门头沟区</option><option value="房山区">房山区</option><option value="通州区">通州区</option><option value="顺义区">顺义区</option><option value="昌平区">昌平区</option><option value="大兴区">大兴区</option><option value="怀柔区">怀柔区</option><option value="平谷区">平谷区</option>');
+        })
+</script>

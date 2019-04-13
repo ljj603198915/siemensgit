@@ -1,0 +1,35 @@
+<layout name="layout"/>
+
+</div>
+    <div class="form-contain">
+        <!-- <form> -->
+        <div class="form-group center">
+            <button class="btn btn-primary update">实时更新</button>
+        </div>
+        <!-- </form> -->
+    </div>
+    <div>粉丝总数:<span class="fans-count"></span></span></div>
+    <div class="center">PV统计</div>
+    <div class="data-summary" id="data-summaryPV" style="width: 800px;height: 300px;margin: 0 auto;"></div>
+    <div class="center">UV统计</div>
+    <div class="data-summary" id="data-summaryUV" style="width: 800px;height: 300px;margin: 0 auto;"></div>
+    <div class="center">粉丝数统计</div>
+    <div class="data-summary" id="data-summaryFANS" style="width: 800px;height: 300px;margin: 0 auto;"></div>
+    <!-- jquery -->
+    <script type="text/javascript" src="<?php echo AdminJsUrl;?>jquery.min.js"></script>
+    <!-- datepicker -->
+    <script type="text/javascript" src="<?php echo AdminJsUrl;?>jquery-ui.min.js"></script>
+    <!-- echarts -->
+    <script src="<?php echo AdminJsUrl;?>echarts.simple.min.js"></script>
+    <script src="<?php echo AdminJsUrl;?>myEcharts.js"></script>
+    <!-- public -->
+    <script type="text/javascript" src="<?php echo AdminJsUrl;?>index.js"></script>
+    <script>
+    $(function() {
+        dataSum_update();
+        $('button.update').click(function() {
+            dataSum_update();
+        })
+    })
+    </script>
+

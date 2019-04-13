@@ -1,0 +1,80 @@
+<layout name="layout"/>
+    <label>拉取数据：</label>
+    <div class="form-group center">
+        <input type="text" class="input_from inp-date" name="" id="from" />
+        <input type="text" class="input_from inp-date" name="" id="to" />
+        <button class="btn btn-primary getData">拉取数据</button>
+        <button class="btn btn-primary update">实时更新</button>
+    </div>
+    <!--<div class="form-group center">-->
+        <!--<button class="btn btn-primary update">实时更新</button>-->
+    <!--</div>-->
+    <div class="fans-origin" id="fans-origin" style="width: 800px;height: 800px;margin: 0 auto;"></div>
+    <!-- jquery -->
+    <script type="text/javascript" src="<?php echo AdminJsUrl;?>jquery.min.js"></script>
+    <!-- echarts -->
+    <script src="<?php echo AdminJsUrl;?>echarts.simple.min.js"></script>
+    <script src="<?php echo AdminJsUrl;?>myEcharts.js"></script>
+    <!-- datepicker -->
+    <script type="text/javascript" src="<?php echo AdminJsUrl;?>jquery-ui.min.js"></script>
+
+    <!-- public -->
+    <script type="text/javascript" src="<?php echo AdminJsUrl;?>index.js"></script>
+    <script>
+    $(function() {
+        fansOri_update();
+        var fromDate='';
+        var toDate='';
+        $("#from").datepicker({
+            // minDate: "-30D",
+            maxDate: "-1",
+            dateFormat: "yy-mm-dd",
+            changeMonth: true,
+            numberOfMonths: 1,
+            onClose: function(selectedDate,defaultDate) {
+                if(selectedDate=='')return;
+                $("#to").datepicker("option", "minDate", selectedDate);
+                // var maxDate=$("#from").datepicker("option", "defaultDate");
+                var maxDate=new Date(new Date(selectedDate).getTime()+(5*24*3600*1000));
+                fromDate=selectedDate;
+                var yesterday=new Date().getTime()-(1*24*3600*1000);
+                if(maxDate.getTime()>yesterday){
+                    maxDate=yesterday
+                }
+                $("#to").datepicker("option", "maxDate", new Date(maxDate));
+            }
+        });
+        $("#to").datepicker({
+            defaultDate: "+1D",
+            maxDate: "-1",
+            changeMonth: true,
+            numberOfMonths: 1,
+            dateFormat: "yy-mm-dd",
+            onClose: function(selectedDate) {
+                if(selectedDate=='')return;
+                $("#from").datepicker("option", "maxDate", selectedDate);
+                var minDate=new Date(new Date(selectedDate).getTime()-(5*24*3600*1000));
+                toDate=selectedDate;
+                $("#from").datepicker("option", "minDate", minDate);
+            }
+        });
+        $('button.getData').click(function(){
+            var hasVoid=false;
+          $('.inp-date').each(function(){
+            if(!$(this).val()){
+                hasVoid=true;
+            }
+            
+          })
+            if(hasVoid){
+                alert('请选择拉取日期！')
+                return;
+            }
+          return fansOri_getData(fromDate,toDate);
+        });
+        $('button.update').click(function(){
+          return fansOri_update();
+        })
+        
+    })
+    </script>

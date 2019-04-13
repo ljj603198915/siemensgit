@@ -1,0 +1,133 @@
+body{padding: 0px;
+    margin: 0px;
+    line-height: 1.6;
+    font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif !important;
+    color: #222;
+    font-size: 14px;
+}
+button{
+  width: 120px;
+}
+
+
+table,th,td{
+    text-align: center;
+}
+.width-10{
+    width: 10%;
+}
+.width-8{
+    width: 8%;
+}
+.width-5{
+    width: 5%;
+}
+.width-2{
+    width: 2%;
+}
+.wid-80{
+    width: 80%;
+}
+.mar-center{
+    margin: 0 auto;
+}
+form{
+    /*width: 70%;*/
+    margin:0 auto;
+}
+.center{
+    text-align: center;
+}
+.form-group>div{
+    display: inline-block;
+}
+.form-group label{
+    text-align: left;
+}
+.form-contain{
+    width: 300px;
+    margin: 30px auto 10px auto
+}
+.groups{
+    display: none;
+}
+input{
+    transition: all 0.30s ease-in-out;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    padding-left:10px;
+    height: 34px;
+    width: 200px;
+}
+input:focus{
+    border:1px solid rgb(55, 182, 238);;
+    box-shadow: 0 0 2px rgb(33, 162, 238);
+    -webkit-box-shadow: 0 0 2px rgb(33, 162, 238);
+    -moz-box-shadow: 0 0 2px rgb(33, 162, 238);
+}
+.div_from_aoto{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:10px;
+    margin-top: 30px;
+}
+.laber_from{
+    width: 100px;
+    float: left;
+    line-height: 35px;
+    color: #222;
+    font-weight: normal;
+}
+.control-group{
+    padding-bottom: 10px;
+}
+.input_select{
+    min-width: 80px;
+    max-width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/*内嵌标题栏部分样式*/
+@font-face {
+    font-family:FontAwesome;src:url(../utilLib/fonts/font_awesome/fontawesome-webfontf77b.eot?v=3.2.1);
+    src:url(../utilLib/fonts/font_awesome/fontawesome-webfontd41d.eot?#iefix&v=3.2.1)
+    format('embedded-opentype'),url(../utilLib/fonts/font_awesome/fontawesome-webfontf77b.woff?v=3.2.1)
+    format('woff'),url(../utilLib/fonts/font_awesome/fontawesome-webfontf77b.ttf?v=3.2.1)
+    format('truetype'),url(../utilLib/fonts/font_awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1)
+    format('svg');font-weight:400;font-style:normal
+}
+.glyph-icon{
+    vertical-align:middle;
+    font-family: FontAwesome;
+    font-weight: 400;font-size:12px;font-style: normal;padding-top:5px;padding-right: 5px;
+}
+.icon-chevron-right:before{content:"\f054";padding-left:10px;}
+.icon-chevron-line:before{content:"\f068";padding-left:10px;}
+.route_bg{
+    background-color: #E7E7E7;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 5px;
+}
+.route_bg i{
+    color: #ccc;
+}
+.route_bg a{
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+.route_bg a:hover{
+    color: #888;
+    text-decoration: none;
+
+}
+
+/*底部导航*/
+.page-nav{
+    text-align: center;
+}

@@ -1,0 +1,913 @@
+<layout name="footer" />
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>产品规格</title>
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/reset.css" />
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/aa.css" />
+    <script type="text/javascript" src="<?php echo HomeJsUrl;?>/jquery-3.1.1.min.js"></script>
+    <style>
+        @media only screen and (min-width:360px) {
+            .series li {
+                margin: 0 20px;
+            }
+        }
+    @media only screen and (min-width:320px) {
+        /*.series li {
+            width: 20%;
+        }*/
+        .caizhi li {
+            width: 20%;
+        }
+        /*.boli_border li{width: 20%;}*/
+        /*.lvzhi li{width: 20%;}*/
+        /*.zhishideng ul li{margin-left: 3px;}*/
+    }
+    @media only screen and (min-width: 375px){
+    	.series li{margin: 0 21px;}
+    }
+    @media only screen and (min-width:414px ) {
+    	.series li{margin: 0 26px;}
+    }
+    @media only screen and (min-width:768px) {
+        .series li {
+            width: 12%;
+        }
+        .product_size {
+            height: 27%;
+        }
+        .caizhi li {
+            width: 12%;
+        }
+        .product_caizhi {
+            height: 23%;
+        }
+        .boli_border li {
+            width: 12%;
+        }
+        .boli_border {
+            height: 22%;
+        }
+        .lvzhi li {
+            width: 12%;
+        }
+        .lvzhi_border {
+            height: 20%;
+        }
+        .block ul li {
+            height: 78px;
+        }
+    }
+    .size_squre>.boli_border>p{
+    	margin:10px 16px;
+    }
+    .size_squre>.lvzhi_border>p{
+    	margin:10px 16px;
+    }
+    .yc{
+    	display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product_logo"><img src="<?php echo HomeImgUrl;?>/SIEMENS.png"></div>
+        <div class="block">
+            <ul>
+                <li class="bbq"><img src="<?php echo HomeImgUrl;?>/choosehome_black.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_black.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/chooseele_black.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_black.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/addchoose_black.png"></li>
+					<li class="dayuhao"><img src="<?php echo HomeImgUrl;?>/dayu_black.png"></li>
+					<li class="bbq"><img src="<?php echo HomeImgUrl;?>/productsize_black.png"></li>
+					<li class="dayuhao"><img class="dayu_bian" src="<?php echo HomeImgUrl;?>/dayu_white.png"></li>
+					<li class="bbq"><img class="bian" src="<?php echo HomeImgUrl;?>/tablelist_white.png"></li>
+            </ul>
+        </div>
+        <div class="size_squre">
+            <div class="product_size">
+                <p style="text-indent: 0.5em;margin-bottom: 6px;">请选择产品系规格：</p>
+                <p class="para-title">系列：</p>
+                <br />
+                <ul class="series">
+                	<!--睿致-->
+                    <li>
+                        <label for="ruizhi">
+                            <img src="<?php echo HomeImgUrl;?>/ruizhi.png">
+                        </label>
+                        <br/>
+                        <input name="ser" type="radio" id="ruizhi">
+                    </li>
+                    <!--皓睿-->
+                    <li>
+                        <label for="haorui">
+                            <img src="<?php echo HomeImgUrl;?>/haorui.png">
+                        </label>
+                        <br/>
+                        <input name="ser" type="radio" id="haorui">
+                    </li>
+                    <!--映彩-->
+                    <li>
+                        <label for="yingcai">
+                            <img src="<?php echo HomeImgUrl;?>/yingcai.png">
+                        </label>
+                        <br/>
+                        <input name="ser" type="radio" id="yingcai">
+                    </li>
+                    <!--睿绎-->
+                    <li>
+                        <label for="yingcai">
+                            <img src="<?php echo HomeImgUrl;?>/ruiyi.png">
+                        </label>
+                        <br/>
+                        <input name="ser" type="radio" id="ruiyi">
+                    </li>
+                    <!--点晶-->
+                    <li>
+                        <label for="dianjing">
+                            <img src="<?php echo HomeImgUrl;?>/dianjing.png">
+                        </label>
+                        <br/>
+                        <input name="ser" type="radio" id="dianjing">
+                    </li>
+                    <!--悦动-->
+                    <li>
+                        <label for="yuedong">
+                            <img src="<?php echo HomeImgUrl;?>/yuedong.png">
+                        </label>
+                        <br/>
+                        <input name="ser" type="radio" id="yuedong">
+                    </li>                    
+                     <!--远景-->
+                    <li>
+                        <label for="yuanjing">
+                            <img src="<?php echo HomeImgUrl;?>/yuanjing.png">
+                        </label>
+                        <br/>
+                        <input name="ser" type="radio" id="yuanjing">
+                    </li>
+                    <!--品宜-->
+                    <li>
+                        <label for="pinyi">
+                            <img src="<?php echo HomeImgUrl;?>/pinyi.png">
+                        </label>
+                        <br/>
+                        <input name="ser" type="radio" id="pinyi">
+                    </li>
+                    <!--灵致-->
+                    <li>
+                        <label for="lingzhi">
+                            <img src="<?php echo HomeImgUrl;?>/lingzhi.png">
+                        </label>
+                        <br/>
+                        <input name="ser" type="radio" id="lingzhi">
+                    </li>
+                    <!--灵动-->
+                    <li>
+                        <label for="lingdong">
+                            <img src="<?php echo HomeImgUrl;?>/lingdong.png">
+                        </label>
+                        <br/>
+                        <input name="ser" type="radio" id="lingdong">
+                    </li>
+                    <div style="clear: both;"></div>
+                </ul>
+            </div>
+            <p class="para-title">材质：</p>
+            <div class="product_caizhi">
+                <p style="text-indent: 0.7em;">PC：</p>
+                <ul class="pc">
+                    <li>
+                        <label for="baise">
+                            <img src="<?php echo HomeImgUrl;?>/white_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="4" id="baise">
+                    </li>
+                    <li>
+                        <label for="jinse">
+                            <img src="<?php echo HomeImgUrl;?>/gold_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="1" id="jinse">
+                    </li>
+                    <li>
+                        <label for="yinse">
+                            <img src="<?php echo HomeImgUrl;?>/silvery_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="2" id="yinse">
+                    </li>
+                    <li>
+                        <label for="heise">
+                            <img src="<?php echo HomeImgUrl;?>/black_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="3" id="heise">
+                    </li>                    
+                    <!--玫瑰金-->
+                    <li>
+                        <label for="meiguijin">
+                            <img src="<?php echo HomeImgUrl;?>/Rosegold_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="25" id="meiguijin">
+                    </li>
+                    <!--映彩颜色-->  
+                    	<!--基本色另一套-->
+                    	<li style="display: none;">
+	                        <label for="baise2">
+	                            <img src="<?php echo HomeImgUrl;?>/white2_color.png">
+	                        </label>
+	                        <br/>
+	                        <input name="color_id" type="radio" value="10004" id="baise2">
+	                    </li>
+	                    <li style="display: none;">
+	                        <label for="jinse2">
+	                            <img src="<?php echo HomeImgUrl;?>/gold2_color.png">
+	                        </label>
+	                        <br/>
+	                        <input name="color_id" type="radio" value="10001" id="jinse2">
+	                    </li>
+	                    <li style="display: none;">
+	                        <label for="yinse2">
+	                            <img src="<?php echo HomeImgUrl;?>/silvery2_color.png">
+	                        </label>
+	                        <br/>
+	                        <input name="color_id" type="radio" value="10002" id="yinse2">
+	                    </li>
+	                    <li style="display: none;">
+	                        <label for="heise2">
+	                            <img src="<?php echo HomeImgUrl;?>/black2_color.png">
+	                        </label>
+	                        <br/>
+	                        <input name="color_id" type="radio" value="10003" id="heise2">
+	                    </li>
+	                     <!--蓝色-->
+	                    <li>
+	                        <label for="blue">
+	                            <img src="<?php echo HomeImgUrl;?>/blue.png">
+	                        </label>
+	                        <br/>
+	                        <input name="color_id" type="radio" value="32" id="blue">
+	                    </li>
+	                    <!--红色-->
+	                    <li>
+	                        <label for="red">
+	                            <img src="<?php echo HomeImgUrl;?>/red.png">
+	                        </label>
+	                        <br/>
+	                        <input name="color_id" type="radio" value="31" id="red">
+	                    </li>
+		                    <!--褐色-->
+	                    <li>
+	                        <label for="brown">
+	                            <img src="<?php echo HomeImgUrl;?>/brown.png">
+	                        </label>
+	                        <br/>
+	                        <input name="color_id" type="radio" value="33" id="brown">
+	                    </li>
+	                   
+	                    <!--灰色-->
+	                    <li>
+	                        <label for="gray">
+	                            <img src="<?php echo HomeImgUrl;?>/gray.png">
+	                        </label>
+	                        <br/>
+	                        <input name="color_id" type="radio" value="30" id="gray">
+	                    </li>
+	                <div style="clear: both"></div>	               
+                </ul>
+            </div>
+            <div class="boli_border">
+                <p style="text-indent: 0.7em;">玻璃(边框)：</p>
+                <ul class="pc">
+                    <li>
+                        <label for="qianbai">
+                            <img src="<?php echo HomeImgUrl;?>/qianbai_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="17" id="qianbai">
+                    </li>
+                    <li>
+                        <label for="louhei">
+                            <img src="<?php echo HomeImgUrl;?>/louhei_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="22" id="louhei">
+                    </li>
+                    <li>
+                        <label for="jianghong">
+                            <img src="<?php echo HomeImgUrl;?>/jianghong_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="18" id="jianghong">
+                    </li>
+                    <li>
+                        <label for="jinglv">
+                            <img src="<?php echo HomeImgUrl;?>/jinglv.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="19" id="jinglv">
+                    </li>
+                    <li>
+                        <label for="liujin">
+                            <img src="<?php echo HomeImgUrl;?>/liujin_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="20" id="liujin">
+                    </li>
+                    <li>
+                        <label for="yaoyin">
+                            <img src="<?php echo HomeImgUrl;?>/yaoyin_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="21" id="yaoyin">
+                    </li>
+                    <div style="clear: both"></div>
+                </ul>
+            </div>
+            <div class="lvzhi_border">
+                <p style="text-indent: 0.7em;">铝制(边框)：</p>
+                <ul class="pc">
+                    <li>
+                        <label for="mosha">
+                            <img src="<?php echo HomeImgUrl;?>/mosha_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="23" id="mosha">
+                    </li>
+                    <li>
+                        <label for="lasi">
+                            <img src="<?php echo HomeImgUrl;?>/lasi_color.png">
+                        </label>
+                        <br/>
+                        <input name="color_id" type="radio" value="24" id="lasi">
+                    </li>
+                    <div style="clear: both"></div>
+                </ul>
+            </div>
+            <div class="zhishideng">
+                <p class="para-title" style="font-size: 16px;">指示灯：</p>
+                <ul class="zsd">
+                    <li>
+                        <input class="duiqi" type="radio" name="zhishideng" value="4" id="LED">&nbsp;&nbsp;&nbsp;
+                        <label for="LED">带LED指示灯</label>
+                    </li>
+                    <li>
+                        <input class="duiqi" type="radio" name="zhishideng" value="3" id="yingguang">&nbsp;&nbsp;&nbsp;
+                        <label for="yingguang">带荧光指示灯</label>
+                    </li>
+                    <li>
+                        <input class="duiqi" type="radio" name="zhishideng" value="2" id="noLight">&nbsp;&nbsp;&nbsp;
+                        <label for="noLight">不带指示灯</label>
+                    </li>
+                    <br />
+                    <br />
+                </ul>
+            </div>
+            <p class="para-title" style="font-size: 16px;text-indent: 0.5em;">您是否需要低压终端配电产品(断路器、配电箱)?</p>
+            <div class="isid">
+                <ul class="need">
+                    <li>
+                        <input class="duiqi" type="radio" name="diya" id="need" value="1">&nbsp;&nbsp;&nbsp;
+                        <label for="need">我要选择</label>
+                    </li>
+                    <li>
+                        <input class="duiqi" type="radio" name="diya" id="notNeed" value="0">&nbsp;&nbsp;&nbsp;
+                        <label for="notNeed">我不需要</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="size_btn">
+                <button>生成清单</button>
+            </div>
+        </div>
+        <!--list页-->
+        <div class="list_squre">
+            <div class="tb">
+                <p style="text-indent: 0.5em;">您家里需要的开关插座为：</p>
+                <br/>
+                <ul>
+                    <li class="series_title">
+                        <!--睿致系列-->
+                    </li>
+                    <li class="series_type">
+                        <!--PC材质-->
+                    </li>
+                    <li class="series_light">
+                        <!--带LED指示灯-->
+                    </li>
+                </ul>
+                <br/>
+                <br/>
+                <table class="tb1" border="1" cellspacing="" cellpadding="">
+                    <tr>
+                        <th style="width:50%;">产品类型</th>
+                        <th>产品型号</th>
+                        <th style="width: 10%">数量</th>
+                    </tr>
+                    <!--<tr>
+						<td style="width: 60%;">天津话天剑话</td>
+						<td class="product_type">03316546554</td>
+						<td style="text-align: center;">5</td>
+					</tr>-->
+                </table>
+                <br />
+                <p style="text-indent: 0.5em;">您家里需要的绿断产品为:</p>
+                <br />
+                <table class="tb2" border="1" cellspacing="" cellpadding="">
+                    <tr>
+                        <th style="width:50%;">产品类型</th>
+                        <th>产品型号</th>
+                        <th style="width: 10%">数量</th>
+                    </tr>
+                    <!--<tr>-->
+                    <!--<td style="width: 60%;">天津话天剑话</td>-->
+                    <!--<td class="product_type">03316546554</td>-->
+                    <!--<td style="text-align: center;">5</td>-->
+                    <!--</tr>-->
+                </table>
+            </div>
+            <div class="go_btn">
+                <br />
+                <br />
+                <button><a>分享</a></button>
+                <br/><span style="color: red">点击右上角按钮进行分享</span>
+                <button class="anzhuo"><span id="bbq-word">导出Word</span></button>
+                <button class="anzhuo"><span id="bbq-excel">导出Excel</span></button>
+                <p style="font-size:14px;margin:10px 0;">如需购买,请您截图保存本次选型结果</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+$(function() {
+    //配置history
+    var stateObj = {
+        foo: "bar"
+    };
+    history.replaceState(stateObj, "page 2", "product_size.html?1");
+
+    $('.size_btn').click(function() {
+        history.pushState(stateObj, "page 2", "product_size.html?2");
+    })
+    window.onpopstate = function(event) {
+        $('.size_squre').show();
+        $('.list_squre').hide();
+        $(".dayu_bian").attr("src", "/Application/Home/public/Images/dayu_white.png");
+        $(".bian").attr("src", "/Application/Home/public/Images/tablelist_white.png");
+        //改变title开始
+        $(document).attr("title", "产品规格");
+        var $body = $('body');
+        document.title = '产品规格';
+        var $iframe = $("<iframe style='display:none;' src='/favicon.ico'></iframe>");
+        $iframe.on('load', function() {
+            setTimeout(function() {
+                $iframe.off('load').remove();
+            }, 0);
+        }).appendTo($body);
+        //改变title开始
+        //清除页面数据
+        $('.series_title').empty();
+        $('.series_type').empty();
+        $(".series_light").empty();
+        $('.need_empty').empty();
+//        $('.tb2>tr>td').empty();
+       // alert('请返回首页重新选择房型！')
+     //   window.location='./select_lst.html';
+    };
+    //				debugger;
+    //系列和点晶那
+    var oldSeriesId = 100; //原来选择的系列id
+    var newSeriesId = 200; //新选择的系列id 
+    var serid=0;
+    $('ul.series li').on('click', 'input', function(e) {
+        newSeriesId = $(this).parent().index();
+        if (newSeriesId != oldSeriesId) {
+            serid = $(this).parent().index();
+            //serid取html中图标的index
+            if (serid == '0') {
+                serid = 7
+            } else if (serid == '1') {
+                serid = 14
+            } else if (serid == '2') {
+                serid = 13
+            } else if (serid == '3') {
+                serid = 15
+            } else if (serid == '4') {
+                serid = 6
+            } else if (serid == '5') {
+                serid = 3
+            } else if (serid == '6') {
+                serid = 2
+            } else if (serid == '7') {
+                serid = 1
+            } else if (serid == '8') {
+                serid = 5
+            }else if (serid == '9') {
+                serid = 4
+            }
+            selectColorAndLight(serid)
+            // localStorage.setItem("series_id", serid);
+            if (serid != '6') {
+                $('.boli_border').css("display", "none");
+                $('.lvzhi_border').css("display", "none");
+                
+            } else {
+                $('.boli_border').css("display", "block");
+                $('.lvzhi_border').css("display", "block");
+            }
+        }
+
+        oldSeriesId = newSeriesId;
+
+    })
+    
+    var color_id=0;
+    $('.pc li input').click(function() {
+        color_id = $('.pc li input[name="color_id"]:checked ').val();
+        // var color_id = localStorage.setItem("color_id", color_id)
+        //睿致玫瑰金选择时，指示灯消失
+        if($("#ruizhi").is(':checked')){
+        	if($("#meiguijin").is(':checked')){
+        		$("#LED").parent().hide();
+        		$("#LED").prop("checked","");
+        	}else{
+        		$("#LED").parent().show();
+        	}
+        }
+    })
+    var lightid=0;
+    //获取指示灯索引值
+    $('ul.zsd').on('click', 'li', function(e) {
+            lightid = $(this).find("input").val();
+            // localStorage.setItem("light_id", lightid);
+        })
+    var isid=0;
+        //获取需要不需要索引值
+    $('ul.need').on('click', 'li', function(e) {
+        isid = $(this).find("input").val();
+        // localStorage.setItem("is_id", isid);
+    })
+
+
+
+    //点击发送ajax	
+    $('.size_btn').click(function() {
+        //验证是否选择全了
+        var selectAll = validSelect();
+        if (!selectAll) {
+            alert('筛选条件太少！')
+            return false;
+        }
+
+        $('.size_squre').css("display", "none");
+        $(".dayu_bian").attr("src", "/Application/Home/public/Images/dayu_black.png");
+        $(".bian").attr("src", "/Application/Home/public/Images/tablelist_black.png");
+        $('.list_squre').css("display", "block");
+        //					var title=$(document).attr("title");
+        $(document).attr("title", "生成清单页");
+        var $body = $('body');
+        document.title = '生成清单页';
+        var $iframe = $("<iframe style='display:none;' src='/favicon.ico'></iframe>");
+        $iframe.on('load', function() {
+            setTimeout(function() {
+                $iframe.off('load').remove();
+            }, 0);
+        }).appendTo($body);
+
+
+
+        //判断机型
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+        if (isMobile.iOS()) {
+            //			alert("apple");
+        } else {
+            //			alert("Android");
+            $('.anzhuo').css("display", "block").addClass("anzhuo1");
+        }
+
+        //					$('.series li .b_sq').removeClass("bg0");
+        //					$('.caizhi li .b_sq').removeClass("bg0");
+        //					$('.boli li .b_sq').removeClass("bg0");
+        //					$('.lvzhi li .b_sq').removeClass("bg0");
+        //					event.preventDefault();
+        var list = "";
+        var listArr = [];
+        var series = serid;
+        var light = lightid;
+        var need = isid;
+        color_id = color_id;
+        var data = {
+            "series_id": series,
+            //							"pc_color_id":pc,
+            //							"boli_color_id":boli,
+            //							"lvzhi_color_id":lvzhi,
+            "color_id": color_id,
+            "light_id": light,
+            "is_id": need
+        }
+        var mat = localStorage.getItem("hometype")
+        var jsonData = {
+            home_type: mat,
+            "kind": localStorage.getItem("kaiguan"),
+            //						"usb": localStorage.getItem("usb"),
+            "is_usb": localStorage.getItem("is_usb"),
+            "no_usb": localStorage.getItem("no_usb"),
+            search: data
+        }
+
+        var sumKind = [];
+        $.ajax({
+            type: "post",
+            url: "__CONTROLLER__/searchThree",
+            async: true,
+            data: jsonData,
+            dataType: 'json',
+
+            success: function(msg) {
+                if (msg == 1) {
+
+                    alert('没有数据传输');
+                } else if (msg == 2) {
+
+                    alert('筛选条件过少');
+                } else if (msg == 3) {
+
+                    alert('房型错误');
+                } else {
+                    var kindpt = msg.kindpt;
+                    //console.log(kindpt)
+                    var kind2 = msg.kind2;
+                    var title = msg.title;
+                    if(title){
+                        $(title).each(function(i, item) {
+                            //标题
+                            $('.series_title').append("<p>" + item.series_name + "</p>");
+                            $('.series_type').append("<p>" + item.color_name + "</p>");
+                            $(".series_light").append("<p>" + item.light_name + "</p>");
+                        })
+                    }
+                    if(kindpt){
+                        $(kindpt).each(function(i, item) {
+                            $('.tb1').append("<tr class='need_empty'><td style='text-align: left;'>" + item.product_desc + "</td><td>" + item.product_name + "</td><td style='text-align: center;'>" + item.product_count + "</td></tr>");
+                        })
+                    }else{
+                        $('.tb1').append("<tr class='need_empty'><td colspan='3' >该类别下没有数据</td></tr>");
+                    }
+                    if(kind2){
+                        $(kind2).each(function(i, item) {
+                            //添加绿断
+                            $('.tb2').append("<tr class='need_empty'><td style='text-align: left;'>" + item.product_desc + "</td><td>" + item.product_name + "</td><td style='text-align: center'>" + item.product_count + "</td></tr>");
+                        })
+                    }else{
+                        $('.tb2').append("<tr class='need_empty'><td colspan='3' >该类别下没有数据</td></tr>");
+
+                    }
+
+                    //拼装用于导出文件时发送的数据
+                    if (kindpt == undefined && kind2 == undefined) {
+                        sumKind = 0;
+                    } else if (kindpt == undefined && kind2 != undefined) {
+                        sumKind = kind2;
+                    } else if (kindpt != undefined && kind2 == undefined) {
+                        sumKind = kindpt;
+                    } else if (kindpt != undefined && kind2 != undefined) {
+                        //									console.log(typeof(kind1),typeof(kind2))
+                        sumKind = kindpt.concat(kind2)
+                    }
+                    //console.log(sumKind)
+                }
+
+
+            },
+            error: function() {}
+        });
+        $('#bbq-word').click(function() {
+            $.ajax({
+                url: '/index.php/Home/Select/ajax',
+                type: 'post',
+                data: {
+                    kind: sumKind,
+                    type: 2
+                },
+                success: function(msg) {
+                    var msg = msg;
+                    window.location = msg;
+
+                }
+            })
+        })
+        $('#bbq-excel').click(function() {
+            $.ajax({
+                url: '/index.php/Home/Select/ajax',
+                type: 'post',
+                data: {
+                    kind: sumKind,
+                    type: 1
+                },
+                success: function(msg) {
+                    var msg = msg;
+                    window.location = msg;
+
+                }
+            })
+        })
+    })
+})
+
+//			function shareApi(timestamp,nonceStr,signature) {
+wx.config({
+    debug: false,
+    appId: 'wx7e38a14dfcd9328a',
+    timestamp: '<?php echo $sign_data["timestamp"];?>',
+    nonceStr: '<?php echo $sign_data["nonceStr"];?>',
+    signature: '<?php echo $sign_data["signature"];?>',
+    jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone']
+});
+wx.ready(function() {
+    wx.onMenuShareTimeline({
+        title: '西门子家居电气自助选型', // 分享标题
+        link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+        imgUrl: '/Application/Home/public/Images/SIEMENS.png', // 分享图标
+        success: function() {
+//            window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/product_size'
+        },
+        cancel: function() {
+//            window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/product_size'
+        }
+    });
+    wx.onMenuShareAppMessage({
+        title: '西门子家居电气自助选型', // 分享标题
+        desc: '西门子家居电气自助选型', // 分享描述
+        link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+        imgUrl: '', // 分享图标
+        type: '', // 分享类型,music、video或link，不填默认为link
+        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+        success: function() {
+//            window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/product_size';
+        },
+        cancel: function() {
+         //   window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/product_size';
+        }
+    });
+    //分享到qq
+    wx.onMenuShareQQ({
+        title: '西门子家居电气自助选型', // 分享标题
+        desc: '西门子家居电气自助选型', // 分享描述
+        link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+        imgUrl: '', // 分享图标
+        success: function () {
+            // 用户确认分享后执行的回调函数
+          //  window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/product_size';
+        },
+        cancel: function () {
+            // 用户取消分享后执行的回调函数
+          //  window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/product_size';
+        }
+    });
+    //分享到腾讯微博
+    wx.onMenuShareWeibo({
+        title: '西门子家居电气自助选型', // 分享标题
+        desc: '西门子家居电气自助选型', // 分享描述
+        link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+        imgUrl: '', // 分享图标
+        success: function () {
+            // 用户确认分享后执行的回调函数
+          //  window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/product_size';
+        },
+        cancel: function () {
+            // 用户取消分享后执行的回调函数
+         //   window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/product_size';
+        }
+    });
+    //分享到qq空间
+    wx.onMenuShareQZone({
+        title: '西门子家居电气自助选型', // 分享标题
+        desc: '西门子家居电气自助选型', // 分享描述
+        link: 'http://www.wawechat.siemens.com.cn/Home/Select/select_lst', // 分享链接
+        imgUrl: '', // 分享图标
+        success: function () {
+            // 用户确认分享后执行的回调函数
+            //window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/product_size';
+        },
+        cancel: function () {
+            // 用户取消分享后执行的回调函数
+           // window.location = 'http://www.wawechat.siemens.com.cn/Home/Select/product_size';
+        }
+    });
+
+});
+wx.error(function(res) {
+    //	alert(res); // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+});
+
+//}
+
+
+//选择系列后的变化
+function selectColorAndLight(serid) {
+    //发送系列号
+    $.ajax({
+            url: '__CONTROLLER__/ChooseSearch',
+            data: {
+                'series_id': serid
+            },
+            method:'post',
+            dataType: 'json'
+       }).done(function(data) {
+            //清空已选颜色
+            $('.pc>li>input').each(function() {
+                    $(this).prop("checked", "");
+                    var val = $(this).val();
+                    var arrColor = [];
+                    arrColor = data.arrColor;
+                    arrColor = arrColor.concat(val);
+                    //数组去重
+                    var arrRes = new Set(arrColor);
+                    if (arrRes.size == arrColor.length) {
+                        //不显示
+                        $(this).parent().hide();
+                    } else {
+                        //显示
+                        $(this).parent().show();
+                    }
+                })
+                //清空已选指示灯
+            $('ul.zsd li>input').each(function() {
+                $(this).prop("checked", "");
+                var val = $(this).val();
+                var arrLight = [];
+                arrLight = data.arrLight;
+                arrLight = arrLight.concat(val);
+
+                //数组去重
+                var arrRes = new Set(arrLight);
+                if (arrRes.size == arrLight.length) {
+                    //不显示
+                    $(this).parent().hide();
+
+                } else {
+                    //显示
+                    $(this).parent().show();
+                }
+            })
+        $('.boli_border').each(function () {
+            $(this).find('li').show()
+        })
+        $('.lvzhi_border').each(function () {
+            $(this).find('li').show()
+        })
+        }).fail(function() {
+            alert("出错啦！")
+            $('.pc>li>input').each(function() {
+                $(this).prop("checked", "");
+            })
+            $('ul.zsd li>input').each(function() {
+                $(this).prop("checked", "");
+            })
+
+
+        })
+        // $('ul.zsd li>input:eq(1)').prop("checked", "");
+}
+//筛选条件验证
+function validSelect() {
+    var selectAll = true;
+    if (!$('ul.series>li>input:checked').length) {
+        selectAll = false;
+    } else if (!$('ul.pc>li>input:checked').length) {
+        selectAll = false;
+    } else if (!$('ul.zsd>li>input:checked').length) {
+        selectAll = false;
+    }
+    return selectAll;
+
+}
+</script>
+
+</html>

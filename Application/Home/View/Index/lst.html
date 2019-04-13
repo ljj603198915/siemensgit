@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+</head>
+<body>
+<div>
+    <button onclick="gain()">choosecard</button>
+    <button onclick="addcard()">addcard</button>
+</div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js "></script>
+<script>
+    wx.config({
+        debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: 'wx7e38a14dfcd9328a', // 必填，公众号的唯一标识
+        timestamp: "<?php echo $data['timestamp'];?>", // 必填，生成签名的时间戳
+        nonceStr: "<?php echo $data['nonceStr'];?>", // 必填，生成签名的随机串
+        signature: "<?php echo $data['signature'];?>",// 必填，签名，见附录1
+        jsApiList: ['addCard', 'chooseCard']
+    });
+
+    function gain() {
+
+    }
+    wx.ready(function () {
+        $.ajax({
+            url: "/index.php/Home/Index/getaddCard",
+            type: 'post',
+            data: {},
+            dataType: 'json',
+            success: function (data) {
+                var cardLIst = "";
+
+                $(data.list).each(function (index, ele) {
+                    console.log(ele)
+                    cardLIst += "{" + "cardId" + ":" + "'" + ele.carId + "'" + ","
+                    cardLIst += "cardExt" + ":" + "'" + ele.cardExt + "'" + "},"
+                });
+                cardLIst = cardLIst.substring(0, cardLIst.length - 1);
+                wx.addCard({
+                    cardList: [cardLIst]
+                });
+            },
+            error: function () {
+                alert('请求失败');
+            }
+        });
+    });
+
+    function addcard() {
+        $.ajax({
+            url: "/index.php/Home/Index/getaddCard",
+            type: 'post',
+            data: {},
+            dataType: 'json',
+            success: function (data) {
+                var cardLIst = "";
+                $(data.list).each(function (index, ele) {
+                    cardLIst += "{" + "cardId" + ":" + "'" + ele.cardId + "'" + ","
+                    cardLIst += "cardExt" + ":" + "'" + ele.cardExt + "'" + "},"
+                });
+                cardLIst = cardLIst.substring(0, cardLIst.length - 1);
+                wx.addCard({
+                    cardList: [cardLIst]
+                });
+            },
+            error: function () {
+                alert('请求失败');
+            }
+        });
+    }
+//    wx.ready(function () {
+//
+//        wx.addCard({
+//            cardList: [
+//                {
+//                    cardId: "<?php echo $addCardData['cardId'];?>",
+//                    cardExt: '{"timestamp":"<?php echo $addCardData["cardExt"]["timestamp"];?>", "signature":"<?php echo $addCardData["cardExt"]["signature"];?>"}'
+//                },
+//                {
+//                    cardId: "<?php echo $addCardData['cardId'];?>",
+//                    cardExt: '{"timestamp":"<?php echo $addCardData["cardExt"]["timestamp"];?>", "signature":"<?php echo $addCardData["cardExt"]["signature"];?>"}'
+//                }
+//            ],
+////            success: function (res) {
+////                var cardList = res.cardList; // 添加的卡券列表信息
+////                alert(cardList);
+////            },
+////            cancel: function (res) {
+////                alert('已取消');
+////            },
+//            fail: function (res) {
+//                alert(JSON.stringify(res));
+//            }
+//        });
+////        wx.chooseCard({
+//////            shopId: '', // 门店Id
+//////            cardType: '', // 卡券类型
+////            //cardId: "<?php echo $apiTicketData['cardId'];?>", // 卡券Id
+////            timestamp: <?php echo $chooseCardData['timestamp'];?>, // 卡券签名时间戳
+////            nonceStr: "<?php echo $chooseCardData['nonceStr'];?>", // 卡券签名随机串
+////            signType: 'SHA1', // 签名方式，默认'SHA1'
+////            cardSign: "<?php echo $chooseCardData['signature'];?>", // 卡券签名
+////            success: function (res) {
+////                var cardList = res.cardList; // 用户选中的卡券列表信息
+////            }
+////        });
+//    });
+
+</script>
+<script>
+    //    wx.config({
+    //        debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    //        appId: 'wx7e38a14dfcd9328a', // 必填，公众号的唯一标识
+    //        timestamp: <?php echo $data['timestamp'];?>, // 必填，生成签名的时间戳
+    //    nonceStr:'<?php echo $data['nonceStr'];?>', // 必填，生成签名的随机串
+    //        signature:'<?php echo $data['signature'];?>', // 必填，签名，见附录1
+    //        jsApiList:['getLocation']
+    //    });
+
+
+</script>
+</html>

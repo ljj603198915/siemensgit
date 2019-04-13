@@ -1,0 +1,27 @@
+<layout name="layout" />
+
+<div class="div_from_aoto" style="width: 500px;">
+    <form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data" >
+    	<input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
+        <table cellspacing="1" cellpadding="3" width="100%">
+            <div class="control-group">
+                <label class="laber_from">队伍名称<sup style="color: red;">*</sup></label>
+                <DIV  class="controls" ><input class="input_from"  name="team_name" type=text value="<?php echo $data['team_name'];?>" ><P class=help-block></P></DIV>
+            </div>
+
+            <div class="control-group">
+                <label class="laber_from">队伍名称<sup style="color: red;">*</sup></label>
+                <DIV  class="controls" ><input class="input_from"  name="team_image" type="file" value="" ><P class=help-block></P></DIV>
+                <img width="100px" height="100px" src="/Public/Uploads/{$data['team_image']}">
+            </div>
+            <DIV class="control-group">
+                <LABEL class="laber_from" ></LABEL>
+                <DIV class="controls" >
+                    <button type="submit" class="btn btn-primary" value="提交">确认</button>
+                </DIV>
+            </DIV>
+        </table>
+    </form>
+</div>
+<script>
+</script>

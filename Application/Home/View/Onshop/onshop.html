@@ -1,0 +1,57 @@
+<layout  name="footer"/>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>在线购买</title>
+		<link rel="stylesheet" href="<?php echo HomeCssUrl;?>/reset.css" />
+		<link rel="stylesheet" href="<?php echo HomeCssUrl;?>/aa.css" />
+
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="Interbuy_img"></div>
+			<br />
+			<div class="store">
+				<ul class="store_ul">
+					<li><div class="shop_div">旗舰店</div></li>
+					<foreach name="shop_data" item="v">
+						<if condition="$v['shop_type'] eq 1 ">
+							<li class="shop"><a href="{$v.shop_url}">{$v.shop_name}<span>>></span></a></li>
+						</if>
+					</foreach>
+				</ul>
+
+                <ul class="store_ul">
+                	<li><div class="shop_div">专卖店</div></li>
+					<foreach name="shop_data" item="v">
+						<if condition="$v['shop_type'] eq 2 ">
+							<li class="shop"><a href="{$v.shop_url}">{$v.shop_name}<span>>></span></a></li>
+						</if>
+					</foreach>
+                </ul>
+				<ul class="store_ul">
+					<li><div class="shop_div">平台专营店</div></li>
+					<foreach name="shop_data" item="v">
+						<if condition="$v['shop_type'] eq 3 ">
+							<li class="shop"><a href="{$v.shop_url}">{$v.shop_name}<span>>></span></a></li>
+						</if>
+					</foreach>
+				</ul>
+
+                <ul class="store_ul">
+                	<li><div class="shop_div">平台自营店</div></li>
+					<foreach name="shop_data" item="v">
+						<if condition="$v['shop_type'] eq 4 ">
+							<li class="shop"><a href="{$v.shop_url}">{$v.shop_name}<span>>></span></a></li>
+						</if>
+					</foreach>
+                </ul>
+                <div style="height: 60px;"></div>
+			</div>
+		</div>
+	</body>
+
+</html>

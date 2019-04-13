@@ -1,0 +1,208 @@
+/*附近店铺页开始*/
+body,
+html {
+    height: 100%;
+    position: relative;
+}
+
+.head-nearshop {
+    min-height: 3.6rem;
+    box-sizing: border-box;
+    padding: .5rem;
+}
+
+.html-nearshop {
+    font-size: 62.5%;
+}
+
+header {
+    box-shadow: 5px 0 10px #ccc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 199497;
+    background-color: #fff;
+}
+
+span.select-city {
+    display: inline-block;
+    font-size: 1.6rem;
+    width: 24%;
+    vertical-align: middle;
+    text-align: center;
+    color: #666;
+}
+
+span.select-city img {
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+input.detail-address {
+    height: 3.6rem;
+    width: 55%;
+    border-top: none;
+    border-bottom: none;
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+    padding: .5rem;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+button.search-nearshop {
+    width: 19%;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #fff;
+    vertical-align: middle;
+    color: #666;
+    outline: none;
+}
+
+.contain-citylist {
+    z-index: 199496;
+    /*width: 60%;*/
+    font-size: 1.6rem;
+    /*border: none;*/
+    position:absolute;
+    top:3.6rem !important;
+    overflow-x: hidden
+
+}
+
+#allmap {
+	position: fixed !important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+.contain-map {
+    height: 100%;
+}
+
+/*附近店铺页结束*/
+/*附近店铺列表*/
+.contain-addr {
+    position: fixed;
+    bottom: 60px;
+    width: 100%;
+    max-height: 220px;
+    overflow: auto;
+}
+
+.one-addr {
+    position: relative;
+    width: 100%;
+    /*height: 60px;*/
+    padding: 5px 15px 5px 45px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    background-color: #fff;
+    width: 95%;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-right: auto;
+}
+
+.contain-addr a:link, .contain-addr a:visited, .contain-addr a:hover, .contain-addr a:active {
+    text-decoration: none;
+}
+
+.goto {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    margin-top: -5px;
+    text-decoration: none;
+    color: #BCBDBD;
+}
+
+.goto > img {
+    width: 100%;
+    height: 100%;
+}
+
+.span-shopName {
+    color: #666464;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.span-shopAddr {
+    color: #BCBDBD;
+}
+
+i > img {
+    width: 24px;
+    height: 30px;
+}
+
+i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.shopKind1, .shopKind2 {
+    padding-left: 5px;
+}
+
+.shopName {
+    font-size: 17px;
+    padding-left: 5%;
+}
+
+.shopKind1 ul li {
+    margin-top: 20px;
+}
+
+.shopAddr {
+    font-size: 15px;
+    padding-left: 5%;
+    color: gray;
+}
+
+.shopKind2 ul li {
+    margin-top: 20px;
+}
+
+/*底部footer样式开始*/
+.footer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    z-index: 100;
+}
+
+.footer ul {
+    list-style: none;
+    font-size: 8px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer ul li {
+    float: left;
+    width: 20%;
+    height: 70px;
+    padding-top: 10px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+/*底部footer样式结束*/
+
+/*附近店铺列表结束*/

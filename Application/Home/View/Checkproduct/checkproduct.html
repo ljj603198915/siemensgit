@@ -1,0 +1,183 @@
+<layout name="footer"/>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>产品验真</title>
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/reset.css"/>
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/aa.css"/>
+    <script type="text/javascript" src="<?php echo HomeJsUrl;?>/jquery-3.1.1.min.js"></script>
+    <!--<script type="text/javascript" src="<?php echo HomeJsUrl;?>/demo.js" ></script>-->
+    <style>
+        .check_logo{
+            background-image: url(/Application/Home/public/Images/checkproduct.png);
+        }
+        @media only screen and (min-width: 320px ) {
+            .check_one {
+                font-size: 15px;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            input {
+                margin-top: 5px;
+            }
+
+            .check_logo {
+                height: 350px;
+            }
+        }
+
+        .container {
+            bottom: 0;
+            margin-top: 0;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="check_logo"></div>
+    <h5 style="color: #ED7139;font-size: 14px;text-align: center;">提示:请根据包装提示选择适合的验真方式</h5><br/>
+    <div class="check_one">
+        <p>方法1.&nbsp;&nbsp;请在下面的输入框中输入20位防伪码</p><br/>
+        <input id="code" type="text"/>
+        <button type="button" id="btn">提交</button>
+        <br/><br/>
+    </div>
+    <div class="error-msg">
+        <p class="error-p"></p>
+    </div>
+    <div class="contain-msg" style="display: none">
+        <button class="button"><a href="http://www.wawechat.siemens.com.cn/Home/Checkproduct/checkproduct">继续查询</a>
+        </button>
+        <br/><br/>
+        <!--<p style="font-size: 18px;color: grey;">请扫描产品本体支架上的验真二维码</p>-->
+    </div>
+    <button class="ssy_ppx" style="display: none"><a
+            href="http://www.wawechat.siemens.com.cn/Home/Checkproduct/checkproduct">继续查询</a></button>
+    <div class="hide-msg" style="display: none"></div>
+    <div class="block-scan">
+        <p>方法2.&nbsp;&nbsp;请扫描产品本体支架上的验真二维码</p><br/>
+        <img id="sanmingzhi" src="<?php echo HomeImgUrl;?>/erweima.png"/>
+    </div>
+</div>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    function searchResult() {
+
+    }
+
+    $("#btn").click(function () {
+        $.ajax({
+            url: "__CONTROLLER__/check_ajax",
+            type: 'post',
+            data: {code: $("#code").val()},
+            //dataType:'json',
+            success: function (msg) {
+                if (msg.toString().trim() == '您已在一分钟内查询多次，请一分钟后再次查询') {
+                    $('.error-msg .error-p').text('您已在一分钟内查询多次，请一分钟后再次查询')
+                    $('.error-msg').show();
+                    $('.ssy_ppx').show();
+                    $('.check_one,.block-scan').hide();
+                    return;
+                    
+                } else if (msg.toString().trim() == '错误，查询码位数非法') {
+                    $('.error-msg .error-p').text('错误，查询码位数非法')
+                    $('.error-msg').show();
+                    $('.ssy_ppx').show();
+                    $('.check_one,.block-scan').hide();
+                    return;
+                }
+                msg = msg.replace(/:/, '：')
+                $('.hide-msg').append(msg);
+                var errorTdLength = $('.hide-msg td').length;
+                var returnArr = new Array;
+                var errmsg = "";
+                for (var i = 0; i < errorTdLength; i++) {
+                    if ($('.hide-msg td:eq(' + i + ')').text().trim() != '中文名称：无') {
+                        returnArr.push($('.hide-msg td:eq(' + i + ')').text().trim());//返回信息，每一个td为一组
+                    }
+                }
+                for (var j = 0; j < returnArr.length; j++) {
+                    errmsg += "<p style='width: 100%'><span >" + returnArr[j] + "</span></p><br/>"
+                }
+                $('.button').before(errmsg);
+                $('.contain-msg').show();
+                $('.check_one,.block-scan').hide();
+
+            }
+        })
+
+    })
+
+</script>
+<script>
+    $("#sanmingzhi").click(function () {
+
+        wx.config({
+            debug: false,
+            appId: 'wx7e38a14dfcd9328a',
+            timestamp: '<?php echo $data["timestamp"];?>',
+            nonceStr: '<?php echo $data["nonceStr"];?>',
+            signature: '<?php echo $data["signature"];?>',
+            jsApiList: ['scanQRCode']
+        });
+        wx.ready(function () {
+            //扫码
+            wx.scanQRCode({
+                needResult: 1, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+                scanType: ["qrCode", "barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+                success: function (res) {
+                    var result = res.resultStr;
+                    $.ajax({
+                        url: "__CONTROLLER__/check_ajax",
+                        type: 'post',
+                        data: {code: result, fromtype: 'fromtype'},
+                        success: function (msg) {
+                            if (msg.toString().trim() == '您已在一分钟内查询多次，请一分钟后再次查询') {
+                                $('.error-msg p').text('查询次数过多，请稍后查询')
+                                $('.error-msg p').show();
+                                $('.ssy_ppx').show();
+                                $('.check_one,.block-scan').hide();
+                                return;
+                            } else if (msg.toString().trim() == '错误，查询码位数非法') {
+                                $('.error-msg p').text('位数错误，请输入20位防伪码')
+                                $('.error-msg p').show();
+                                $('.ssy_ppx').show();
+                                $('.check_one,.block-scan').hide();
+                                return;
+                            }
+
+                            msg = msg.replace(/:/, '：')
+                            $('.hide-msg').append(msg);
+                            var errorTdLength = $('.hide-msg td').length;
+                            var returnArr = new Array;
+                            var errmsg = "";
+                            for (var i = 0; i < errorTdLength; i++) {
+                                if ($('.hide-msg td:eq(' + i + ')').text().trim() != '中文名称：无') {
+                                    returnArr.push($('.hide-msg td:eq(' + i + ')').text().trim());//返回信息，每一个td为一组
+                                }
+                            }
+                            for (var j = 0; j < returnArr.length; j++) {
+                                errmsg += "<p style='width: 100%'><span >" + returnArr[j] + "</span></p><br/>"
+                            }
+                            $('.button').before(errmsg);
+                            $('.contain-msg').show();
+                            $('.check_one,.block-scan').hide();
+
+
+                        }
+                    })
+                }
+            });
+
+
+        });
+    })
+</script>
+</body>
+</html>

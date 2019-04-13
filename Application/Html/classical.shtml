@@ -1,0 +1,68 @@
+<!--  内容  -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>经典系列</title>
+		<link rel="stylesheet" href="/Application/Home/public/Styles/reset.css" />
+		<link rel="stylesheet" href="/Application/Home/public/Styles/aa.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="product_logo"><img src="/Application/Home/public/Images/SIEMENS.png"></div>
+			<div class="box">
+				<ul>
+					<li><img src="/Application/Home/public/Images/001.png"></li>
+					<li><img src="/Application/Home/public/Images/ximenziruizhi.png"></li>
+					<li><img src="/Application/Home/public/Images/003.png"></li><br />
+					<li><img style="width: 40%;" src="/Application/Home/public/Images/004.png"></li><br />
+					<li><img src="/Application/Home/public/Images/005.png"></li>
+					<li><img src="/Application/Home/public/Images/006.png"></li>
+					<li><img src="/Application/Home/public/Images/007.png"></li>
+					<li><img src="/Application/Home/public/Images/008.png"></li><br />
+					<li><img style="width: 40%;" src="/Application/Home/public/Images/009.png"></li><br />
+					<li><img src="/Application/Home/public/Images/010.png"></li>
+					<li><img src="/Application/Home/public/Images/011.png"></li>
+					<li><img src="/Application/Home/public/Images/012.png"></li><br />
+					<li><img style="width: 40%;" src="/Application/Home/public/Images/013.png"></li><br />
+					<li><img src="/Application/Home/public/Images/014.png"></li>
+					<li><img src="/Application/Home/public/Images/015.png"></li>
+					<li><img src="/Application/Home/public/Images/016.png"></li>
+					<li><img src="/Application/Home/public/Images/017.png"></li>
+					<li><img src="/Application/Home/public/Images/018.png"></li>
+					<li><img src="/Application/Home/public/Images/019.png"></li><br />
+					<li><img style="width: 40%;" src="/Application/Home/public/Images/020.png"></li><br />
+					<li><img src="/Application/Home/public/Images/021.png"></li>
+					<li><img src="/Application/Home/public/Images/022.png"></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+
+<div class="footer">
+    <ul>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Product/ssy_product"><img src="/Application/Home/public/Images/product.png">
+                <br />了解产品</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Select/select_lst"><img src="/Application/Home/public/Images/heart.png">
+                <br />自助选型</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Checkproduct/checkproduct"><img src="/Application/Home/public/Images/glass.png">
+                <br />产品验真</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Onshop/onshop"><img src="/Application/Home/public/Images/fenzhi.png">
+                <br />在线购买</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Nearshop/shop"><img src="/Application/Home/public/Images/position.png">
+                <br />附近店铺</a>
+        </li>
+    </ul>
+</div>

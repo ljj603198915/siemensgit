@@ -1,0 +1,38 @@
+<layout name="layout"/>
+<div class="div_from_aoto" style="width: 500px;">
+    <form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data">
+        <div class="control-group">
+            <label class="laber_from">活动名称<sup style="color: red;">*</sup></label>
+            <div class="controls"><input class="input_from" name="name" type='text'>
+                <P class=help-block></P></div>
+        </div>
+        <div class="control-group">
+            <label class="laber_from">比赛时间<sup style="color: red;">*</sup></label>
+            <div class="controls"><input class="input_from" name="game_time" type='text'>
+                <P class=help-block></P></div>
+        </div>
+        <div class="control-group">
+            <label class="laber_from">主队<sup style="color: red;">*</sup></label>
+            <div  class="controls" >
+                <?php buildSelect(team,home_team_id,id,team_name, $data['home_team_id']);?>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="laber_from">客队<sup style="color: red;">*</sup></label>
+            <div  class="controls" >
+                <?php buildSelect(team,guest_team_id,id,team_name, $data['guest_team_id']);?>
+            </div>
+        <DIV class="control-group">
+            <LABEL class="laber_from"></LABEL>
+            <DIV class="controls">
+                <button type="submit" class="btn btn-primary" value="确认">确认</button>
+                <button type="reset" class="btn btn-primary" value="重置">重置</button>
+
+            </DIV>
+        </DIV>
+    </form>
+</div>
+
+
+<script>
+</script>

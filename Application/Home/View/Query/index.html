@@ -1,0 +1,49 @@
+<html>
+<head>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+
+
+<table>
+<tr>
+   <td>图片地址：<input id="img_url" size="100" type="text" /></td>
+</tr>
+<tr>
+    <td>code：<input id="code" size="100" type="text" /></td>
+</tr>
+<tr>
+    <td>msg：<input id="msg" size="100" type="text" /></td>
+</tr>
+<tr>
+    <td>填写型号：<input id="mlfb" type="text" style="text-transform:uppercase"/><button onclick="send()" value="查询">查询</button></td>
+</tr>
+</table>
+
+
+
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script><script>
+  function send() {
+      var sendData = {"mlfb":$("#mlfb").val(),"token":"e386fe532385b61a79fed603f14f8999085c5397"};
+      $.ajax({
+          url:'__CONTROLLER__/findPro/',
+          contentType:'application/json',
+          type:'POST',
+          data:JSON.stringify(sendData),
+          dataType:"json",
+          success:function(msg){
+              alert(msg.msg);
+             $("#img_url").val(msg.data);
+              $("#code").val(msg.code);
+              $("#msg").val(msg.msg);
+
+              //$("#detailDesc").innerHTML=msg.code;
+
+          }
+      })
+  }
+</script>
+</html>

@@ -1,0 +1,187 @@
+/* footer */
+.footer {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	bottom: 0;
+	background: #efefef;
+	z-index: 100;
+}
+
+.footer ul {
+	list-style: none;
+	font-size: 8px;
+}
+
+.footer ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.footer ul li {
+	float: left;
+	width: 20%;
+	height: 70px;
+	padding-top: 10px;
+	text-align: center;
+	opacity: 0.6;
+}
+/* footer end */
+.container{
+    padding: 6%;
+}
+.check_logo {
+	width: 100%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+div.logo {
+    box-sizing: border-box;
+}
+
+div.logo img {
+    width: 30%;
+}
+
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: #94a0a3;
+    margin: 5px 0 15px 0;
+}
+
+.search_one{
+    margin: 10px 0;
+    padding-bottom: 60px;
+}
+
+.header2{
+    width: 70px;
+    border-radius: 6px;
+    background-color: #686868;
+    color: #F9FAFA;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.grey-font{
+    color: #929394;
+    font-size: 14px;
+}
+.grey-font-min{
+    color: #929394;
+    font-size: 14px;
+}
+
+.search_one>div>div,.search_one>div>p{
+    margin: 8px 0;
+}
+
+.search_one input{
+    border: none;
+    background-color: #f1f2f4;
+    height: 25px;
+    border-radius: 5px;
+    width: 78%;
+}
+
+.search_one .btn{
+    height: 25px;
+    width: 20%;
+    vertical-align: bottom;
+    background-color: #94A0A3;
+    border-radius: 3px;
+    color: white;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.search_one>div:nth-child(2){
+    margin-top: 10%;
+}
+
+.pad-left{
+    padding: 0 0 0 14px;
+}
+
+.tel{
+    color: #3fabb4;
+    font-size: 14px;
+}
+
+/* 查询结果页 */
+.show_msg,.container-search{
+    display: none;
+}
+
+.show_msg p{
+    margin: 5px 0;
+    font-size: 14px；
+}
+
+.show_msg i{
+    font-size: 14px;
+    vertical-align: baseline;
+    transform: scale(0.5,0.5);
+}
+
+.track-con{
+    margin: 10px 0;
+}
+
+.track-padding-top{
+    padding-top: 3%;
+}
+
+.track-padding-left{
+    padding-left: 14px;
+}
+
+.container-search{
+    text-align: center;
+}
+
+.container-search .btn{
+    height: 25px;
+    width: 20%;
+    vertical-align: bottom;
+    background-color: #94A0A3;
+    border-radius: 3px;
+    color: white;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.container-search .btn a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* 查询结果页end */
+
+/* sticky footer */
+html,body{
+    height: 100%;
+}
+
+.container{
+    height: calc(100% - 80px);
+}
+
+.wrapper{
+    min-height: 100%;
+}
+
+.container-search{
+    margin-top: -100px;
+}
+
+.show_msg{
+    padding-bottom: 100px;
+}
+/* sticky footer end */

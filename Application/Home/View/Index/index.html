@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+
+<a href="#" id="select">选型</a>
+<a href="./lst.html">链接</a>
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script><script>
+    $("#select").click(function(){
+        $.ajax({
+            url:'__MODULE__/Product/switchChoose',
+            type:'POST',
+//            data:{home_type:1,color_id:1,series_id:1,step:1,material_id:1,'33':'111','44':2222,is_lvduan:1},
+            data:{type:1,series:6},
+
+            success:function(msg){
+                alert(msg)
+
+            }
+        })
+
+
+    })
+</script>
+</html>
