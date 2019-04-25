@@ -1,0 +1,23 @@
+<layout name="layout"/>
+
+<!-- 列表 -->
+<div class="list-div" id="listDiv">
+    <table cellpadding="3" cellspacing="1" class="table">
+        <tr>
+            <th width="50%">菜单名称</th>
+            <th width="50%">访问数量</th>
+        </tr>
+        <foreach name="data" item="v">
+
+            <tr class="tron">
+                <td>{$v.name}</td>
+                <td>{$v.count}</td>
+            </tr>
+        </foreach>
+    </table>
+</div>
+
+<script>
+</script>
+
+<script src="__PUBLIC__/Admin/Js/tron.js"></script>

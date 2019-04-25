@@ -1,0 +1,86 @@
+<layout name="layout" />
+
+<!-- 搜索 -->
+<div class="form-div search_form_div">
+	<div class="form-contain">
+		<form action="__ACTION__" method="GET" name="search_form">
+			<p>
+				姓名
+				<input type="text" name="advice_name" size="30" value="<?php echo I('get.advice_name'); ?>" />
+			</p>
+			<p>
+				电话
+				<input type="text" name="phone" size="30" value="<?php echo I('get.phone'); ?>" />
+			</p>
+			<p>
+				状态
+				<select class="input_select" name="status" >
+					<option value="">请选择</option>
+					<option value="0"<?php if(I('get.status')==0)echo 'selected';?>>未处理</option>
+					<option value="1" <?php if(I('get.status')==1)echo 'selected';?>>已处理</option>
+				</select>
+			</p>
+			<p><input type="submit" value=" 搜索 " class="button btn-primary" /></p>
+		</form>
+	</div>
+</div>
+<!-- 列表 -->
+<div class="list-div" id="listDiv">
+	<table cellpadding="3" cellspacing="1" class="table">
+		<tr>
+			<th width="4%" >客户类型</th>
+			<th  width="4%">姓名</th>
+			<th  width="4%">联系电话</th>
+			<th  width="4%">电子邮箱</th>
+			<th  width="4%">投诉类型</th>
+			<th  width="30%">图片</th>
+			<th  width="30%">投诉建议</th>
+			<th  width="4%">状态</th>
+			<th  width="4%">投诉时间</th>
+			<th  width="4%">处理时间</th>
+			<th  width="4%">操作</th>
+		</tr>
+		<foreach name="data" item="v">
+
+			<tr class="tron">
+				<td>
+					<if condition="$v['customer_type'] eq 1">消费者
+						<elseif condition="$v['customer_type'] eq 2" />代理商
+						<elseif condition="$v['customer_type'] eq 3" />公司
+					</if>
+				</td>
+				<td>{$v.advice_name}</td>
+				<td>{$v.phone}</td>
+				<td>{$v.email}</td>
+				<td>
+					<if condition="$v['advice_type'] eq 1">服务
+						<elseif condition="$v['advice_type'] eq 2" />质量
+						<elseif condition="$v['advice_type'] eq 3" />售假
+						<elseif condition="$v['advice_type'] eq 4" />建议
+						<elseif condition="$v['advice_type'] eq 5" />其他
+					</if>
+				</td>
+				<td><img src=""></td>
+
+				<td>{$v.advice_content}</td>
+                <td>
+                    <if condition="$v['status'] eq 1">处理
+                        <elseif condition="$v['status'] eq 0" />未处理
+                    </if>
+                </td>
+				<td>{$v.created_time}</td>
+				<td>{$v.handle_time}</td>
+				<td align="center" style="white-space: nowrap;">
+					<a href="<?php echo U('handle?id='.$v['id'].'&p='.I('get.p')); ?>" title="处理"><if condition="$v['status'] eq 0 ">处理</if></a>
+				</td>
+			</tr>
+		</foreach>
+
+		<tr><td align="right" nowrap="true" colspan="99" height="30">  <?php if(preg_match('/\d/', $page)) echo $page; ?></td></tr>
+	</table>
+</div>
+
+<script>
+</script>
+
+<script src="__PUBLIC__/Admin/Js/tron.js"></script>
