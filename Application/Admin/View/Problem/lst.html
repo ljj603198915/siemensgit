@@ -1,0 +1,62 @@
+<layout name="layout" />
+
+<!-- 搜索 -->
+<div class="form-div search_form_div">
+	<div class="form-contain">
+		<form action="__ACTION__" method="GET" name="search_form">
+			<p>
+				题干名称
+				<input type="text" name="problem_name" size="30" value="<?php echo I('get.problem_name'); ?>" />
+			</p>
+			<p>
+				题干类型
+				<select class="input_select" name="problem_type" >
+					<option value="">请选择</option>
+					<option value="1"<?php if(I('get.problem_type')==1)echo 'selected';?>>常见问题</option>
+					<option value="2" <?php if(I('get.problem_type')==2)echo 'selected';?>>产品问题</option>
+					<option value="3" <?php if(I('get.problem_type')==3)echo 'selected';?>>接线问题</option>
+				</select>
+			</p>
+			<p><input type="submit" value=" 搜索 " class="button btn-primary" /></p>
+		</form>
+	</div>
+</div>
+<!-- 列表 -->
+<div class="list-div" id="listDiv">
+	<table cellpadding="3" cellspacing="1" class="table">
+		<tr>
+			<th width="35%" >题干名称</th>
+			<th  width="15%">题干类型</th>
+			<th  width="15%">状态</th>
+			<th width="15%">操作</th>
+		</tr>
+		<foreach name="data" item="v">
+
+			<tr class="tron">
+				<td>{$v.problem_name}</td>
+				<td>
+					<if condition="$v['problem_type'] eq 1">常见问题
+						<elseif condition="$v['problem_type'] eq 2" />产品问题
+						<elseif condition="$v['problem_type'] eq 3" />接线问题
+					</if>
+				</td>
+				<td>
+					<if condition="$v['is_use'] eq 1">启用
+						<elseif condition="$v['is_use'] eq 0" />停用
+					</if>
+				</td>
+				<td align="center">
+					<a href="<?php echo U('edit?id='.$v['id'].'&p='.I('get.p')); ?>" title="编辑">编辑</a> |
+					<a href="<?php echo U('delete?id='.$v['id'].'&p='.I('get.p')); ?>" onclick="return confirm('确定要删除吗？');" title="移除">移除</a>
+				</td>
+			</tr>
+		</foreach>
+
+		<tr><td align="right" nowrap="true" colspan="99" height="30">  <?php if(preg_match('/\d/', $page)) echo $page; ?></td></tr>
+	</table>
+</div>
+
+<script>
+</script>
+
+<script src="__PUBLIC__/Admin/Js/tron.js"></script>

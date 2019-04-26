@@ -1,0 +1,37 @@
+<layout name="layout" />
+<div class="div_from_aoto" style="width: 500px;">
+    <form name="form" method="POST" action="__SELF__" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />
+        <div class="control-group">
+            <label class="laber_from">题干名称<sup style="color: red;">*</sup></label>
+            <DIV  class="controls" ><input class="input_from"  name="problem_name" type=text value="<?php echo $data['problem_name'];?>" ><P class=help-block></P></DIV>
+        </div>
+        <div class="control-group">
+            <label class="laber_from">题干类型<sup style="color: red;">*</sup></label>
+            <div  class="controls" >
+                <select class="input_select" name="problem_type" >
+                    <option value="" >请选择</option>
+                    <option value="1" <?php if($data['problem_type']==1) echo 'selected';?>>常见问题</option>
+                    <option value="2" <?php if($data['problem_type']==2) echo 'selected';?>>产品问题</option>
+                    <option value="3" <?php if($data['problem_type']==3) echo 'selected';?>>接线问题</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="laber_from">状态<sup style="color: red;">*</sup></label>
+            <div  class="controls" >
+                <select class="input_select" name="is_use" >
+                    <option value="1" <?php if($data['is_use']==1) echo 'selected';?>>启用</option>
+                    <option value="0" <?php if($data['problem_type']==0) echo 'selected';?>>停用</option>
+                </select>
+            </div>
+        </div>
+        <DIV class="control-group">
+            <LABEL class="laber_from" ></LABEL>
+            <DIV class="controls" >
+                <button type="submit" class="btn btn-primary" value="提交">确认</button>
+
+            </DIV>
+        </DIV>
+    </form>
+</div>

@@ -1,0 +1,69 @@
+<layout name="layout" />
+
+<!-- 搜索 -->
+<div class="form-div search_form_div">
+	<div class="form-contain">
+		<form action="__ACTION__" method="GET" name="search_form">
+			<p>
+				姓名
+				<input type="text" name="name" size="30" value="<?php echo I('get.name'); ?>" />
+			</p>
+			<p>
+				电话
+				<input type="text" name="phone" size="30" value="<?php echo I('get.phone'); ?>" />
+			</p>
+			<p>
+				状态
+				<select class="input_select" name="status" >
+					<option value="">请选择</option>
+					<option value="0"<?php if(I('get.status')==0)echo 'selected';?>>未处理</option>
+					<option value="1" <?php if(I('get.status')==1)echo 'selected';?>>已处理</option>
+				</select>
+			</p>
+			<p><input type="submit" value=" 搜索 " class="button btn-primary" /></p>
+		</form>
+	</div>
+</div>
+<!-- 列表 -->
+<div class="list-div" id="listDiv">
+	<table cellpadding="3" cellspacing="1" class="table">
+		<tr>
+			<th width="5%" >名称</th>
+			<th  width="5%">电话</th>
+			<th  width="5%">省份</th>
+			<th  width="5%">城市</th>
+			<th  width="30%">希望代理的产品</th>
+			<th  width="5%">状态</th>
+			<th  width="15%">来访时间</th>
+			<th  width="15%">处理时间</th>
+			<th  width="15%">操作</th>
+		</tr>
+		<foreach name="data" item="v">
+
+			<tr class="tron">
+				<td>{$v.name}</td>
+				<td>{$v.phone}</td>
+				<td>{$v.province}</td>
+				<td>{$v.city}</td>
+				<td>{$v.agent_product}</td>
+				<td>
+					<if condition="$v['status'] eq 1">处理
+						<elseif condition="$v['status'] eq 0" />未处理
+					</if>
+				</td>
+				<td>{$v.created_time}</td>
+				<td>{$v.handle_time}</td>
+				<td align="center" style="white-space: nowrap;">
+					<a href="<?php echo U('handle?id='.$v['id'].'&p='.I('get.p')); ?>" title="处理"><if condition="$v['status'] eq 0 ">处理</if></a>
+				</td>
+			</tr>
+		</foreach>
+
+		<tr><td align="right" nowrap="true" colspan="99" height="30">  <?php if(preg_match('/\d/', $page)) echo $page; ?></td></tr>
+	</table>
+</div>
+
+<script>
+</script>
+
+<script src="__PUBLIC__/Admin/Js/tron.js"></script>
