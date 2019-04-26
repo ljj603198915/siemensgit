@@ -1,0 +1,135 @@
+/*logo*/
+.logo-container{
+    padding: 6%;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+div.logo {
+    box-sizing: border-box;
+}
+
+div.logo img {
+    width: 30%;
+}
+/*logo end*/
+.hr{
+    width: 90%;
+    height: 1px;
+    background-color: #94a0a3;
+    margin: 0 auto;
+}
+/*info*/
+.info-container{
+    width: 90%;
+    margin:0 auto;
+    margin-top: 70px;
+}
+.info-container .line{
+    min-height: 40px;
+    /*margin: 20px 0 20px 0;*/
+    position: relative;
+}
+
+.label{
+    background-color: #686868;
+    display: inline-block;
+    width: 30%;
+    color: #fff;
+    text-align: justify;
+    height: 40px;
+    border-radius: 9px;
+    line-height: 40px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+}
+
+.label:after{
+    content:'.';
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    height: 0;
+}
+
+.line ul{
+    display: none;
+    width: 80px;
+    box-shadow: 5px 5px 5px grey;
+    text-align: center;
+    color: #4a5c67;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+.line ul li {
+    height: 40px;
+    line-height: 40px;
+}
+
+.line ul li:nth-of-type(n+2){
+    border-top: 1px solid #94a0a3;
+}
+
+
+
+
+
+.info-container .line input,.info-container select,
+.info-container textarea{
+    width:68%;
+    background-color: #f1f2f4;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+    border:none;
+    outline:0;
+    padding:0 10px 0 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+
+
+.info-container .line input,.info-container .line select{
+
+    height: 40px;
+
+}
+
+.info-container .line textarea{
+    height: 150px;
+    font-size: 18px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info-container .i-con{
+    color: #686868;
+    position: absolute;
+    right: 20px;
+    top:0;
+    line-height: 40px;
+}
+/*info end*/
+.submit{
+    width: 100px;
+    height: 40px;
+    background-color: #95a0a2;
+    box-shadow: 0 0 0 0;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    margin:0 auto;
+    outline:none;
+}
+
+.sub-mar{
+    margin-top: 20px;
+}

@@ -1,0 +1,93 @@
+/*logo*/
+.logo-container{
+    padding: 6%;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+div.logo {
+    box-sizing: border-box;
+}
+
+div.logo img {
+    width: 30%;
+}
+/*logo end*/
+.hr{
+    width: 90%;
+    height: 1px;
+    background-color: #94a0a3;
+    margin: 0 auto;
+}
+/*info*/
+.info-container{
+    width: 90%;
+    margin:0 auto;
+    margin-top: 70px;
+}
+
+.label{
+    background-color: #686868;
+    display: inline-block;
+    width: 20%;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    border-radius: 9px;
+    line-height: 40px;
+}
+.line.agency .label{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.line.agency textarea{
+    width: 100%;
+    height: 150px;
+    font-size: 18px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.info-container .line{
+    min-height: 40px;
+    margin: 20px 0 20px 0;
+    position: relative;
+}
+.info-container .line input,.info-container select,
+.info-container textarea{
+    background-color: #f1f2f4;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+    border:none;
+    outline:0;
+    padding:0 10px 0 10px;
+    box-sizing: border-box;
+}
+
+
+
+.info-container .line input,.info-container .line select{
+    width:78%;
+    height: 40px;
+
+}
+
+.info-container .i-con{
+    color: #686868;
+    position: absolute;
+    right: 20px;
+    top:0;
+    line-height: 40px;
+}
+/*info end*/
+.submit{
+    width: 100px;
+    height: 40px;
+    background-color: #95a0a2;
+    box-shadow: 0 0 0 0;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    margin:0 auto;
+}

@@ -1,0 +1,108 @@
+/*logo*/
+.logo-container{
+    padding: 6%;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+div.logo {
+    box-sizing: border-box;
+}
+
+div.logo img {
+    width: 30%;
+}
+.logo .inp-search{
+    float: right;
+    border:1px solid #686868;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+    margin:0 10px 0 10px;
+}
+.logo i{
+    float: right;
+    color: #00A7AE;
+}
+/*logo end*/
+/*tabs*/
+.tabs{
+    width:95%;
+    height: 40px;
+    background-color: #686868;
+
+    font-size: 16px;
+    left:50%;
+    margin:0 auto;
+    border-radius: 8px;
+}
+
+.tabs .title{
+    width: 33.333333%;
+    height: 100%;
+    color: #d9d9d9;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+.tabs .title.active{
+    background-color: #bdbec0;
+    color: #ffffff;
+    border-radius: 8px;
+}
+/*tabs end*/
+/*one-Q*/
+.one-Q{
+    width: 90%;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #4a5c67;
+}
+.one-Q .ques{
+    background-color: #f1f2f4;
+    color: #4a5c67;
+    min-height: 30px;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.one-Q .ques .text{
+    line-height: 30px;
+    display: inline-block;
+    width: 94%;
+}
+.one-Q .ques .i-con{
+    width: 5%;
+    height:100%;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    font-size: 24px;
+}
+.one-Q .ques .i-con i{
+    position: absolute;
+    height: 30px;
+    top:50%;
+    margin-top: -15px;
+    transition: all 0.5s;
+}
+
+.one-Q .ans{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    line-height: 20px;
+    display: none;
+}
+.one-Q .pro{
+    display: none;
+}
+/*one-Q end*/

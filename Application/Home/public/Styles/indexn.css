@@ -1,0 +1,91 @@
+html,body{
+    height: 100%;
+}
+/*logo*/
+.logo-container{
+    padding: 6%;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+div.logo {
+    box-sizing: border-box;
+}
+
+div.logo img {
+    width: 30%;
+}
+/*logo end*/
+/*gird布局*/
+.wrapper{
+    display: grid;
+    width: 100%;
+    height: 89%;
+    grid-template-columns: repeat(3,33.3333%);
+    grid-template-rows: repeat(5,20%);}
+
+.wrapper>div{
+    position: relative;
+    box-shadow: 2px 2px 5px #888888;
+    margin: 5px;
+    background-color: #cfcfcf;
+
+}
+.wrapper>div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #686868;
+}
+.wrapper>div a:visited,.wrapper>div a:link{
+    color: #686868;
+}
+.wrapper .icon{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    font-size: 24px;
+    color: #686868;
+    text-align: right;
+}
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item11{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.item12{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.text{
+    position: absolute;
+    bottom: 5%;
+    width: 96%;
+    left: 50%;
+    margin-left: -48%;
+}
+.text .chi{
+    font-size:14px;
+
+}
+.text .eng{
+    font-size: 12px;
+}
+
+/*grid布局 end*/
+
+/*videos page*/
+.tabs{
+
+}
+/*videos page end*/
