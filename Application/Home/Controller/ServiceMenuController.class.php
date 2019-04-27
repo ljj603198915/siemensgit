@@ -7,20 +7,135 @@ use Tools\HomeController;
 class ServiceMenuController extends HomeController
 {
     /**
-     * 服务菜单首页
+     * 服务菜单首页页面
      */
     public function index()
     {
         $this->display();
-        die;
     }
 
-    public function join()
+    /**
+     * 申请加盟列表页面
+     */
+    public function joinus()
     {
-        addStatis("join");
-        //$this->display();
+        $this->display();
     }
 
+    /**
+     * 投诉建议页面
+     */
+    public function advices()
+    {
+        $this->display();
+    }
+
+    /**
+     * 问题列表页面
+     */
+    public function questions()
+    {
+        $this->display();
+    }
+
+    /**
+     * 视频列表页面
+     */
+    public function videos()
+    {
+        $this->display();
+    }
+
+    /**
+     * 视频接口
+     */
+    public function videosList()
+    {
+        $videoData = D("video")->order("sort asc")->select();
+        //echo D("problem")->_sql();
+        $res = $this->packageVideo($videoData);
+        echo jsonToData(1, "success", $res);
+        exit;
+    }
+
+    /**
+     * 问题接口
+     */
+    public function problem()
+    {
+        $type = I("problem_type");
+        $search = I("search");
+        if (!empty($search)) {
+            $map['problem_name'] = array("like", "%$search%");
+            $map['answer'] = array("like", "%$search%");
+            $map['_logic'] = "or";
+            $where['_complex'] = $map;
+        }
+        if (!empty($type)) {
+            $where['problem_type'] = $type;
+        }
+        $where['is_use'] = 1;
+        $problemData = D("problem")->where($where)->select();
+        //echo D("problem")->_sql();
+        $res = $this->packageProblem($problemData);
+        echo jsonToData(1, "success", $res);
+        exit;
+        //pp($res);
+    }
+
+    /**
+     * 包装问题列表
+     * @param $problemData
+     * @return mixed
+     */
+    public function packageProblem($problemData)
+    {
+        $normal = array();
+        $product = array();
+        $line = array();
+        foreach ($problemData as $k => $v) {
+            if ($v['problem_type'] == 1) {
+                $normal[] = $v;
+            } elseif ($v['problem_type'] == 2) {
+                $product[] = $v;
+            } elseif ($v['problem_type'] == 3) {
+                $line[] = $v;
+            }
+        }
+        $res['normal'] = $normal;
+        $res['product'] = $product;
+        $res['line'] = $line;
+        return $res;
+    }
+
+    /**
+     * 包装视频列表
+     * @param $videoData
+     * @return mixed
+     */
+    public function packageVideo($videoData)
+    {
+        $brand = array();
+        $product = array();
+        $line = array();
+        foreach ($videoData as $k => $v) {
+            if ($v['video_type'] == 1) {
+                $brand[] = $v;
+            } elseif ($v['video_type'] == 2) {
+                $product[] = $v;
+            } elseif ($v['video_type'] == 3) {
+                $line[] = $v;
+            }
+        }
+        $res['brand'] = $brand;
+        $res['product'] = $product;
+        $res['line'] = $line;
+        return $res;
+    }
+
+    /**
+     * 添加答疑解惑
+     */
     public function addJoin()
     {
         $data['name'] = I("name");
@@ -35,11 +150,9 @@ class ServiceMenuController extends HomeController
         exit;
     }
 
-    public function advice()
-    {
-        $this->display();
-    }
-
+    /**
+     * @return bool添加投诉与建议
+     */
     public function addAdvice()
     {
         $data['customer_type'] = I("customer_type");
@@ -73,34 +186,17 @@ class ServiceMenuController extends HomeController
         exit;
     }
 
-    /**
-     * 问题列表
-     */
-    public function problem()
-    {
-        $problemData = D("problem")->where(array("is_use" => 1))->select();
-//        foreach ($problemData as $k => $v) {
-//            $answerData = D("answer")->where(array("problem_id" => $v['id']))->select();
-//            $problemData[$k]['answer'] = $answerData;
-//        }
-        echo jsonToData(1, "success", $problemData);
-        exit;
-        pp($problemData);
-        //$this->display();
-    }
 
     public function statis()
     {
         $type = I("type");
-        $problemId = I("problemId");
-        switch ($type) {
-            case "s":
-                addStatis($type);
-                break;
-
-            default:
-                break;
+//        array("prodesc", "checkproduct", "nearshop", "onshop", "logistics ", "joinus",
+//            "advice", "electric", "400help", "jingcai", "video", "problem");
+//        $problem_id = I("problem_id");
+        if (empty($problem_id)) {
+            $problem_id = 0;
         }
+        addStatis($type, $problem_id);
     }
 
 }
