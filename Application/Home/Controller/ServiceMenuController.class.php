@@ -142,7 +142,7 @@ class ServiceMenuController extends HomeController
         $data['phone'] = I("phone");
         $data['province'] = I("province");
         $data['agent_product'] = I("agent_product");
-        $data['status'] = 0;
+        $data['status'] = 1;
         $data['created_time'] = date(("Y-m-d H:i:s"));
 
         D("join_in")->save($data);
@@ -159,6 +159,7 @@ class ServiceMenuController extends HomeController
         $data['advice_name'] = I("advice_name");
         $data['phone'] = I("phone");
         $data['email'] = I("email");
+        $data['status'] = 1;
         $files = $_FILES;
         foreach ($files as $k => $v) {
             if ($v['error'] == 0) {
