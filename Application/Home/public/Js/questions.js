@@ -1,6 +1,6 @@
 function getQs(data) {
     $.ajax({
-        url: "/Home/servicemenu/problem",
+        url: "/index.php/Home/servicemenu/problem",
         type: 'post',
         data:data,
         dataType: 'json',
@@ -21,26 +21,40 @@ function getQs(data) {
         }
     })
 }
-$('.i-con').click(function () {
+//点击题干
+$('.ques-container').on("click",".i-con",function (event) {
         $(this).children("i").toggleClass("fa-rotate-90");
         $(this).parents(".ques").siblings(".ans").toggle(500);
     }
 )
+//点击搜索
 $(".logo .fa").click(function () {
     var value=$(this).parents(".logo").find(".inp-search").val();
     // console.log(value);
-    var data={value:value,type:"search"}
+    var data={"search":value,"problem_type":1}
     getQs(data)
 })
-//getQs({type:"all"});
 
-// tabs begin
+
+// 点击tabs
 $(".tabs .title").click(function () {
     $(this).siblings(".title").removeClass("active");
     $(this).addClass("active");
-    var id=$(this).index()+1;
-    console.log(id);
-    // var data={value:id,type:"kinds"}
+
+    var value=$(".inp-search").val();//搜索框内容
+    var type_id=$(this).index()+1;//问题类型
+    if(value != ""){
+        //搜索中
+        var data={"search":value,"problem_type":type_id}
+    }else{
+        //未搜索
+        var data={"search":"","problem_type":type_id}
+    }
+    // console.log(id);
+
     getQs(data);
 })
 // tabs end
+//init
+getQs({"search":"","problem_type":1});
+//init end

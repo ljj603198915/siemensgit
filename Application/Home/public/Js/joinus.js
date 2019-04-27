@@ -63,26 +63,32 @@ $(".submit").click(function () {
     var pro=$(".info-container").find(".province").val();
     var city=$(".info-container").find(".city").val();
     var agent=$(".info-container").find("textarea").val();
-    var data = {
-        name:name,
-        phone:tel,
-        province:pro,
-        city:city,
-        agent_product:agent
+    if(name == ""||tel==""){
+        alert("姓名或电话不能为空！")
+    }else{
+        var data = {
+            name:name,
+            phone:tel,
+            province:pro,
+            city:city,
+            agent_product:agent
+        }
+        // console.log(data);
+        $.ajax({
+            url: "/index.php/Home/servicemenu/addJoin",
+            type: 'post',
+            data:data,
+            dataType: 'json',
+            success: function (data) {
+                if(data.code == '1'){
+                    alert("提交成功！")
+                    location.reload();
+
+                }else{alert("提交失败！")}
+
+            }
+        })
     }
-     console.log(data);
-    // $.ajax({
-    //     url: "/Home/servicemenu/problem",
-    //     type: 'post',
-    //     data:data,
-    //     dataType: 'json',
-    //     success: function (data) {
-    //         if(data.code == '1'){
-    //             alert("提交成功！")
-    //
-    //         }else{alert("提交失败！")}
-    //
-    //     }
-    // })
+
 })
 // 提交 end
