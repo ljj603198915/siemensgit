@@ -27,7 +27,7 @@ div.logo img {
 }
 .info-container .line{
     min-height: 40px;
-    /*margin: 20px 0 20px 0;*/
+    margin: 20px 0 20px 0;
     position: relative;
 }
 
@@ -44,13 +44,13 @@ div.logo img {
     box-sizing: border-box;
 }
 
-.label:after{
-    content:'.';
-    width: 100%;
-    display: inline-block;
-    overflow: hidden;
-    height: 0;
-}
+/*.label:after{*/
+    /*content:'.';*/
+    /*width: 100%;*/
+    /*display: inline-block;*/
+    /*overflow: hidden;*/
+    /*height: 0;*/
+/*}*/
 
 .line ul{
     display: none;

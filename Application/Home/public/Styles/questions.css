@@ -43,6 +43,7 @@ div.logo img {
     float: left;
     text-align: center;
     line-height: 40px;
+    transition: all 0.5s;
 }
 .tabs .title.active{
     background-color: #bdbec0;
