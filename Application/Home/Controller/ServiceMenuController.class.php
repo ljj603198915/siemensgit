@@ -77,8 +77,8 @@ class ServiceMenuController extends HomeController
         $where['is_use'] = 1;
         $problemData = D("problem")->where($where)->select();
         //echo D("problem")->_sql();
-        $res = $this->packageProblem($problemData);
-        echo jsonToData(1, "success", $res);
+        //$res = $this->packageProblem($problemData);
+        echo jsonToData(1, "success", $problemData);
         exit;
         //pp($res);
     }
