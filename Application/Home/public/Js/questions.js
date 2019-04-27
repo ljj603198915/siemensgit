@@ -9,12 +9,27 @@ function getQs(data) {
                 var Qs=data.list;
                 var _html="";
                 $(Qs).each(function (index, ele) {
+                    // console.log("未转义："+ele.answer)
+                    // var ans=ele.answer.replace(new RegExp("&amp;","g"),"<").replace(new RegExp("&amp;gt;","g"),">")
+                    //     .replace(new RegExp("lt;","g"),"<")
+                    var ans=ele.answer;
+                    if(ans.length == 0) return "";
+                    ans = ans.replace(new RegExp("&amp;","g"),"&");
+                    ans = ans.replace(new RegExp("&amp;","g"),"&");
+                    ans = ans.replace(new RegExp("&amp;","g"),"&");
+                    ans = ans.replace(/&lt;/g,"<");
+                    ans = ans.replace(/&gt;/g,">");
+                    // console.log(ans)
+                    ans = ans.replace(/&nbsp;/g," ");
+                    ans = ans.replace(/&#39;/g,"\'");
+                    ans = ans.replace(/&quot;/g,"\"");
+                    // console.log("转义后："+ans)
                     _html+='<div class="one-Q"><div class="ques"><span class="text">'+ele.problem_name+'</span>'+
                         '<span class="i-con"><i class="fa fa-angle-right fa-lg"></i></span></div>'+
-                        '<div class="ans">'+ele.answer+'</div><input type="text" class="pro" data-type="'+
+                        '<div class="ans">'+ans+'</div><input type="text" class="pro" data-type="'+
                         ele.problem_type+'" data-id="'+ele.id+'"/></div>'
                 })
-                $(".ques-container").empty().append(_html);
+                $(".ques-container").empty().html(_html);
 
             }
 
@@ -25,6 +40,12 @@ function getQs(data) {
 $('.ques-container').on("click",".i-con",function (event) {
         $(this).children("i").toggleClass("fa-rotate-90");
         $(this).parents(".ques").siblings(".ans").toggle(500);
+    event.stopPropagation();
+    }
+)
+$('.ques-container').on("click",".ques",function (event) {
+        $(this).find(".i-con").children("i").toggleClass("fa-rotate-90");
+        $(this).find(".i-con").parents(".ques").siblings(".ans").toggle(500);
     }
 )
 //点击搜索

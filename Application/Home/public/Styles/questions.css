@@ -103,6 +103,7 @@ div.logo img {
     box-sizing: border-box;
     line-height: 20px;
     display: none;
+    word-wrap:break-word;
 }
 .one-Q .pro{
     display: none;

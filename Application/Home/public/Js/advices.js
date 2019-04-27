@@ -28,7 +28,7 @@ var uploader = WebUploader.create({
     auto: true,
 
     // swf文件路径
-    // swf: BASE_URL + '/js/Uploader.swf',
+    swf: '../js/Uploader.swf',
 
     // 文件接收服务端。
     server: 'http://webuploader.duapp.com/server/fileupload.php',
