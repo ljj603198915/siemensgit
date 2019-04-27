@@ -1,15 +1,16 @@
-<layout name="layout" />
+<layout name="layout"/>
 <div class="div_from_aoto" style="width: 500px;">
     <form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data">
 
         <div class="control-group">
             <label class="laber_from">题干名称<sup style="color: red;">*</sup></label>
-            <div  class="controls" ><input class="input_from"  name="problem_name" type='text' ><P class=help-block></P></div>
+            <div class="controls"><input class="input_from" name="problem_name" type='text'>
+                <P class=help-block></P></div>
         </div>
         <div class="control-group">
             <label class="laber_from">题干类型<sup style="color: red;">*</sup></label>
-            <div  class="controls" >
-                <select class="input_select" name="problem_type" >
+            <div class="controls">
+                <select class="input_select" name="problem_type">
                     <option value="">请选择</option>
                     <option value="1">常见问题</option>
                     <option value="2">产品问题</option>
@@ -17,19 +18,22 @@
                 </select>
             </div>
         </div>
-
+        <div class="control-group">
+            <label class="laber_from">题干名称<sup style="color: red;">*</sup></label>
+            <div class="controls"><textarea name="answer" id="myEditor">这里写你的初始化内容</textarea></div>
+        </div>
         <div class="control-group">
             <label class="laber_from">状态<sup style="color: red;">*</sup></label>
-            <div  class="controls" >
-                <select class="input_select" name="is_use" >
+            <div class="controls">
+                <select class="input_select" name="is_use">
                     <option value="1">启用</option>
                     <option value="0">停用</option>
                 </select>
             </div>
         </div>
         <DIV class="control-group">
-            <LABEL class="laber_from" ></LABEL>
-            <DIV class="controls" >
+            <LABEL class="laber_from"></LABEL>
+            <DIV class="controls">
                 <button type="submit" class="btn btn-primary" value="确认">确认</button>
                 <button type="reset" class="btn btn-primary" value="重置">重置</button>
 
@@ -39,5 +43,17 @@
 
     </form>
 </div>
-<script>
+<script type="text/javascript" charset="utf-8" src="<?php echo AdminPublicUrl;?>utf8-php/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo AdminPublicUrl;?>utf8-php/ueditor.all.js"></script>
+<script type="text/javascript" src="<?php echo AdminPublicUrl;?>utf8-php/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+
+    var editor = new UE.ui.Editor();
+
+    editor.render("myEditor");
+
+    //1.2.4以后可以使用一下代码实例化编辑器 
+
+    //UE.getEditor(’myEditor’) 
+
 </script>
