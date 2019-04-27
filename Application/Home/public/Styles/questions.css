@@ -58,7 +58,7 @@ div.logo img {
     margin:0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #4a5c67;
+    color: #4a5c67 !important;
 }
 .one-Q .ques{
     background-color: #f1f2f4;

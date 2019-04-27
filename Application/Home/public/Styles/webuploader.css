@@ -6,7 +6,7 @@
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px,1px,1px,1px);
 }
-.webuploader-pick {
+.webUploader-picker {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
@@ -17,12 +17,18 @@
 	border-radius: 3px;
 	overflow: hidden;
 }
-.webuploader-pick-hover {
+.webuploader-picker-hover {
 	background: #00a2d4;
 }
 
-.webuploader-pick-disable {
+.webuploader-picker-disable {
 	opacity: 0.6;
 	pointer-events:none;
+}
+
+.file-item{
+	width: 100px;
+	word-break: break-word;
+	float: left;
 }
 

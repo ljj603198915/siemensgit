@@ -75,12 +75,13 @@
         <div class="line">
             <span class="label mail">上传图片</span>
             <!--dom结构部分-->
-            <div id="uploader-container">
+            <div id="filePicker" id="uploader-container">
                 <!--用来存放item-->
+                <div class="webUploader-picker">选择图片</div>
                 <div id="fileList" class="uploader-list"></div>
-                <div id="filePicker webuploader-pick">选择图片</div>
-            </div>
 
+            </div>
+            <div style="clear: both"></div>
         </div>
         <div class="line">
             <span class="label com-advices">*投诉建议</span>

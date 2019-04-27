@@ -25,10 +25,10 @@ function toggleUl(obj) {
 var uploader = WebUploader.create({
 
     // 选完文件后，是否自动上传。
-    auto: true,
+    auto: false,
 
     // swf文件路径
-    swf: '../js/Uploader.swf',
+    swf: 'http://cdn.staticfile.org/webuploader/0.1.0/Uploader.swf',
 
     // 文件接收服务端。
     server: 'http://webuploader.duapp.com/server/fileupload.php',
@@ -57,7 +57,7 @@ uploader.on( 'fileQueued', function( file ) {
 
 
     // $list为容器jQuery实例
-    $list.append( $li );
+    $(".uploader-list").append( $li );
 
     // 创建缩略图
     // 如果为非图片文件，可以不用调用此方法。
@@ -69,7 +69,7 @@ uploader.on( 'fileQueued', function( file ) {
         }
 
         $img.attr( 'src', src );
-    }, thumbnailWidth, thumbnailHeight );
+    }, 100, 100 );
 });
 
 // 文件上传过程中创建进度条实时显示。
