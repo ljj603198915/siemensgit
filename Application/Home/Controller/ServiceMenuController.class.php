@@ -7,7 +7,7 @@ use Tools\HomeController;
 class ServiceMenuController extends HomeController
 {
     /**
-     * 服务菜单首页
+     * 服务菜单首页页面
      */
     public function index()
     {
@@ -15,7 +15,7 @@ class ServiceMenuController extends HomeController
     }
 
     /**
-     * 申请加盟列表
+     * 申请加盟列表页面
      */
     public function joinus()
     {
@@ -23,7 +23,7 @@ class ServiceMenuController extends HomeController
     }
 
     /**
-     * 投诉建议
+     * 投诉建议页面
      */
     public function advices()
     {
@@ -31,11 +31,31 @@ class ServiceMenuController extends HomeController
     }
 
     /**
-     * 问题列表
+     * 问题列表页面
      */
     public function questions()
     {
         $this->display();
+    }
+
+    /**
+     * 视频列表页面
+     */
+    public function videos()
+    {
+        $this->display();
+    }
+
+    /**
+     * 视频接口
+     */
+    public function videosList()
+    {
+        $videoData = D("video")->order("sort asc")->select();
+        //echo D("problem")->_sql();
+        $res = $this->packageVideo($videoData);
+        echo jsonToData(1, "success", $res);
+        exit;
     }
 
     /**
@@ -46,8 +66,8 @@ class ServiceMenuController extends HomeController
         $type = I("problem_type");
         $search = I("search");
         if (!empty($search)) {
-            $map['problem_name'] = array("like","%$search%");
-            $map['answer'] = array("like","%$search%");
+            $map['problem_name'] = array("like", "%$search%");
+            $map['answer'] = array("like", "%$search%");
             $map['_logic'] = "or";
             $where['_complex'] = $map;
         }
@@ -63,6 +83,11 @@ class ServiceMenuController extends HomeController
         //pp($res);
     }
 
+    /**
+     * 包装问题列表
+     * @param $problemData
+     * @return mixed
+     */
     public function packageProblem($problemData)
     {
         $normal = array();
@@ -83,7 +108,34 @@ class ServiceMenuController extends HomeController
         return $res;
     }
 
+    /**
+     * 包装视频列表
+     * @param $videoData
+     * @return mixed
+     */
+    public function packageVideo($videoData)
+    {
+        $brand = array();
+        $product = array();
+        $line = array();
+        foreach ($videoData as $k => $v) {
+            if ($v['video_type'] == 1) {
+                $brand[] = $v;
+            } elseif ($v['video_type'] == 2) {
+                $product[] = $v;
+            } elseif ($v['video_type'] == 3) {
+                $line[] = $v;
+            }
+        }
+        $res['brand'] = $brand;
+        $res['product'] = $product;
+        $res['line'] = $line;
+        return $res;
+    }
 
+    /**
+     * 添加答疑解惑
+     */
     public function addJoin()
     {
         $data['name'] = I("name");
@@ -98,7 +150,9 @@ class ServiceMenuController extends HomeController
         exit;
     }
 
-
+    /**
+     * @return bool添加投诉与建议
+     */
     public function addAdvice()
     {
         $data['customer_type'] = I("customer_type");
@@ -136,15 +190,13 @@ class ServiceMenuController extends HomeController
     public function statis()
     {
         $type = I("type");
-        $problemId = I("problemId");
-        switch ($type) {
-            case "s":
-                addStatis($type);
-                break;
-
-            default:
-                break;
+//        array("prodesc", "checkproduct", "nearshop", "onshop", "logistics ", "joinus",
+//            "advice", "electric", "400help", "jingcai", "video", "problem");
+//        $problem_id = I("problem_id");
+        if (empty($problem_id)) {
+            $problem_id = 0;
         }
+        addStatis($type, $problem_id);
     }
 
 }

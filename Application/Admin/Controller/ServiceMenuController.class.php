@@ -7,7 +7,7 @@ class ServiceMenuController extends AdminController
 {
     public function lst()
     {
-        $menuArr = array("prodesc", "checkproduct", "nearshop", "onshop", "los", "join_in",
+        $menuArr = array("prodesc", "checkproduct", "nearshop", "onshop", "logistics ", "joinus",
             "advice", "electric", "400help", "jingcai", "video", "problem");
         foreach ($menuArr as $k => $v) {
             $count = D("service_statis")->where(array("type" => $v))->count();
@@ -25,10 +25,10 @@ class ServiceMenuController extends AdminController
                 case "onshop":
                     $res[$k]['name'] = "在线购买";
                     break;
-                case "los":
+                case "logistics ":
                     $res[$k]['name'] = "物流查询";
                     break;
-                case "join_in":
+                case "joinus":
                     $res[$k]['name'] = "申请加盟";
                     break;
                 case "advice":
