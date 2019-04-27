@@ -3,14 +3,15 @@ namespace Admin\Model;
 use Think\Model;
 class ProblemModel extends Model 
 {
-	protected $insertFields = array('problem_type','problem_name','is_use');
-	protected $updateFields = array('id','problem_type','problem_name','is_use');
+	protected $insertFields = array('problem_type','problem_name','is_use','answer');
+	protected $updateFields = array('id','problem_type','problem_name','is_use','answer');
 	protected $_validate = array(
-		array('problem_type', 'require', '1常见问题2产品问题3接线问题不能为空！', 1, 'regex', 3),
-		array('problem_type', 'number', '1常见问题2产品问题3接线问题必须是一个整数！', 1, 'regex', 3),
+		array('problem_type', 'require', '类型不能为空！', 1, 'regex', 3),
+		array('problem_type', 'number', '类型必须是一个整数！', 1, 'regex', 3),
 		array('problem_name', 'require', '不能为空！', 1, 'regex', 3),
 		array('problem_name', '1,255', '的值最长不能超过 255 个字符！', 1, 'length', 3),
-		array('is_use', 'number', '1使用0停用必须是一个整数！', 2, 'regex', 3),
+		array('is_use', 'number', '状态是一个整数！', 2, 'regex', 3),
+		array('answer', 'require', '不能为空！', 1, 'regex', 3),
 	);
 	public function search($pageSize = 20)
 	{
@@ -22,6 +23,8 @@ class ProblemModel extends Model
 			$where['problem_name'] = array('like', "%$problem_name%");
 		if($is_use = I('get.is_use'))
 			$where['is_use'] = array('eq', $is_use);
+		if($answer = I('get.answer'))
+			$where['answer'] = array('eq', $answer);
 		/************************************* 翻页 ****************************************/
 		$count = $this->alias('a')->where($where)->count();
 		$page = new \Think\Page($count, $pageSize);

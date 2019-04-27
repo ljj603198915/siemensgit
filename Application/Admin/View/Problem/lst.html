@@ -25,8 +25,10 @@
 <div class="list-div" id="listDiv">
 	<table cellpadding="3" cellspacing="1" class="table">
 		<tr>
-			<th width="35%" >题干名称</th>
-			<th  width="15%">题干类型</th>
+			<th width="20%" >题干名称</th>
+			<th  width="10%">题干类型</th>
+			<!--<th  width="15%">答案</th>-->
+			<th  width="15%">点击数量</th>
 			<th  width="15%">状态</th>
 			<th width="15%">操作</th>
 		</tr>
@@ -40,6 +42,8 @@
 						<elseif condition="$v['problem_type'] eq 3" />接线问题
 					</if>
 				</td>
+				<!--<td><textarea id="myEditor">{$v.answer}</textarea></td>-->
+				<td>{$v.count}</td>
 				<td>
 					<if condition="$v['is_use'] eq 1">启用
 						<elseif condition="$v['is_use'] eq 0" />停用
@@ -59,4 +63,17 @@
 <script>
 </script>
 
-<script src="__PUBLIC__/Admin/Js/tron.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo AdminPublicUrl;?>utf8-php/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo AdminPublicUrl;?>utf8-php/ueditor.all.js"></script>
+<script type="text/javascript" src="<?php echo AdminPublicUrl;?>utf8-php/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+
+    var editor = new UE.ui.Editor();
+
+    editor.render("myEditor");
+
+    //1.2.4以后可以使用一下代码实例化编辑器 
+
+    //UE.getEditor(’myEditor’) 
+
+</script>

@@ -18,6 +18,10 @@
             </div>
         </div>
         <div class="control-group">
+            <label class="laber_from">题干名称<sup style="color: red;">*</sup></label>
+            <div class="controls"><textarea name="answer" id="myEditor">{$data.answer}</textarea></div>
+        </div>
+        <div class="control-group">
             <label class="laber_from">状态<sup style="color: red;">*</sup></label>
             <div  class="controls" >
                 <select class="input_select" name="is_use" >
@@ -35,3 +39,17 @@
         </DIV>
     </form>
 </div>
+<script type="text/javascript" charset="utf-8" src="<?php echo AdminPublicUrl;?>utf8-php/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo AdminPublicUrl;?>utf8-php/ueditor.all.js"></script>
+<script type="text/javascript" src="<?php echo AdminPublicUrl;?>utf8-php/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+
+    var editor = new UE.ui.Editor();
+
+    editor.render("myEditor");
+
+    //1.2.4以后可以使用一下代码实例化编辑器 
+
+    //UE.getEditor(’myEditor’) 
+
+</script>
