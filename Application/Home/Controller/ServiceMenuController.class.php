@@ -12,14 +12,77 @@ class ServiceMenuController extends HomeController
     public function index()
     {
         $this->display();
-        die;
     }
 
-    public function join()
+    /**
+     * 申请加盟列表
+     */
+    public function joinus()
     {
-        addStatis("join");
-        //$this->display();
+        $this->display();
     }
+
+    /**
+     * 投诉建议
+     */
+    public function advices()
+    {
+        $this->display();
+    }
+
+    /**
+     * 问题列表
+     */
+    public function questions()
+    {
+        $this->display();
+    }
+
+    /**
+     * 问题接口
+     */
+    public function problem()
+    {
+        $type = I("problem_type");
+        $search = I("search");
+        if (!empty($search)) {
+            $map['problem_name'] = array("like","%$search%");
+            $map['answer'] = array("like","%$search%");
+            $map['_logic'] = "or";
+            $where['_complex'] = $map;
+        }
+        if (!empty($type)) {
+            $where['problem_type'] = $type;
+        }
+        $where['is_use'] = 1;
+        $problemData = D("problem")->where($where)->select();
+        //echo D("problem")->_sql();
+        $res = $this->packageProblem($problemData);
+        echo jsonToData(1, "success", $res);
+        exit;
+        //pp($res);
+    }
+
+    public function packageProblem($problemData)
+    {
+        $normal = array();
+        $product = array();
+        $line = array();
+        foreach ($problemData as $k => $v) {
+            if ($v['problem_type'] == 1) {
+                $normal[] = $v;
+            } elseif ($v['problem_type'] == 2) {
+                $product[] = $v;
+            } elseif ($v['problem_type'] == 3) {
+                $line[] = $v;
+            }
+        }
+        $res['normal'] = $normal;
+        $res['product'] = $product;
+        $res['line'] = $line;
+        return $res;
+    }
+
 
     public function addJoin()
     {
@@ -35,10 +98,6 @@ class ServiceMenuController extends HomeController
         exit;
     }
 
-    public function advice()
-    {
-        $this->display();
-    }
 
     public function addAdvice()
     {
@@ -73,21 +132,6 @@ class ServiceMenuController extends HomeController
         exit;
     }
 
-    /**
-     * 问题列表
-     */
-    public function problem()
-    {
-        $problemData = D("problem")->where(array("is_use" => 1))->select();
-//        foreach ($problemData as $k => $v) {
-//            $answerData = D("answer")->where(array("problem_id" => $v['id']))->select();
-//            $problemData[$k]['answer'] = $answerData;
-//        }
-        echo jsonToData(1, "success", $problemData);
-        exit;
-        pp($problemData);
-        //$this->display();
-    }
 
     public function statis()
     {
