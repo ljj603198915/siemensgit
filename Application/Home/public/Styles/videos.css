@@ -1,0 +1,70 @@
+/*logo*/
+.logo-container{
+    padding: 6%;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+div.logo {
+    box-sizing: border-box;
+}
+
+div.logo img {
+    width: 30%;
+}
+.logo .inp-search{
+    float: right;
+    border:1px solid #686868;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+    margin:0 10px 0 10px;
+}
+.logo i{
+    float: right;
+    color: #00A7AE;
+}
+/*logo end*/
+/*tabs*/
+.tabs{
+    width:95%;
+    height: 40px;
+    background-color: #686868;
+
+    font-size: 16px;
+    left:50%;
+    margin:0 auto;
+    border-radius: 8px;
+}
+
+.tabs .title{
+    width: 33.333333%;
+    height: 100%;
+    color: #d9d9d9;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.5s;
+}
+.tabs .title.active{
+    background-color: #bdbec0;
+    color: #ffffff;
+    border-radius: 8px;
+}
+/*tabs end*/
+/*videos begin*/
+.videos .line.videos{
+    position: relative;
+    overflow: hidden;
+}
+
+.videos .line.videos .one{
+    width: 40%;
+    float: left;
+    margin: 0 5%;
+    height: 100%;
+}
+
+.videos .line.videos .one video{
+    width: 100%;
+}
+/*videos end*/

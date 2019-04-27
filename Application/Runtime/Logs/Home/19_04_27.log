@@ -1,0 +1,165 @@
+[ 2019-04-27T00:02:53+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002420s ]
+
+[ 2019-04-27T00:03:57+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+
+[ 2019-04-27T00:06:18+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
+
+[ 2019-04-27T00:06:19+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+
+[ 2019-04-27T00:06:19+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+
+[ 2019-04-27T00:06:20+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+
+[ 2019-04-27T00:06:20+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2019-04-27T00:06:20+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+
+[ 2019-04-27T00:06:21+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
+[ 2019-04-27T00:06:21+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+
+[ 2019-04-27T00:06:34+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001682s ]
+
+[ 2019-04-27T00:07:27+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+
+[ 2019-04-27T00:08:03+08:00 ] ::1 /index.php/Home/Brandstory/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+
+[ 2019-04-27T00:10:20+08:00 ] ::1 /index.php/Home/Brandstory/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+
+[ 2019-04-27T00:11:40+08:00 ] ::1 /index.php/Home/Brandstory/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2019-04-27T00:11:41+08:00 ] ::1 /index.php/Home/Brandstory/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+
+[ 2019-04-27T00:11:41+08:00 ] ::1 /index.php/Home/Brandstory/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2019-04-27T00:12:38+08:00 ] ::1 /index.php/Home/Brandstory/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+
+[ 2019-04-27T00:12:39+08:00 ] ::1 /index.php/Home/Brandstory/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2019-04-27T00:13:01+08:00 ] ::1 /index.php/Home/Brandstory/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+
+[ 2019-04-27T00:15:15+08:00 ] ::1 /index.php/Home/Brandstory/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+
+[ 2019-04-27T00:15:15+08:00 ] ::1 /index.php/Home/Brandstory/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2019-04-27T00:15:39+08:00 ] ::1 /index.php/Home/Brandstory/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2019-04-27T00:19:01+08:00 ] ::1 /index.php/Home/Brandstory/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+
+[ 2019-04-27T00:20:37+08:00 ] ::1 /index.php/Home/Brandstory/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+
+[ 2019-04-27T00:22:53+08:00 ] ::1 /index.php/Home/Brandstory/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2019-04-27T00:29:19+08:00 ] ::1 /index.php/Home/Brandstory/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+
+[ 2019-04-27T00:33:22+08:00 ] ::1 /index.php/Home/Brandstory/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2019-04-27T00:33:37+08:00 ] ::1 /index.php/Home/Brandstory/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+
+[ 2019-04-27T00:34:22+08:00 ] ::1 /index.php/Home/Brandstory/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2019-04-27T00:39:59+08:00 ] ::1 /index.php/Home/Brandstory/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+
+[ 2019-04-27T00:40:01+08:00 ] ::1 /index.php/Home/Brandstory/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2019-04-27T00:41:17+08:00 ] ::1 /index.php/Home/Brandstory/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+
