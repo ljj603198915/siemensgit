@@ -22,7 +22,7 @@ function getQs(data) {
     })
 }
 //点击题干
-$('.i-con').click(function () {
+$('.ques-container').on("click",".i-con",function (event) {
         $(this).children("i").toggleClass("fa-rotate-90");
         $(this).parents(".ques").siblings(".ans").toggle(500);
     }
@@ -31,18 +31,27 @@ $('.i-con').click(function () {
 $(".logo .fa").click(function () {
     var value=$(this).parents(".logo").find(".inp-search").val();
     // console.log(value);
-    var data={"search":value,"problem_type":""}
+    var data={"search":value,"problem_type":1}
     getQs(data)
 })
 
 
-// tabs
+// 点击tabs
 $(".tabs .title").click(function () {
     $(this).siblings(".title").removeClass("active");
     $(this).addClass("active");
-    var id=$(this).index()+1;
+
+    var value=$(".inp-search").val();//搜索框内容
+    var type_id=$(this).index()+1;//问题类型
+    if(value != ""){
+        //搜索中
+        var data={"search":value,"problem_type":type_id}
+    }else{
+        //未搜索
+        var data={"search":"","problem_type":type_id}
+    }
     // console.log(id);
-    var data={"search":"","problem_type":id}
+
     getQs(data);
 })
 // tabs end
