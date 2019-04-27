@@ -1018,3 +1018,453 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
 
+[ 2019-04-27T21:48:29+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+
+[ 2019-04-27T21:48:30+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+
+[ 2019-04-27T21:48:31+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+
+[ 2019-04-27T21:48:31+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+
+[ 2019-04-27T21:56:01+08:00 ] 192.168.2.102 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2019-04-27T21:56:02+08:00 ] 192.168.2.102 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+
+[ 2019-04-27T21:58:49+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+
+[ 2019-04-27T21:58:50+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+
+[ 2019-04-27T21:58:50+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+
+[ 2019-04-27T21:58:51+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002256s ]
+
+[ 2019-04-27T21:59:02+08:00 ] 192.168.2.102 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2019-04-27T21:59:03+08:00 ] 192.168.2.102 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2019-04-27T21:59:10+08:00 ] 192.168.2.102 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2019-04-27T21:59:10+08:00 ] 192.168.2.102 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2019-04-27T21:59:15+08:00 ] 192.168.2.102 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2019-04-27T21:59:15+08:00 ] 192.168.2.102 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2019-04-27T21:59:29+08:00 ] 192.168.2.102 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2019-04-27T21:59:29+08:00 ] 192.168.2.102 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2019-04-27T21:59:33+08:00 ] 192.168.2.102 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+
+[ 2019-04-27T21:59:33+08:00 ] 192.168.2.102 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2019-04-27T21:59:36+08:00 ] 192.168.2.102 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2019-04-27T21:59:36+08:00 ] 192.168.2.102 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+
+[ 2019-04-27T22:04:38+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2019-04-27T22:04:38+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+
+[ 2019-04-27T22:04:39+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+
+[ 2019-04-27T22:04:39+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001947s ]
+
+[ 2019-04-27T22:05:20+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+
+[ 2019-04-27T22:05:20+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+
+[ 2019-04-27T22:05:21+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+
+[ 2019-04-27T22:05:21+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+
+[ 2019-04-27T22:05:37+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2019-04-27T22:05:38+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+
+[ 2019-04-27T22:05:38+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+
+[ 2019-04-27T22:05:38+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+
+[ 2019-04-27T22:05:50+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+
+[ 2019-04-27T22:05:51+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+
+[ 2019-04-27T22:06:14+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+
+[ 2019-04-27T22:06:14+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+
+[ 2019-04-27T22:06:30+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2019-04-27T22:06:30+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+
+[ 2019-04-27T22:08:25+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+
+[ 2019-04-27T22:08:25+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+
+[ 2019-04-27T22:10:22+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2019-04-27T22:10:22+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+
+[ 2019-04-27T22:11:27+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+
+[ 2019-04-27T22:11:27+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2019-04-27T22:11:35+08:00 ] ::1 /index.php/Home/ServiceMenu/&quot;/ueditor/php/upload/image/20190427/1556355265664483.jpeg&quot;
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+
+[ 2019-04-27T22:57:38+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001398s ]
+
+[ 2019-04-27T22:57:39+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2019-04-27T23:06:02+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+
+[ 2019-04-27T23:06:02+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+
+[ 2019-04-27T23:06:50+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2019-04-27T23:06:50+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+
+[ 2019-04-27T23:06:51+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+
+[ 2019-04-27T23:06:52+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+
+[ 2019-04-27T23:06:52+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+
+[ 2019-04-27T23:06:52+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+
+[ 2019-04-27T23:06:53+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+
+[ 2019-04-27T23:06:53+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+
+[ 2019-04-27T23:06:54+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2019-04-27T23:06:54+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+
+[ 2019-04-27T23:07:23+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+
+[ 2019-04-27T23:07:24+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+
+[ 2019-04-27T23:13:57+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+
+[ 2019-04-27T23:13:57+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+
+[ 2019-04-27T23:16:29+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2019-04-27T23:16:30+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
+[ 2019-04-27T23:17:44+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2019-04-27T23:17:44+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+
+[ 2019-04-27T23:18:51+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+
+[ 2019-04-27T23:18:52+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+
+[ 2019-04-27T23:20:15+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+
+[ 2019-04-27T23:20:15+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+
+[ 2019-04-27T23:21:27+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+
+[ 2019-04-27T23:21:27+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+
+[ 2019-04-27T23:21:29+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+
+[ 2019-04-27T23:21:29+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+
+[ 2019-04-27T23:21:53+08:00 ] 192.168.2.102 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2019-04-27T23:21:53+08:00 ] 192.168.2.102 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2019-04-27T23:25:46+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+
+[ 2019-04-27T23:25:46+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2019-04-27T23:25:48+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+
+[ 2019-04-27T23:25:48+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001295s ]
+
+[ 2019-04-27T23:25:55+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2019-04-27T23:25:56+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+
+[ 2019-04-27T23:26:10+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2019-04-27T23:26:10+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+
+[ 2019-04-27T23:31:38+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+
+[ 2019-04-27T23:31:55+08:00 ] ::1 /index.php/Home/ServiceMenu/questions
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+
+[ 2019-04-27T23:31:55+08:00 ] ::1 /index.php/Home/servicemenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+

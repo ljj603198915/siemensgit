@@ -1,6 +1,37 @@
-<layout name="layout"/>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>后台模板</title>
+
+    <script type="text/javascript" src="<?php echo AdminJsUrl;?>jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo AdminJsUrl;?>index.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo AdminCssUrl;?>jquery-ui.min.css">
+
+    <link rel="stylesheet" href="<?php echo AdminCssUrl;?>add.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo AdminCssUrl;?>bootstrap.min.css" type="text/css"/>
+</head>
+<body>
+    <!-- <?php if($_page_btn_name): ?>
+    <span class="action-span"><a href="<?php echo $_page_btn_link; ?>"><?php echo $_page_btn_name; ?></a></span>
+    <?php endif; ?>
+    <span class="action-span1"><a href="#">管理中心</a></span>
+    <span id="search_id" class="action-span1"> - <?php echo $_page_title; ?> </span>
+    <div style="clear:both"></div>
+ -->
+    <div class="route_bg">
+        <span>管理中心</span>
+        <i class="glyph-icon icon-chevron-line"></i>
+        <span><?php echo $_page_title; ?></span>
+        <i class="glyph-icon icon-chevron-right"></i>
+        <?php if($_page_btn_name): ?>
+        <a href="<?php echo $_page_btn_link; ?>" target="menuFrame"><?php echo $_page_btn_name; ?></a>
+        <?php endif; ?>
+    </div>
+<!--  内容  -->
+
 <div class="div_from_aoto" style="width: 500px;">
-    <!--<form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data">-->
+    <!--<form name="main_form" method="POST" action="/index.php/Admin/Problem/add" enctype="multipart/form-data">-->
 
         <div class="control-group">
             <label class="laber_from">题干名称<sup style="color: red;">*</sup></label>
@@ -55,9 +86,9 @@
     editor.render("myEditor");
 
     $(".sub").click(function () {
-//        var content = editor.getPlainTxt();
-//
-//        console.log(content);
+        var content = editor.getPlainTxt();
+
+        console.log(content);
 
         var content1=editor.getContent();
         console.log(content1)
@@ -65,19 +96,12 @@
         $(".show").html(content1);
     })
 
-    $.ajax({
-        url: "/index.php/Home/servicemenu/problem",
-        type: 'post',
-        data:data,
-        dataType: 'json',
-        success: function (data) {
-
-
-
-        }
-    })
     //1.2.4以后可以使用一下代码实例化编辑器 
 
     //UE.getEditor(’myEditor’) 
 
 </script>
+
+
+</body>
+</html>
