@@ -26,7 +26,7 @@ class JoinInController extends Controller
         $id = I("id");
         $model = D('join_in');
         $lowShopData = $model ->find($id);
-        $lowShopData["status"] = 1;
+        $lowShopData["status"] = 2;
         $lowShopData['handle_time'] = date("Y-m-d H:i:s");
         if($model->save($lowShopData) !== FALSE)
         {

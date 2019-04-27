@@ -42,7 +42,7 @@
 						<elseif condition="$v['problem_type'] eq 3" />接线问题
 					</if>
 				</td>
-				<!--<td><textarea id="myEditor">{$v.answer}</textarea></td>-->
+				<td id="test">{$v.answer}</td>
 				<td>{$v.count}</td>
 				<td>
 					<if condition="$v['is_use'] eq 1">启用
@@ -69,9 +69,7 @@
 <script type="text/javascript">
 
     var editor = new UE.ui.Editor();
-
     editor.render("myEditor");
-
     //1.2.4以后可以使用一下代码实例化编辑器 
 
     //UE.getEditor(’myEditor’) 
