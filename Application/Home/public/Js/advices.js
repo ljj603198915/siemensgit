@@ -109,6 +109,11 @@ uploader.on( 'uploadError', function( file ) {
 uploader.on( 'uploadComplete', function( file ) {
     $( '#'+file.id ).find('.progress').remove();
 });
+
+$(".webUploader-picker1").click(function () {
+    uploader.upload();
+})
+
 // 上传图片end
 
 //提交 begin
