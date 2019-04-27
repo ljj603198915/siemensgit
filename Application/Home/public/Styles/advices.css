@@ -42,6 +42,7 @@ div.logo img {
     line-height: 40px;
     padding: 0 10px 0 10px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 /*.label:after{*/

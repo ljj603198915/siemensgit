@@ -11,9 +11,9 @@ $(".line.ul input,.line.ul .i-con").click(function () {
 $(".line.ul ul li").click(function () {
     var reg = new RegExp("&nbsp;","g");
     var val=$(this).html().replace(reg,"")
-    var id=$(this).attr("id")
+    var id=$(this).attr("data-id")
     $(this).parents(".line").find("input").val(val)
-    $(this).parents(".line").find("input").attr("id",id)
+    $(this).parents(".line").find("input").attr("data-id",id)
     toggleUl($(this).parents("ul"));
 })
 function toggleUl(obj) {
@@ -113,33 +113,40 @@ uploader.on( 'uploadComplete', function( file ) {
 
 //提交 begin
 $(".submit").click(function () {
-    var cuskind=$(".info-container").find("input.cus-kind").val();
+    var cuskind=$(".info-container").find("input.cus-kind").attr("data-id");
     var name=$(".info-container").find("input.name").val();
     var tel=$(".info-container").find("input.tel").val();
     var mail=$(".info-container").find("input.mail").val();
-    var comkind=$(".info-container").find("input.com-kind").attr("id");
+    var comkind=$(".info-container").find("input.com-kind").attr("data-id");
     var comadvices=$(".info-container").find("textarea").val();
-    var data = {
-        customer_type:cuskind,
-        advice_name:name,
-        phone:tel,
-        email:mail,
-        advice_type:comkind,
-        advice_content:comadvices
+    if(cuskind == ""||name == ""||tel == ""||comkind == ""||comadvices == ""){
+        alert("加*为必输项！")
+    }else{
+        var data = {
+            customer_type:cuskind,
+            advice_name:name,
+            phone:tel,
+            email:mail,
+            advice_type:comkind,
+            advice_content:comadvices
+        }
+        // console.log(data);
+        $.ajax({
+            url: "/index.php/Home/servicemenu/problem",
+            type: 'post',
+            data:data,
+            dataType: 'json',
+            success: function (data) {
+                if(data.code == '1'){
+                    alert("提交成功！")
+
+                }else{alert("提交失败！")}
+
+            }
+        })
     }
-    console.log(data);
-    // $.ajax({
-    //     url: "/Home/servicemenu/problem",
-    //     type: 'post',
-    //     data:data,
-    //     dataType: 'json',
-    //     success: function (data) {
-    //         if(data.code == '1'){
-    //             alert("提交成功！")
-    //
-    //         }else{alert("提交失败！")}
-    //
-    //     }
-    // })
+
 })
 // 提交 end
+
+
