@@ -76,9 +76,10 @@ class ServiceMenuController extends HomeController
         }
         $where['is_use'] = 1;
         $problemData = D("problem")->where($where)->select();
-        /*foreach ($problemData as $k => $v) {
-            $problemData[$k]['answer'] = htmlentities($problemData[$k]['answer']);
-        }*/
+//        foreach ($problemData as $k => $v) {
+//            $problemData[$k]['answer'] = htmlentities($problemData[$k]['answer']);
+//        }
+
         //pp($problemData);
         //echo D("problem")->_sql();
         //$res = $this->packageProblem($problemData);
