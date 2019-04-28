@@ -9,7 +9,7 @@ class ServiceMenuController extends HomeController
     /**
      * 服务菜单首页页面
      */
-    public function index()
+    public function home()
     {
         $this->display();
     }
@@ -164,37 +164,56 @@ class ServiceMenuController extends HomeController
     /**
      * @return bool添加投诉与建议
      */
+    public function addAdviceFile()
+    {
+        $model = D("advice_img");
+        $id = I("uid");
+        //pp($_FILES);die;
+
+        if (isset($_FILES['advice_img']) && $_FILES['advice_img']['error'] == 0) {
+            $ret = uploadImage('advice_img', 'Advice');
+
+            if ($ret['ok'] == 1) {
+                $filePath = $ret['images'][0];
+
+            } else {
+                echo jsonToData(2, "图片上传错误");
+                exit;
+//                $this->error = $ret['error'];
+//                return FALSE;
+            }
+
+        }
+        $data['advice_id'] = $id;
+        $data['advice_img'] = $filePath;
+        if ($model->add($data)) {
+            echo jsonToData(1, "success");
+            exit;
+        } else {
+            echo jsonToData(2, "图片保存错误");
+            exit;
+        }
+
+    }
+
+    /**
+     * @return bool添加投诉与建议
+     */
     public function addAdvice()
     {
         $data['customer_type'] = I("customer_type");
         $data['advice_name'] = I("advice_name");
         $data['phone'] = I("phone");
         $data['email'] = I("email");
-        $data['status'] = 1;
-        $files = $_FILES;
-        foreach ($files as $k => $v) {
-            if ($v['error'] == 0) {
-                $filename = date("YmdH:i:s");
-                $exits = substr(strrchr($v['name'], '.'), 1);
-                unlink("./Public/Uploads/Product/$filename.$exits");
-                $ret = uploadOne('img', 'Product', $filename, array()
-                );
-                if ($ret['ok'] == 1) {
-                    $data['product_image'] = $ret['images'][0];
-
-                } else {
-                    $this->error = $ret['error'];
-                    return FALSE;
-                }
-
-            }
-        }
         $data['advice_type'] = I("advice_type");
-        $data['status'] = 0;
+        $data['advice_content'] = I("advice_content");
+
+        $data['status'] = 1;
         $data['created_time'] = date(("Y-m-d H:i:s"));
 
-        D("join_in")->save($data);
-        echo jsonToData(1, "success");
+        $id = D("advice")->add($data);
+        //pp($id);die;
+        echo jsonToData(1, "success", array("id" => $id));
         exit;
     }
 
