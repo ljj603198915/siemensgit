@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <title>投诉建议</title>
     <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/reset.css" />
     <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/font-awesome.min.css" />
@@ -78,7 +79,7 @@
             <div id="filePicker" id="uploader-container">
                 <!--用来存放item-->
                 <div class="webUploader-picker">选择图片</div>
-                <div class="webUploader-picker1">确认上传</div>
+                <!--<div class="webUploader-picker1">确认上传</div>-->
                 <div id="fileList" class="uploader-list"></div>
 
             </div>

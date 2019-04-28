@@ -31,11 +31,19 @@ var uploader = WebUploader.create({
     swf: 'http://cdn.staticfile.org/webuploader/0.1.0/Uploader.swf',
 
     // 文件接收服务端。
-    server: 'http://webuploader.duapp.com/server/fileupload.php',
+    server: '/index.php/Home/ServiceMenu/addAdviceFile',
 
     // 选择文件的按钮。可选。
     // 内部根据当前运行是创建，可能是input元素，也可能是flash.
     pick: '#filePicker',
+
+    fileNumLimit: 5,
+
+    fileVal:"advice_img",
+
+    formata:{
+        uid:0
+    },
 
     // 只允许选择图片文件。
     accept: {
@@ -90,6 +98,7 @@ uploader.on( 'uploadProgress', function( file, percentage ) {
 // 文件上传成功，给item添加成功class, 用样式标记上传成功。
 uploader.on( 'uploadSuccess', function( file ) {
     $( '#'+file.id ).addClass('upload-state-done');
+
 });
 
 // 文件上传失败，显示上传出错。
@@ -110,9 +119,9 @@ uploader.on( 'uploadComplete', function( file ) {
     $( '#'+file.id ).find('.progress').remove();
 });
 
-$(".webUploader-picker1").click(function () {
-    uploader.upload();
-})
+// $(".webUploader-picker1").click(function () {
+//     uploader.upload();
+// })
 
 // 上传图片end
 
@@ -143,7 +152,13 @@ $(".submit").click(function () {
             dataType: 'json',
             success: function (data) {
                 if(data.code == '1'){
+                    uploader.on("uploadBeforeSend",function (object,data,header) {
+                        data.uid = msg.list.id;
+                        
+                    })
+                    uploader.upload();
                     alert("提交成功！")
+                    location.reload();
 
                 }else{alert("提交失败！")}
 

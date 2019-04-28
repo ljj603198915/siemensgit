@@ -188,3 +188,103 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
 
+[ 2019-04-29T00:37:22+08:00 ] 192.168.2.102 /index.php/Home/Servicemenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+
+[ 2019-04-29T00:37:24+08:00 ] 192.168.2.102 /index.php/Home/Servicemenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+
+[ 2019-04-29T00:49:31+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+
+[ 2019-04-29T00:50:02+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001944s ]
+
+[ 2019-04-29T00:53:06+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+
+[ 2019-04-29T00:53:08+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2019-04-29T00:54:32+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
+[ 2019-04-29T00:54:33+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+
+[ 2019-04-29T00:54:34+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2019-04-29T00:54:47+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2019-04-29T00:55:25+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+
+[ 2019-04-29T00:57:03+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+
+[ 2019-04-29T00:57:05+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2019-04-29T00:57:05+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2019-04-29T00:57:06+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+
+[ 2019-04-29T00:57:07+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+
+[ 2019-04-29T00:57:07+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+
+[ 2019-04-29T00:57:08+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2019-04-29T00:57:58+08:00 ] ::1 /index.php/Home/ServiceMenu/problem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+
+[ 2019-04-29T00:58:00+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+
