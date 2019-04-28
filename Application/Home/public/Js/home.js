@@ -7,7 +7,7 @@ $(".wrapper .item>a").click(function () {
 
 function putData(data) {
     $.ajax({
-        url: "/Home/servicemenu/statis",
+        url: "/Home/ServiceMenu/statis",
         type: 'post',
         data:data,
         dataType: 'json',
