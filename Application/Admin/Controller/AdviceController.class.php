@@ -122,8 +122,9 @@ class AdviceController extends Controller
         foreach ($data['data'] as $key => $value) {
             // 设置单元格高度
             $objPHPExcel->getActiveSheet()->getRowDimension($row_num)->setRowHeight(32);
-
-            $objPHPExcel->getActiveSheet()->getStyle('D' . $row_num)->getAlignment()->setWrapText(true);
+            $objPHPExcel->getActiveSheet()->getStyle("A".$row_num.":"."I".$row_num)->getAlignment()
+                ->setVertical(\PHPExcel_Style_Alignment::VERTICAL_CENTER);
+            //$objPHPExcel->getActiveSheet()->getStyle('D' . $row_num)->getAlignment()->setWrapText(true);
 
             // 设置单元格数值
             $objPHPExcel->getActiveSheet()->setCellValue('A' . $row_num, $value['customer_type']);

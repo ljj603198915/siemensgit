@@ -96,7 +96,7 @@ class JoinInController extends Controller
                 //折行线索
 //            $objPHPExcel->getActiveSheet()->getStyle('D' . $row_num)->getAlignment()->setWrapText(true);
             $objPHPExcel->getActiveSheet()->getStyle("A".$row_num.":"."H".$row_num)->getAlignment()
-                ->setVertical(\PHPExcel_Style_Alignment::VERTICAL_DISTRIBUTED);
+                ->setVertical(\PHPExcel_Style_Alignment::VERTICAL_CENTER);
             // 设置单元格数值
             $objPHPExcel->getActiveSheet()->setCellValue('A' . $row_num, $value['name']);
             $objPHPExcel->getActiveSheet()->setCellValue('B' . $row_num, $value['phone']);
