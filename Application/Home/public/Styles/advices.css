@@ -37,12 +37,14 @@ div.logo img {
     width: 30%;
     color: #fff;
     text-align: justify;
-    height: 40px;
+    height: 30px;
     border-radius: 9px;
-    line-height: 40px;
+    line-height: 30px;
     padding: 0 10px 0 10px;
     box-sizing: border-box;
     text-align: center;
+    font-size: 14px;
+    font-weight:700;
 }
 
 /*.label:after{*/
@@ -93,13 +95,14 @@ div.logo img {
     padding:0 10px 0 10px;
     box-sizing: border-box;
     vertical-align: top;
+    color: #000;
 }
 
 
 
 .info-container .line input,.info-container .line select{
 
-    height: 40px;
+    height: 30px;
 
 }
 
@@ -115,7 +118,7 @@ div.logo img {
     position: absolute;
     right: 20px;
     top:0;
-    line-height: 40px;
+    line-height: 30px;
 }
 /*info end*/
 .submit{

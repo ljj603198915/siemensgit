@@ -32,9 +32,12 @@ div.logo img {
     width: 20%;
     color: #fff;
     text-align: center;
-    height: 40px;
+    height: 30px;
     border-radius: 9px;
-    line-height: 40px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 700;
 }
 .line.agency .label{
     width: 50%;
@@ -67,8 +70,8 @@ div.logo img {
 
 
 .info-container .line input,.info-container .line select{
-    width:78%;
-    height: 40px;
+    width:73%;
+    height: 30px;
 
 }
 
@@ -77,7 +80,7 @@ div.logo img {
     position: absolute;
     right: 20px;
     top:0;
-    line-height: 40px;
+    line-height: 30px;
 }
 /*info end*/
 .submit{

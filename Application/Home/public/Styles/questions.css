@@ -38,6 +38,7 @@ div.logo img {
 }
 
 .tabs .title{
+    font-weight: 700;
     width: 33.333333%;
     height: 100%;
     color: #d9d9d9;
@@ -84,20 +85,20 @@ div.logo img {
     display: inline-block;
     position: absolute;
     right: 10px;
-    font-size: 24px;
+    font-size: 20px;
 }
 .one-Q .ques .i-con i{
     position: absolute;
     height: 30px;
     top:50%;
-    margin-top: -15px;
+    margin-top: -13px;
     transition: all 0.5s;
 }
 
 .one-Q .ans{
     width: 100%;
     margin: 0 auto;
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
