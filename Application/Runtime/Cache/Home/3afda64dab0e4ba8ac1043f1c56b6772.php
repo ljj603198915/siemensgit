@@ -34,7 +34,7 @@
 </div>
 <div class="wrapper">
     <div class="item1 item">
-        <a id="prodesc" href="../Checkproduct/proDesc.html">
+        <a id="prodesc" href="http://www.wawechat.siemens.com.cn/index.php/Home/Checkproduct/proDesc.html">
             <div class="icon"><i class="fa fa-map fa-lg"></i></div>
             <div class="text">
                 <p class="chi">产品说明书</p>
@@ -43,7 +43,7 @@
         </a>
     </div>
     <div class="item2 item">
-        <a id="checkproduct" href="../Checkproduct/checkproduct.html">
+        <a id="checkproduct" href="http://www.wawechat.siemens.com.cn/index.php/Home/Checkproduct/checkproduct.html">
             <div class="icon"><i class="fa fa-search fa-lg"></i></div>
             <div class="text">
                 <p class="chi">产品验真</p>
@@ -53,7 +53,7 @@
 
     </div>
     <div class="item3 item">
-        <a id="nearshop" href="../Nearshop/shop">
+        <a id="nearshop" href="http://www.wawechat.siemens.com.cn/Home/Nearshop/shop">
             <div class="icon"><i class="fa fa-home fa-lg"></i></div>
             <div class="text">
                 <p class="chi">附近店铺</p>
@@ -62,7 +62,7 @@
         </a>
     </div>
     <div class="item4 item">
-        <a id="onshop" href="../Onshop/onshop">
+        <a id="onshop" href="http://www.wawechat.siemens.com.cn/Home/Onshop/onshop">
             <div class="icon"><i class="fa fa-shopping-cart fa-lg"></i></div>
             <div class="text">
                 <p class="chi">在线购买</p>

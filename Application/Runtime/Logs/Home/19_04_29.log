@@ -473,3 +473,18 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
 
+[ 2019-04-29T02:11:18+08:00 ] 192.168.2.102 /index.php/Home/ServiceMenu/advices.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+
+[ 2019-04-29T02:12:10+08:00 ] 192.168.2.102 /index.php/Home/ServiceMenu/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2019-04-29T02:12:11+08:00 ] 192.168.2.102 /index.php/Home/Checkproduct/logistics.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
