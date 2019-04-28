@@ -1,7 +1,9 @@
 <?php
 namespace Admin\Controller;
+
 use Think\Controller;
-class AdviceController extends Controller 
+
+class AdviceController extends Controller
 {
 //    public function add()
 //    {
@@ -70,29 +72,35 @@ class AdviceController extends Controller
 //    }
     public function lst()
     {
-    	$model = D('Advice');
-    	$data = $model->search();
-    	$this->assign(array(
-    		'data' => $data['data'],
-    		'page' => $data['page'],
-    	));
+        $model = D('Advice');
+        $data = $model->search();
+        foreach ($data['data'] as $k => $v) {
+            $imgData = D("advice_img")->where(array("advice_id" => $v['id']))->select();
+            $data['data'][$k]['img'] = $imgData;
+        }
+        $this->assign(array(
+            'data' => $data['data'],
+            'page' => $data['page'],
+        ));
 
-		// 设置页面中的信息
-		$this->assign(array(
-			'_page_title' => '列表',
-			'_page_btn_name' => '添加',
-			'_page_btn_link' => U('add'),
-		));
-    	$this->display();
+        //pp($data);die;
+        // 设置页面中的信息
+        $this->assign(array(
+            '_page_title' => '列表',
+            '_page_btn_name' => '添加',
+            '_page_btn_link' => U('add'),
+        ));
+        $this->display();
     }
-    public function handle(){
+
+    public function handle()
+    {
         $id = I("id");
         $model = D('advice');
-        $lowShopData = $model ->find($id);
+        $lowShopData = $model->find($id);
         $lowShopData["status"] = 2;
         $lowShopData['handle_time'] = date("Y-m-d H:i:s");
-        if($model->save($lowShopData) !== FALSE)
-        {
+        if ($model->save($lowShopData) !== FALSE) {
             $this->success('处理成功！', U('lst', array('p' => I('get.p', 1))));
             exit;
         }

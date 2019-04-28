@@ -47,13 +47,13 @@ class JoinInModel extends Model
 			$where['handle_time'] = array('elt', strtotime("$handle_timeto 23:59:59"));
 		/************************************* 翻页 ****************************************/
 		$count = $this->alias('a')->where($where)->count();
-		$page = new \Think\Page($count, $pageSize);
-		// 配置翻页的样式
-		$page->setConfig('prev', '上一页');
-		$page->setConfig('next', '下一页');
-		$data['page'] = $page->show();
+        $page= new \Org\Util\MyPage($count,$pageSize);
+        // 配置翻页的样式
+        $page->setConfig('prev', '上一页');
+        $page->setConfig('next', '下一页');
+        $data['page'] = $page->show();
 		/************************************** 取数据 ******************************************/
-		$data['data'] = $this->alias('a')->where($where)->group('a.id')->limit($page->firstRow.','.$page->listRows)->select();
+		$data['data'] = $this->alias('a')->where($where)->group('a.id')->order("a.status asc, a.created_time desc")->limit($page->firstRow.','.$page->listRows)->select();
 		return $data;
 	}
 	// 添加前

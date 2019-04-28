@@ -1,6 +1,6 @@
 <layout name="layout"/>
 <div class="div_from_aoto" style="width: 500px;">
-    <!--<form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data">-->
+    <form name="main_form" method="POST" action="__SELF__" enctype="multipart/form-data">
 
         <div class="control-group">
             <label class="laber_from">题干名称<sup style="color: red;">*</sup></label>
@@ -43,7 +43,7 @@
     <div class="show"></div>
 
 
-    <!--</form>-->
+    </form>
 </div>
 <script type="text/javascript" charset="utf-8" src="<?php echo AdminPublicUrl;?>utf8-php/ueditor.config.js"></script>
 <script type="text/javascript" charset="utf-8" src="<?php echo AdminPublicUrl;?>utf8-php/ueditor.all.js"></script>
@@ -54,28 +54,28 @@
 
     editor.render("myEditor");
 
-    $(".sub").click(function () {
-//        var content = editor.getPlainTxt();
+//    $(".sub").click(function () {
+////        var content = editor.getPlainTxt();
+////
+////        console.log(content);
 //
-//        console.log(content);
-
-        var content1=editor.getContent();
-        console.log(content1)
-
-        $(".show").html(content1);
-    })
-
-    $.ajax({
-        url: "/index.php/Home/servicemenu/problem",
-        type: 'post',
-        data:data,
-        dataType: 'json',
-        success: function (data) {
-
-
-
-        }
-    })
+//        var content1=editor.getContent();
+//        console.log(content1)
+//
+//        $(".show").html(content1);
+//    })
+//
+//    $.ajax({
+//        url: "/index.php/Home/servicemenu/problem",
+//        type: 'post',
+//        data:data,
+//        dataType: 'json',
+//        success: function (data) {
+//
+//
+//
+//        }
+//    })
     //1.2.4以后可以使用一下代码实例化编辑器 
 
     //UE.getEditor(’myEditor’) 

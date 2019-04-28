@@ -27,11 +27,11 @@ class ProblemModel extends Model
 			$where['answer'] = array('eq', $answer);
 		/************************************* 翻页 ****************************************/
 		$count = $this->alias('a')->where($where)->count();
-		$page = new \Think\Page($count, $pageSize);
-		// 配置翻页的样式
-		$page->setConfig('prev', '上一页');
-		$page->setConfig('next', '下一页');
-		$data['page'] = $page->show();
+        $page= new \Org\Util\MyPage($count,$pageSize);
+        // 配置翻页的样式
+        $page->setConfig('prev', '上一页');
+        $page->setConfig('next', '下一页');
+        $data['page'] = $page->show();
 		/************************************** 取数据 ******************************************/
 		$data['data'] = $this->alias('a')->where($where)->group('a.id')->limit($page->firstRow.','.$page->listRows)->select();
 		return $data;

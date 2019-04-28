@@ -60,7 +60,12 @@
 						<elseif condition="$v['advice_type'] eq 5" />其他
 					</if>
 				</td>
-				<td><img src=""></td>
+
+				<td>
+					<foreach name="v['img']" item="vv">
+						<img src="{$vv.advice_img}">
+					</foreach>
+					</td>
 
 				<td>{$v.advice_content}</td>
                 <td>
