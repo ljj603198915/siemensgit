@@ -14,6 +14,31 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <splitter split-orientation="horizontal" split-proportion="0.17899929">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="advices.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Home/View/ServiceMenu/advices.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="advices.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Home/public/Js/advices.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="643">
+                  <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+                  <folding />
+=======
     <splitter split-orientation="horizontal" split-proportion="0.64927286">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -31,30 +56,64 @@
                     <element signature="e#1490#1496#0" expanded="true" />
                     <element signature="n#style#0;n#div#1;n#div#5;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
+          <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Common/Conf/config.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="220">
+                  <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="46" />
+=======
           <file leaf-file-name="questions.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Home/public/Styles/questions.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="345">
                   <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
+          <file leaf-file-name="advices.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Home/public/Styles/advices.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1464">
+                  <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="webuploader.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Home/public/Styles/webuploader.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="185">
+                  <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+=======
           <file leaf-file-name="webuploader.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Home/public/Styles/webuploader.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="625">
                   <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
+          <file leaf-file-name="questions.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Home/public/Js/questions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="44">
+                  <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="42" />
+=======
         </leaf>
       </split-first>
       <split-second>
@@ -64,6 +123,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="517">
                   <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
                   <folding />
                 </state>
               </provider>
@@ -78,6 +138,7 @@
       <find>click</find>
       <find>myEditor</find>
       <find>R</find>
+      <find>picker1</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -96,16 +157,32 @@
         <option value="$PROJECT_DIR$/Home/View/ServiceMenu/home.html" />
         <option value="$PROJECT_DIR$/Home/public/Js/home.js" />
         <option value="$PROJECT_DIR$/Home/View/ServiceMenu/questions.html" />
+<<<<<<< HEAD
+=======
         <option value="$PROJECT_DIR$/Home/public/Js/joinus.js" />
         <option value="$PROJECT_DIR$/Home/public/Styles/advices.css" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
         <option value="$PROJECT_DIR$/Home/public/Js/a" />
         <option value="$PROJECT_DIR$/Admin/View/Problem/add.html" />
         <option value="$PROJECT_DIR$/Home/Controller/ServiceMenuController.class.php" />
         <option value="$PROJECT_DIR$/Home/public/Js/questions.js" />
         <option value="$PROJECT_DIR$/Home/public/Styles/questions.css" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/Home/View/ServiceMenu/videos.html" />
+        <option value="$PROJECT_DIR$/Home/public/Styles/videos.css" />
+        <option value="$PROJECT_DIR$/Home/public/Js/videos.js" />
+        <option value="$PROJECT_DIR$/Home/public/Js/home.js" />
+        <option value="$PROJECT_DIR$/Home/public/Js/joinus.js" />
+        <option value="$PROJECT_DIR$/Home/public/Js/questions.js" />
+        <option value="$PROJECT_DIR$/Home/View/ServiceMenu/advices.html" />
+        <option value="$PROJECT_DIR$/Home/public/Styles/advices.css" />
+        <option value="$PROJECT_DIR$/Home/public/Styles/webuploader.css" />
+        <option value="$PROJECT_DIR$/Home/public/Js/advices.js" />
+=======
         <option value="$PROJECT_DIR$/Home/View/ServiceMenu/advices.html" />
         <option value="$PROJECT_DIR$/Home/public/Js/advices.js" />
         <option value="$PROJECT_DIR$/Home/public/Styles/webuploader.css" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
       </list>
     </option>
   </component>
@@ -189,7 +266,83 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="Styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Js" />
+=======
               <option name="myItemId" value="Controller" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,12 +460,21 @@
       <workItem from="1555551119693" duration="7149000" />
       <workItem from="1555597348774" duration="1993000" />
       <workItem from="1556117768198" duration="26855000" />
+<<<<<<< HEAD
+      <workItem from="1556362798977" duration="14121000" />
+      <workItem from="1556458699378" duration="8453000" />
+=======
       <workItem from="1556362798977" duration="14052000" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="59128000" />
+=======
     <option name="totallyTimeSpent" value="50606000" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -347,6 +509,8 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/Home/public/Js/videos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -378,6 +542,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
     <entry file="file://$PROJECT_DIR$/Home/View/Checkproduct/logistics.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
@@ -551,6 +716,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Home/public/Js/a" />
+=======
     <entry file="file://$PROJECT_DIR$/Home/public/Js/joinus.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -575,6 +743,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
     <entry file="file://$PROJECT_DIR$/Home/public/Js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5881">
@@ -641,18 +810,58 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Home/public/img/activity.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home/public/Images/003.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home/public/Js/joinus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1466">
+          <caret line="77" column="45" lean-forward="false" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
+=======
     <entry file="file://$PROJECT_DIR$/Home/public/Js/questions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Home/View/ServiceMenu/videos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="66" column="3" lean-forward="true" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home/public/Js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home/public/Styles/videos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+=======
     <entry file="file://$PROJECT_DIR$/Home/View/ServiceMenu/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
           <caret line="146" column="64" lean-forward="false" selection-start-line="146" selection-start-column="64" selection-end-line="146" selection-end-column="64" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
           <folding />
         </state>
       </provider>
@@ -660,6 +869,17 @@
     <entry file="file://$PROJECT_DIR$/Home/public/Js/videos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+<<<<<<< HEAD
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home/public/Js/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+=======
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -667,6 +887,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Home/View/ServiceMenu/advices.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="132">
+          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home/public/Styles/advices.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1464">
+          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="29" />
+=======
         <state relative-caret-position="374">
           <caret line="80" column="47" lean-forward="false" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
           <folding>
@@ -685,22 +917,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Home/public/Styles/webuploader.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+=======
+    <entry file="file://$PROJECT_DIR$/Home/public/Js/advices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Home/public/Js/questions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Home/public/Js/advices.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+        <state relative-caret-position="643">
+          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="46" />
+=======
     <entry file="file://$PROJECT_DIR$/Home/public/Styles/webuploader.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
           <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+>>>>>>> 7463acd4b679140967db93092673edc1010984bb
           <folding />
         </state>
       </provider>

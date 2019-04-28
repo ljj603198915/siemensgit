@@ -7,10 +7,11 @@
     clip: rect(1px,1px,1px,1px);
 }
 .webUploader-picker {
+	margin-top: 10px;
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
-	background: #00b7ee;
+	background: #686868;
 	padding: 10px 15px;
 	color: #fff;
 	text-align: center;
