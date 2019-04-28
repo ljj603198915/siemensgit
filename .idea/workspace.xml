@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677c0e9d-e5c2-4ed9-9bc6-f2c04a84205e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1f19697e8bc87fef2f4c64bc66e5dd4f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/481594c64ae06cb95d3b4646639e3099.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/8f07a0f5d4ef32cc9286e007b4bb0157.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/f37fee156b0525292be431ab6bc1ede3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_04_29.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/AdviceController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/AdviceController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/JoinInController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/JoinInController.class.php" />
     </list>
     <ignored path="siemens.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,6 +33,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1951">
               <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="advices.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/advices.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3498">
+              <caret line="159" column="34" lean-forward="false" selection-start-line="159" selection-start-column="34" selection-end-line="159" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -124,7 +137,6 @@
         <option value="$PROJECT_DIR$/Application/Home/public/Js/joinus.js" />
         <option value="$PROJECT_DIR$/Application/Home/public/Js/questions.js" />
         <option value="$PROJECT_DIR$/Application/Home/public/Js/home.js" />
-        <option value="$PROJECT_DIR$/Application/Home/public/Js/advices.js" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/JoinInModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/ProblemModel.class.php" />
@@ -135,6 +147,7 @@
         <option value="$PROJECT_DIR$/Application/Admin/View/Problem/lst.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/JoinInController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/AdviceController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/public/Js/advices.js" />
       </list>
     </option>
   </component>
@@ -469,12 +482,12 @@
       <workItem from="1555064361824" duration="1869000" />
       <workItem from="1555833779268" duration="27835000" />
       <workItem from="1556364055965" duration="11445000" />
-      <workItem from="1556379686138" duration="19712000" />
+      <workItem from="1556379686138" duration="20771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1107702000" />
+    <option name="totallyTimeSpent" value="1108761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="817" extended-state="0" />
@@ -945,8 +958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/advices.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2673">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="3498">
+          <caret line="159" column="34" lean-forward="false" selection-start-line="159" selection-start-column="34" selection-end-line="159" selection-end-column="34" />
           <folding />
         </state>
       </provider>
