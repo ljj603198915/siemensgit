@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677c0e9d-e5c2-4ed9-9bc6-f2c04a84205e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/advices.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/joinus.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/questions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/public/Js/advices.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/public/Js/home.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/public/Js/joinus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/public/Js/questions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/0d68cee479ec467eadfc85bb99cfb029.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_04_28.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" afterPath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/public/Js/advices.js" afterPath="$PROJECT_DIR$/Application/Home/public/Js/advices.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/public/Js/videos.js" afterPath="$PROJECT_DIR$/Application/Home/public/Js/videos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/public/Styles/videos.css" afterPath="$PROJECT_DIR$/Application/Home/public/Styles/videos.css" />
     </list>
     <ignored path="siemens.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/Application/Admin/View/Problem/lst.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+              <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -88,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/Application/Admin/Model/JoinInModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="478">
-              <caret line="30" column="52" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="30" selection-end-column="52" />
+              <caret line="30" column="52" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="30" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -264,94 +256,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ServiceMenu" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -626,12 +530,12 @@
       <workItem from="1555064361824" duration="1869000" />
       <workItem from="1555833779268" duration="27835000" />
       <workItem from="1556364055965" duration="11445000" />
-      <workItem from="1556379686138" duration="17545000" />
+      <workItem from="1556379686138" duration="17723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1105535000" />
+    <option name="totallyTimeSpent" value="1105713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1085,7 +989,7 @@
     <entry file="file://$PROJECT_DIR$/Application/Admin/Model/JoinInModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
-          <caret line="30" column="52" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="30" selection-end-column="52" />
+          <caret line="30" column="52" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="30" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1093,7 +997,7 @@
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Problem/lst.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
           <folding />
         </state>
       </provider>
