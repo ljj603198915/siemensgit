@@ -52,19 +52,27 @@ div.logo img {
 }
 /*tabs end*/
 /*videos begin*/
-.videos .line.videos{
+.videos-con:nth-of-type(3){
+    display: none;
+}
+.videos-con .line.videos{
     position: relative;
     overflow: hidden;
+    margin:50px 0;
+    text-align: center;
 }
 
-.videos .line.videos .one{
+.videos-con:nth-of-type(3) .line.videos .one{
     width: 40%;
     float: left;
     margin: 0 5%;
     height: 100%;
 }
 
-.videos .line.videos .one video{
+.videos-con .line.videos .one video{
+    width: 100%;
+}
+.con-player{
     width: 100%;
 }
 /*videos end*/

@@ -1,46 +1,26 @@
-function getQs(data) {
-    $.ajax({
-        url: "/Home/servicemenu/problem",
-        type: 'post',
-        data:data,
-        dataType: 'json',
-        success: function (data) {
-            if(data.code == '1'){
-                var Qs=data.list;
-                var _html="";
-                $(Qs).each(function (index, ele) {
-                    _html+='<div class="one-Q"><div class="ques"><span class="text">'+ele.problem_name+'</span>'+
-                        '<span class="i-con"><i class="fa fa-angle-right fa-lg"></i></span></div>'+
-                        '<div class="ans">'+ele.answer+'</div><input type="text" class="pro" data-type="'+
-                        ele.problem_type+'" data-id="'+ele.id+'"/></div>'
-                })
-                $(".ques-container").empty().append(_html);
-
-            }
-
-        }
-    })
-}
-$('.i-con').click(function () {
-        $(this).children("i").toggleClass("fa-rotate-90");
-        $(this).parents(".ques").siblings(".ans").toggle(500);
-    }
-)
-$(".logo .fa").click(function () {
-    var value=$(this).parents(".logo").find(".inp-search").val();
-    // console.log(value);
-    var data={value:value,type:"search"}
-    getQs(data)
+$(".con-player").each(function (idx, ele) {
+    var vid=$(ele).attr("data-id");
+    var modId=$(ele).attr("id");
+    initPlayer(vid,modId)
 })
-//getQs({type:"all"});
+function initPlayer(vid,modId) {
+    var video = new tvp.VideoInfo();
+    video.setVid(vid);
+    var player = new tvp.Player();
+    player.create({
+        video: video,
+        modId: modId,
+        autoplay: 0
+    });
+}
 
-// tabs begin
+// 点击tabs
 $(".tabs .title").click(function () {
     $(this).siblings(".title").removeClass("active");
     $(this).addClass("active");
-    var id=$(this).index()+1;
-    console.log(id);
-    // var data={value:id,type:"kinds"}
-    getQs(data);
+
+    var idx=$(this).index()
+// console.log($(this).index())
+    $(".videos-con").hide()
+    $(".videos-con").eq(idx).show()
 })
-// tabs end
