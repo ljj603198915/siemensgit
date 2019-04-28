@@ -128,3 +128,63 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
 
+[ 2019-04-29T00:17:57+08:00 ] ::1 /index.php/Home/Servicemenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2019-04-29T00:18:07+08:00 ] ::1 /index.php/Home/Servicemenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2019-04-29T00:22:25+08:00 ] ::1 /index.php/Home/Servicemenu/advices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+
+[ 2019-04-29T00:24:02+08:00 ] ::1 /index.php/Home/Servicemenu/joinus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+
+[ 2019-04-29T00:24:17+08:00 ] ::1 /index.php/Home/servicemenu/addJoin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+
+[ 2019-04-29T00:24:19+08:00 ] ::1 /index.php/Home/Servicemenu/joinus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+
+[ 2019-04-29T00:24:34+08:00 ] ::1 /index.php/Home/Servicemenu/joinus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+
+[ 2019-04-29T00:24:34+08:00 ] ::1 /index.php/Home/Servicemenu/joinus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+
+[ 2019-04-29T00:24:42+08:00 ] ::1 /index.php/Home/Servicemenu/joinus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2019-04-29T00:24:53+08:00 ] ::1 /index.php/Home/Servicemenu/joinus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2019-04-29T00:25:02+08:00 ] ::1 /index.php/Home/ServiceMenu/addJoin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2019-04-29T00:25:04+08:00 ] ::1 /index.php/Home/Servicemenu/joinus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+

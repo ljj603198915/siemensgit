@@ -75,7 +75,7 @@ $(".submit").click(function () {
         }
         // console.log(data);
         $.ajax({
-            url: "/index.php/Home/servicemenu/addJoin",
+            url: "/index.php/Home/ServiceMenu/addJoin",
             type: 'post',
             data:data,
             dataType: 'json',

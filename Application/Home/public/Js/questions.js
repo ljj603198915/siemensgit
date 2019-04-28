@@ -1,6 +1,6 @@
 function getQs(data) {
     $.ajax({
-        url: "/index.php/Home/servicemenu/problem",
+        url: "/index.php/Home/ServiceMenu/problem",
         type: 'post',
         data:data,
         dataType: 'json',
