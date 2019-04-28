@@ -19,7 +19,6 @@
 	overflow: hidden;
 	box-sizing: border-box;
 	font-size: 14px;
-	z-index: 1000;
 }
 .webUploader-picker1 {
 	position: relative;

@@ -1,0 +1,118 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+<!--  内容  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0"/>
+    <title>产品说明书查询</title>
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/reset.css"/>
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/aa.css"/>
+    <script type="text/javascript" src="<?php echo HomeJsUrl;?>/jquery-3.1.1.min.js"></script>
+    <style>
+    	.check_logo{
+            background-image: url(/Application/Home/public/Images/checkproindex.jpeg);
+        }
+
+        @media only screen and (min-width: 768px) {
+            input {
+                margin-top: 5px;
+            }
+
+            .check_logo {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+	<div class="check_logo"></div>
+    <h5  class="warnmsg">提示:开关插座系列产品支架上有"5TA/5UB/5UH/5TD/5TG"开头的数字和英文字符，请在下方输入框中输入包含该字符的所有串码，即可查询该产品的安装接线说明书。</h5>
+    <div class="check_one">
+    
+        <p class="">请在下面的输入框中输入产品型号</p><br/>
+        <input id="code" type="text" style="text-transform:uppercase;" />
+        <button type="button" id="btn">提交</button>
+        <br/><br/>
+    </div>
+    <div class="check_one_img"><img src="/Application/Home/public/Images/prodesc3.jpeg"></div>
+    <div class="error-msg">
+        <p class="error-p"></p>
+    </div>
+    <div class="container-proimg" style="display: none "><img src="" alt=""></div>
+    <div class="container-search" style="display: none">
+        <button class="button con-search"><a href="proDesc.html">继续查询</a>
+        </button>
+        <!--<p style="font-size: 18px;color: grey;">请扫描产品本体支架上的验真二维码</p>-->
+    </div>
+
+</div>
+
+<script>
+	$("#btn").click(function () {
+        $.ajax({
+            url: "/index.php/Home/checkproduct/selectPro",
+            type: 'post',
+            data: {mlfb: $("#code").val()},
+            //dataType:'json',
+            success: function (msg) {
+                msg=JSON.parse(msg)
+                if (msg.code != '200') {
+                    $('.error-msg .error-p').text(msg.msg)//装填错误信息
+                    $('.error-msg').show();//展示错误信息
+                    
+                    searchChange();//各展示框变化
+                    return;
+                } 
+                $('.container-proimg>img').attr('src',msg.data);//装填说明书图片
+                $('.container-proimg').show();//展示说明书
+          
+                //$('.button').before(msg.msg);
+                $('.warnmsg').hide();//提示
+                searchChange();//各展示框变化
+
+            }
+        })
+
+    })
+
+    //各展示框变化
+    function searchChange(){
+        $('.container-search').show();//继续搜索按钮
+        $('.check_one').hide();//一次搜索按钮
+        $('.check_one_img').hide();//一次展示图片（按钮图）
+        $('.check_logo').css('background-image','url(/Application/Home/public/Images/prodesc2.jpeg)')//查询到正确说明书之后换banner
+    }
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+</body>
+</html>
+
+<div class="footer">
+    <ul>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Product/ssy_product"><img src="<?php echo HomeImgUrl;?>/product.png">
+                <br />了解产品</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Select/select_lst"><img src="<?php echo HomeImgUrl;?>/heart.png">
+                <br />自助选型</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Checkproduct/index"><img src="<?php echo HomeImgUrl;?>/glass.png">
+                <br />产品验真</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Onshop/onshop"><img src="<?php echo HomeImgUrl;?>/fenzhi.png">
+                <br />在线购买</a>
+        </li>
+        <li>
+            <a href="http://www.wawechat.siemens.com.cn/Home/Nearshop/shop"><img src="<?php echo HomeImgUrl;?>/position.png">
+                <br />附近店铺</a>
+        </li>
+    </ul>
+</div>

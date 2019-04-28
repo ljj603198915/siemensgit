@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -71,7 +71,7 @@
         </a>
     </div>
     <div class="item5 item">
-        <a id="logistics" href="#">
+        <a id="logistics" href="../Checkproduct/logistics.html">
             <div class="icon"><i class="fa fa-truck fa-lg"></i></div>
             <div class="text">
                 <p class="chi">物流查询</p>
