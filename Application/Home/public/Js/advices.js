@@ -150,8 +150,8 @@ $(".submit").click(function () {
             type: 'post',
             data:data,
             dataType: 'json',
-            success: function (data) {
-                if(data.code == '1'){
+            success: function (msg) {
+                if(msg.code == '1'){
                     uploader.on("uploadBeforeSend",function (object,data,header) {
                         data.uid = msg.list.id;
                         
