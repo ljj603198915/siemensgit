@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -84,14 +84,14 @@
                 <div id="fileList" class="uploader-list"></div>
 
 
-            </div>
-            <div style="clear: both"></div>
+            <!--</div>-->
+            <!--<div style="clear: both"></div>-->
+        <!--</div>-->
+        <div class="line">
+            <span class="label com-advices">*投诉建议</span>
+            <textarea class="com-advices" name="" id="" cols="30" rows="5"></textarea>
         </div>
-
-            <div class="line">
-                <span class="label com-advices">*投诉建议</span>
-                <textarea class="com-advices" name="" id="" cols="30" rows="5"></textarea>
-            </div>
+    </div>
     <button class="submit sub-mar">提交</button>
 
 <script type="text/javascript" src="<?php echo HomeJsUrl;?>/jquery-3.1.1.min.js"></script>
