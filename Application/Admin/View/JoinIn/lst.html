@@ -6,11 +6,11 @@
 		<form action="__ACTION__" method="GET" name="search_form">
 			<p>
 				姓名
-				<input type="text" name="name" size="30" value="<?php echo I('get.name'); ?>" />
+				<input type="text" name="name" id="name" size="30" value="<?php echo I('get.name'); ?>" />
 			</p>
 			<p>
 				电话
-				<input type="text" name="phone" size="30" value="<?php echo I('get.phone'); ?>" />
+				<input type="text" name="phone" id="phone" size="30" value="<?php echo I('get.phone'); ?>" />
 			</p>
 			<p>
 				状态
@@ -21,6 +21,7 @@
 				</select>
 			</p>
 			<p><input type="submit" value=" 搜索 " class="button btn-primary" /></p>
+			<p><input type="button" value=" 导出 " class="button btn-primary" onclick="download()"/></p>
 		</form>
 	</div>
 </div>
@@ -64,6 +65,18 @@
 </div>
 
 <script>
+    function download() {
+        var name = $("#name").val();
+        var phone = $("#phone").val();
+        var status = $("select[name='status']").val();
+        var baseUrl ="__CONTROLLER__";
+        baseUrl+="/download?name"+name+"&phone="+phone+"&status="+status;
+        var a = document.createElement("a");
+        a.href = baseUrl;
+        $("body").append(a);  // 修复firefox中无法触发click
+        a.click();
+        $(a).remove();
+    }
 </script>
 
 <script src="__PUBLIC__/Admin/Js/tron.js"></script>
