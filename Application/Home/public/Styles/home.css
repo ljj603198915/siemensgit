@@ -1,6 +1,9 @@
 html,body{
     height: 100%;
 }
+body{
+    padding: 0 3px;
+}
 /*logo*/
 .logo-container{
     padding: 6%;
@@ -52,7 +55,7 @@ div.logo img {
     position: absolute;
     right: 10px;
     top:10px;
-    font-size: 24px;
+    font-size: 30px;
     color: #686868;
     text-align: right;
 }
@@ -81,12 +84,15 @@ div.logo img {
 }
 .text .chi{
     font-size:14px;
-
+    font-weight: 600;
 }
 .text .eng{
     font-size: 12px;
     color: #969696;
     font-family: "MyFont";
+    white-space: nowrap;
+    transform: scale(0.8);
+    width:0;
 }
 
 /*grid布局 end*/

@@ -1,3 +1,6 @@
+body{
+    background-color: white;
+}
 /*logo*/
 .logo-container{
     padding: 6%;
@@ -23,7 +26,7 @@ div.logo img {
 .info-container{
     width: 90%;
     margin:0 auto;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .label{
@@ -40,7 +43,7 @@ div.logo img {
     font-weight: 700;
 }
 .line.agency .label{
-    width: 50%;
+    width: 160px;
     margin-bottom: 20px;
 }
 .line.agency textarea{
@@ -53,11 +56,12 @@ div.logo img {
 }
 .info-container .line{
     min-height: 40px;
-    margin: 20px 0 20px 0;
+    margin: 10px 0;
     position: relative;
 }
 .info-container .line input,.info-container select,
 .info-container textarea{
+    font-size: 12px;
     background-color: #f1f2f4;
     border-radius: 10px;
     box-shadow: 0 0 0 0;
@@ -65,6 +69,7 @@ div.logo img {
     outline:0;
     padding:0 10px 0 10px;
     box-sizing: border-box;
+    -webkit-appearance: none;/*兼容苹果手机*/
 }
 
 

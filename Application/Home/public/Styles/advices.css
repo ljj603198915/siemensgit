@@ -1,3 +1,6 @@
+body{
+    background-color: #ffffff;
+}
 /*logo*/
 .logo-container{
     padding: 6%;
@@ -23,18 +26,39 @@ div.logo img {
 .info-container{
     width: 90%;
     margin:0 auto;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 .info-container .line{
     min-height: 40px;
-    margin: 20px 0 20px 0;
+    margin: 10px 0;
     position: relative;
 }
-
+@media screen and (max-width: 320px) {
+    .label{
+        width: 34%;
+    }
+    .info-container .line input{
+        width: 60%;
+    }
+    .info-container .line textarea{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 321px){
+    .label{
+        width: 30%;
+    }
+    .info-container .line input{
+        width: 65%;
+    }
+    .info-container .line textarea{
+        width: 65%;
+    }
+}
 .label{
+    margin-right: 10px;
     background-color: #686868;
     display: inline-block;
-    width: 30%;
     color: #fff;
     text-align: justify;
     height: 30px;
@@ -58,11 +82,11 @@ div.logo img {
 .line ul{
     display: none;
     width: 80px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 2px 2px 2px #95a0a2;
     text-align: center;
     color: #4a5c67;
     font-size: 14px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 0 10px 0 10px;
     box-sizing: border-box;
     position: absolute;
@@ -86,7 +110,6 @@ div.logo img {
 
 .info-container .line input,.info-container select,
 .info-container textarea{
-    width:68%;
     background-color: #f1f2f4;
     border-radius: 10px;
     box-shadow: 0 0 0 0;
@@ -96,6 +119,7 @@ div.logo img {
     box-sizing: border-box;
     vertical-align: top;
     color: #000;
+    font-size: 12px;
 }
 
 
@@ -108,7 +132,7 @@ div.logo img {
 
 .info-container .line textarea{
     height: 150px;
-    font-size: 18px;
+    font-size: 12px;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -130,10 +154,19 @@ div.logo img {
     border-radius: 10px;
     color: #fff;
     display: block;
-    margin:0 auto;
+    margin: 10px auto;
     outline:none;
 }
 
 .sub-mar{
     margin-top: 20px;
 }
+
+/*webuploader*/
+.webUploader-picker img{
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    display: inline-block;
+}
+/*webuploaderpicker end*/
