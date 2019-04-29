@@ -41,7 +41,7 @@ var uploader = WebUploader.create({
 
     fileVal:"advice_img",
 
-    formata:{
+    formData:{
         uid:0
     },
 
@@ -146,7 +146,7 @@ $(".submit").click(function () {
         }
         // console.log(data);
         $.ajax({
-            url: "/index.php/Home/ServiceMenu/problem",
+            url: "/index.php/Home/ServiceMenu/addAdvice",
             type: 'post',
             data:data,
             dataType: 'json',
@@ -158,7 +158,7 @@ $(".submit").click(function () {
                     })
                     uploader.upload();
                     alert("提交成功！")
-                    location.reload();
+                    //location.reload();
 
                 }else{alert("提交失败！")}
 
