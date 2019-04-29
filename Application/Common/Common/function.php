@@ -270,10 +270,4 @@ function getToken()
     return $arr;
 }
 
-function addStatis($type,$problemId=0)
-{
-    $data['type'] = $type;
-    $data['date_time'] = date("Y-m-d");
-    $data['created_time'] = date("Y-m-d H:i:s");
-    D("service_statis")->add($data);
-}
+
