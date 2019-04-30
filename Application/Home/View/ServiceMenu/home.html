@@ -126,10 +126,11 @@
     <div class="item11 item">
         <a id="problem" href="./questions.html">
             <div class="icon">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-square fa-stack-2x "></i>
-                    <i class="fa fa-question-sign fa-stack-1x "></i>
-                </span>
+                <i class="fa fa-question-circle fa-lg"></i>
+                <!--<span class="fa-stack fa-lg">-->
+                    <!--<i class="fa fa-square fa-stack-2x "></i>-->
+                    <!--<i class="fa fa-question-sign fa-stack-1x "></i>-->
+                <!--</span>-->
             </div>
             <div class="text">
                 <p class="chi">答疑解惑</p>
