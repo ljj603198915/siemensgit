@@ -1,9 +1,9 @@
 <?php
 namespace Admin\Controller;
 
-use Think\Controller;
+use Tools\AdminController;
 
-class ProblemController extends Controller
+class ProblemController extends AdminController
 {
     public function add()
     {

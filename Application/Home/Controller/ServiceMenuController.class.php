@@ -6,6 +6,9 @@ use Tools\HomeController;
 
 class ServiceMenuController extends HomeController
 {
+    private $preg_email = '/^[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+)*@([a-zA-Z0-9]+[-.])+([a-z]{2,5})$/ims';
+    private $preg_phone = '/^1[3456789]\d{9}$/ims';
+
     /**
      * 服务菜单首页页面
      */
@@ -164,6 +167,37 @@ class ServiceMenuController extends HomeController
     /**
      * @return bool添加投诉与建议
      */
+    public function addAdvice()
+    {
+        $data['customer_type'] = I("customer_type");
+        $data['advice_name'] = I("advice_name");
+        $data['phone'] = I("phone");
+        $data['email'] = I("email");
+        $data['advice_type'] = I("advice_type");
+        $data['advice_content'] = I("advice_content");
+        if(empty($data['customer_type'])||empty($data['advice_name'])||empty($data['phone'])
+        ||empty($data['advice_type'])||empty($data['advice_content'])){
+            echo jsonToData(400, "加*项为必填", null);
+            exit;
+        }
+        if (!empty($data['email'])) {
+            if (!preg_match($this->preg_email, $data['email'])) {
+                echo jsonToData(400, "请填写正确的电子邮箱");
+                exit;
+            }
+        }
+        $data['status'] = 1;
+        $data['created_time'] = date(("Y-m-d H:i:s"));
+
+        $id = D("advice")->add($data);
+        //pp($id);die;
+        echo jsonToData(1, "success", array("id" => $id));
+        exit;
+    }
+
+    /**
+     * @return bool添加投诉与建议
+     */
     public function addAdviceFile()
     {
         $model = D("advice_img");
@@ -179,10 +213,7 @@ class ServiceMenuController extends HomeController
             } else {
                 echo jsonToData(2, "图片上传错误");
                 exit;
-//                $this->error = $ret['error'];
-//                return FALSE;
             }
-
         }
         $data['advice_id'] = $id;
         $data['advice_img'] = $filePath;
@@ -193,41 +224,22 @@ class ServiceMenuController extends HomeController
             echo jsonToData(2, "图片保存错误");
             exit;
         }
-
     }
-
-    /**
-     * @return bool添加投诉与建议
-     */
-    public function addAdvice()
-    {
-        $data['customer_type'] = I("customer_type");
-        $data['advice_name'] = I("advice_name");
-        $data['phone'] = I("phone");
-        $data['email'] = I("email");
-        $data['advice_type'] = I("advice_type");
-        $data['advice_content'] = I("advice_content");
-
-        $data['status'] = 1;
-        $data['created_time'] = date(("Y-m-d H:i:s"));
-
-        $id = D("advice")->add($data);
-        //pp($id);die;
-        echo jsonToData(1, "success", array("id" => $id));
-        exit;
-    }
-
 
     public function statis()
     {
-        $type = I("type");
-//        array("prodesc", "checkproduct", "nearshop", "onshop", "logistics ", "joinus",
+        //        array("prodesc", "checkproduct", "nearshop", "onshop", "logistics ", "joinus",
 //            "advice", "electric", "400help", "jingcai", "video", "problem");
 //        $problem_id = I("problem_id");
+        $type = I("type");
+        $problem_id = I("problem_id");
         if (empty($problem_id)) {
             $problem_id = 0;
         }
-        addStatis($type, $problem_id);
+        $data['type'] = $type;
+        $data['date_time'] = date("Y-m-d");
+        $data['created_time'] = date("Y-m-d H:i:s");
+        $data['$problem_id'] = $problem_id;
+        D("service_statis")->add($data);
     }
-
 }

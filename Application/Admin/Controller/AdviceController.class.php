@@ -1,9 +1,9 @@
 <?php
 namespace Admin\Controller;
 
-use Think\Controller;
+use Tools\AdminController;
 
-class AdviceController extends Controller
+class AdviceController extends AdminController
 {
     public function lst()
     {
@@ -54,27 +54,27 @@ class AdviceController extends Controller
             $where['status'] = array('eq', $status);
         $data['data'] = $model->where($where)->order("status asc, created_time desc")->select();
         foreach ($data['data'] as $k => $v) {
-            if ($v['customer_type'] = 1) {
+            if ($v['customer_type'] == 1) {
                 $data['data'][$k]['customer_type'] = "消费者";
-            } elseif ($v['customer_type'] = 2) {
+            } elseif ($v['customer_type'] == 2) {
                 $data['data'][$k]['customer_type'] = "代理商";
-            } elseif ($v['customer_type'] = 3) {
+            } elseif ($v['customer_type'] == 3) {
                 $data['data'][$k]['customer_type'] = "公司";
             }
-            if ($v['advice_type'] = 1) {
+            if ($v['advice_type'] == 1) {
                 $data['data'][$k]['advice_type'] = "服务";
-            } elseif ($v['advice_type'] = 2) {
+            } elseif ($v['advice_type'] == 2) {
                 $data['data'][$k]['advice_type'] = "质量";
-            } elseif ($v['advice_type'] = 3) {
+            } elseif ($v['advice_type'] == 3) {
                 $data['data'][$k]['advice_type'] = "售假";
-            } elseif ($v['advice_type'] = 4) {
+            } elseif ($v['advice_type'] == 4) {
                 $data['data'][$k]['advice_type'] = "建议";
-            } elseif ($v['advice_type'] = 5) {
+            } elseif ($v['advice_type'] == 5) {
                 $data['data'][$k]['advice_type'] = "其他";
             }
-            if ($v['status'] = 1) {
+            if ($v['status'] == 1) {
                 $data['data'][$k]['status'] = "未处理";
-            } elseif ($v['status'] = 2) {
+            } elseif ($v['status'] == 2) {
                 $data['data'][$k]['status'] = "处理";
             }
             $imgData = D("advice_img")->where(array("advice_id" => $v['id']))->select();

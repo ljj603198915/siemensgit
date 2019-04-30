@@ -29,17 +29,17 @@
 <div class="list-div" id="listDiv">
 	<table cellpadding="3" cellspacing="1" class="table">
 		<tr>
-			<th width="4%" >客户类型</th>
-			<th  width="4%">姓名</th>
-			<th  width="4%">联系电话</th>
-			<th  width="4%">电子邮箱</th>
-			<th  width="4%">投诉类型</th>
-			<th  width="30%">图片</th>
-			<th  width="30%">投诉建议</th>
-			<th  width="4%">状态</th>
-			<th  width="4%">投诉时间</th>
-			<th  width="4%">处理时间</th>
-			<th  width="4%">操作</th>
+			<th width="8%" >客户类型</th>
+			<th  width="5%">姓名</th>
+			<th  width="10%">联系电话</th>
+			<th  width="10%">电子邮箱</th>
+			<th  width="8%">投诉类型</th>
+			<th  width="13%">图片</th>
+			<th  width="13%">投诉建议</th>
+			<th  width="8%">状态</th>
+			<th  width="10%">投诉时间</th>
+			<th  width="10%">处理时间</th>
+			<th  width="5%">操作</th>
 		</tr>
 		<foreach name="data" item="v">
 
@@ -64,7 +64,7 @@
 
 				<td>
 					<foreach name="v['img']" item="vv">
-						<img src="{$vv.advice_img}">
+						<img width="30%" src="/Public/Uploads/{$vv.advice_img}">
 					</foreach>
 					</td>
 

@@ -1,9 +1,10 @@
 <?php
 namespace Admin\Controller;
 
-use Think\Controller;
 
-class JoinInController extends Controller
+use Tools\AdminController;
+
+class JoinInController extends AdminController
 {
     public function lst()
     {
@@ -49,9 +50,9 @@ class JoinInController extends Controller
             $where['status'] = array('eq', $status);
         $data = $model->where($where)->order("status asc, created_time desc")->select();
         foreach ($data as $k => $v) {
-            if ($v['status'] = 1) {
+            if ($v['status'] == 1) {
                 $data[$k]['status'] = "未处理";
-            } elseif ($v['status'] = 2) {
+            } elseif ($v['status'] == 2) {
                 $data[$k]['status'] = "处理";
             }
         }
@@ -93,9 +94,9 @@ class JoinInController extends Controller
         foreach ($data as $key => $value) {
             // 设置单元格高度
             $objPHPExcel->getActiveSheet()->getRowDimension($row_num)->setRowHeight(32);
-                //折行线索
+            //折行线索
 //            $objPHPExcel->getActiveSheet()->getStyle('D' . $row_num)->getAlignment()->setWrapText(true);
-            $objPHPExcel->getActiveSheet()->getStyle("A".$row_num.":"."H".$row_num)->getAlignment()
+            $objPHPExcel->getActiveSheet()->getStyle("A" . $row_num . ":" . "H" . $row_num)->getAlignment()
                 ->setVertical(\PHPExcel_Style_Alignment::VERTICAL_CENTER);
             // 设置单元格数值
             $objPHPExcel->getActiveSheet()->setCellValue('A' . $row_num, $value['name']);

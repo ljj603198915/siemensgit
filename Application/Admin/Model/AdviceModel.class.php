@@ -20,7 +20,7 @@ class AdviceModel extends Model
 		array('status', 'number', '状态必须是一个整数！', 2, 'regex', 3),
 		array('created_time', 'require', '不能为空！', 1, 'regex', 3),
 	);
-	public function search($pageSize = 2)
+	public function search($pageSize = 20)
 	{
 		/**************************************** 搜索 ****************************************/
 		$where = array();
