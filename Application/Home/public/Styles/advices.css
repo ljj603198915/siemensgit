@@ -119,9 +119,21 @@ div.logo img {
     box-sizing: border-box;
     vertical-align: top;
     color: #000;
-    font-size: 12px;
+    font-size: 14px;
 }
 
+.line input[disabled]{
+    background-color: #e7e8ec;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+    border:none;
+    outline:0;
+    padding:0 10px 0 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+    color: #000;
+    font-size: 14px;
+}
 
 
 .info-container .line input,.info-container .line select{

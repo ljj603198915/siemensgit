@@ -61,7 +61,6 @@ div.logo img {
 }
 .info-container .line input,.info-container select,
 .info-container textarea{
-    font-size: 12px;
     background-color: #f1f2f4;
     border-radius: 10px;
     box-shadow: 0 0 0 0;
@@ -69,7 +68,16 @@ div.logo img {
     outline:0;
     padding:0 10px 0 10px;
     box-sizing: border-box;
-    -webkit-appearance: none;/*兼容苹果手机*/
+    font-size: 14px;
+
+}
+
+.info-container select {
+    outline: none;
+    -webkit-appearance: none;
+    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+    /*border-radius: 0;*/
+    border: 1px solid #f1f2f4;
 }
 
 
