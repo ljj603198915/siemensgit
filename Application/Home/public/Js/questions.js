@@ -40,6 +40,7 @@ function getQs(data) {
 $('.ques-container').on("click",".i-con",function (event) {
         $(this).children("i").toggleClass("fa-rotate-90");
         $(this).parents(".ques").siblings(".ans").toggle(500);
+        $(this).
     event.stopPropagation();
     }
 )
