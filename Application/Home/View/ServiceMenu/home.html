@@ -139,7 +139,7 @@
         </a>
     </div>
     <div class="item12 item">
-        <a id="video" href="./videos.html">
+        <a id="video" href="#">
             <div class="icon"><i class="fa fa-play-circle-o fa-lg"></i></div>
             <div class="text">
                 <p class="chi">观看视频</p>

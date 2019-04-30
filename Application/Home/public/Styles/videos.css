@@ -53,7 +53,7 @@ div.logo img {
 }
 /*tabs end*/
 /*videos begin*/
-.videos-con:nth-of-type(2){
+.videos-con:nth-of-type(3){
     display: none;
 }
 .videos-con .line.videos{
