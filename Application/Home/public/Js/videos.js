@@ -32,11 +32,16 @@ function initPlayer(vid, modId,imgurl) {
             playerType: 'html5',
             modId: modId,
             autoplay: 0,
+            isiPhoneShowPlaysinline:1,
+            isHtml5UseAirPlay:1,
             isHtml5ShowPlayBtnOnPause: 1,
             isHtml5ShowPosterOnStart: true,
             pic:'../../../Application/Home/public/Images/'+imgurl
             // pic:'http://m.qpic.cn/psb?/V11PpG8F27FnBO/XnpjNxPwcljUr6N*envv.B34qXBcaeNb5yYEC6c0Yng!/b/dFMBAAAAAAAA&bo=gwJoAQAAAAARF8g!&rf=viewer_4&t=5'
         });
+        $('video').each(function (idx,ele) {
+            $(ele).removeAttr(".webkit-playsinline").removeAttr("playsinline")
+        })
         // setTimeout(function () {
         //
         //     // $('#' + vidieid).find('video').attr('onpause', "palyover('" + vidieid + "')");
@@ -44,36 +49,38 @@ function initPlayer(vid, modId,imgurl) {
         //     $('video')[0].play();
         //
         // }, 1500)
-        // player.onwrite = function () {
-        //     player.play();
+
+
+
+        // player.onplaying = function () {
+        //     var videoDom = document.getElementsByTagName('video')[0];
+        //     // alert('a')
+        //     if(videoDom.requestFullscreen){
+        //
+        //         return videoDom.requestFullscreen();
+        //
+        //     }else if(videoDom.webkitRequestFullScreen){
+        //
+        //         return videoDom.webkitRequestFullScreen();
+        //
+        //     }else if(videoDom.mozRequestFullScreen){
+        //
+        //         return videoDom.mozRequestFullScreen();
+        //
+        //     }else{
+        //
+        //         return videoDom.msRequestFullscreen();
+        //
+        //     }
         // }
-        player.onplaying = function () {
-            var videoDom = document.getElementsByTagName('video')[0];
-            // alert('a')
-            if(videoDom.requestFullscreen){
-
-                return videoDom.requestFullscreen();
-
-            }else if(videoDom.webkitRequestFullScreen){
-
-                return videoDom.webkitRequestFullScreen();
-
-            }else if(videoDom.mozRequestFullScreen){
-
-                return videoDom.mozRequestFullScreen();
-
-            }else{
-
-                return videoDom.msRequestFullscreen();
-
-            }
-        }
         // video.addEventListener('ended', videoEnd, false);
         // video.play();
         // video.webkitEnterFullScreen();
 
     });
+
 }
+
 // initPlayer('f0752boa23k','player9')
 // function initPlayer(vid,modId) {
 //     var video = new tvp.VideoInfo();

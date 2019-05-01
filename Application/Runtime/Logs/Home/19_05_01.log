@@ -1,0 +1,70 @@
+[ 2019-05-01T16:46:46+08:00 ] ::1 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001137s ]
+
+[ 2019-05-01T16:47:06+08:00 ] 192.168.2.105 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+
+[ 2019-05-01T16:47:09+08:00 ] 192.168.2.105 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+
+[ 2019-05-01T16:51:43+08:00 ] ::1 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001321s ]
+
+[ 2019-05-01T16:51:56+08:00 ] ::1 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+
+[ 2019-05-01T16:52:02+08:00 ] ::1 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2019-05-01T16:52:13+08:00 ] 192.168.2.100 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+
+[ 2019-05-01T16:52:25+08:00 ] 192.168.2.105 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2019-05-01T16:53:31+08:00 ] ::1 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+
+[ 2019-05-01T16:54:38+08:00 ] ::1 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+
+[ 2019-05-01T16:54:57+08:00 ] 192.168.2.105 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+
+[ 2019-05-01T16:55:20+08:00 ] ::1 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+
+[ 2019-05-01T16:55:30+08:00 ] 192.168.2.105 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+
+[ 2019-05-01T16:55:36+08:00 ] 192.168.2.105 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+
