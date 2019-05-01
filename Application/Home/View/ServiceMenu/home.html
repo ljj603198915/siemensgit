@@ -42,7 +42,19 @@
     </div>
     <div class="item2 item">
         <a id="checkproduct" href="http://www.wawechat.siemens.com.cn/index.php/Home/Checkproduct/checkproduct.html">
-            <div class="icon"><i class="fa fa-search fa-lg"></i></div>
+            <div class="icon">
+                <!--<i class="fa fa-search fa-lg"></i>-->
+                <i class="fa fa-search fa-lg " style="position: absolute;top: 0;left: 10px;"></i>
+                <i class="fa fa-check fa-lg " style="
+    position: absolute;
+    left: 17px;
+    top: 0px;
+    font-size: 28px;"></i>
+                <!--<span class="fa-stack fa-lg">-->
+                <!---->
+                <!---->
+                <!--</span>-->
+            </div>
             <div class="text">
                 <p class="chi">产品验真</p>
                 <p class="eng">Product verification</p>
@@ -98,7 +110,11 @@
     <div class="item8 item">
         <a id="electric"
            href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIxNDcxMzgzNg==&hid=2&sn=15e9fb9389ed13b5ffe50a73f4b3f1ec">
-            <div class="icon"><i class="fa fa-lightbulb-o fa-lg"></i></div>
+            <div class="icon"><i class="fa fa-lightbulb-o fa-lg" style="
+    position: absolute;
+    top: 4px;
+    left: 22px;
+"></i></div>
             <div class="text">
                 <p class="chi">电气贴士</p>
                 <p class="eng">Electrical tips</p>
@@ -126,11 +142,16 @@
     <div class="item11 item">
         <a id="problem" href="./questions.html">
             <div class="icon">
-                <i class="fa fa-question-circle fa-lg"></i>
-                <!--<span class="fa-stack fa-lg">-->
-                    <!--<i class="fa fa-square fa-stack-2x "></i>-->
-                    <!--<i class="fa fa-question-sign fa-stack-1x "></i>-->
-                <!--</span>-->
+                <!--<i class="fa fa-question-circle fa-lg"></i>-->
+                    <i class="fa fa-square fa-lg " style="
+    font-size: 42px;
+"></i>
+                    <i class="fa fa-question fa-lg fa-inverse " style="
+    position: absolute;
+    left: 22px;
+    top: 6px;
+    font-size: 33px;
+"></i>
             </div>
             <div class="text">
                 <p class="chi">答疑解惑</p>

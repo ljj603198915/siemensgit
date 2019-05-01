@@ -10,12 +10,11 @@ function putData(data) {
         url: "/index.php/Home/ServiceMenu/statis",
         type: 'post',
         data:data,
-        dataType: 'json',
         success: function (data) {
-            if(data.code == '1'){
-                alert("提交成功！")
-
-            }else{alert("提交失败！")}
+            // if(data.code == '1'){
+            //     alert("提交成功！")
+            //
+            // }else{alert("提交失败！")}
 
         }
     })
