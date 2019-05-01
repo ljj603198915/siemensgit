@@ -40,7 +40,7 @@ function initPlayer(vid, modId,imgurl) {
             // pic:'http://m.qpic.cn/psb?/V11PpG8F27FnBO/XnpjNxPwcljUr6N*envv.B34qXBcaeNb5yYEC6c0Yng!/b/dFMBAAAAAAAA&bo=gwJoAQAAAAARF8g!&rf=viewer_4&t=5'
         });
         $('video').each(function (idx,ele) {
-            $(ele).removeAttr(".webkit-playsinline").removeAttr("playsinline")
+            $(ele).removeAttr("webkit-playsinline").removeAttr("playsinline")
         })
         // setTimeout(function () {
         //
