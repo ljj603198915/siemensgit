@@ -1,5 +1,10 @@
 body{
-    background-color: white;
+    background-color: #ffffff;
+}
+/*去除ios移动端触摸阴影*/
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent;
 }
 /*logo*/
 .logo-container{
@@ -35,9 +40,9 @@ div.logo img {
     width: 20%;
     color: #fff;
     text-align: center;
-    height: 30px;
+    height: 35px;
     border-radius: 9px;
-    line-height: 30px;
+    line-height: 35px;
     font-size: 14px;
     margin-right: 10px;
     font-weight: 700;
@@ -84,7 +89,7 @@ div.logo img {
 
 .info-container .line input,.info-container .line select{
     width:73%;
-    height: 30px;
+    height: 35px;
 
 }
 
@@ -93,7 +98,7 @@ div.logo img {
     position: absolute;
     right: 20px;
     top:0;
-    line-height: 30px;
+    line-height: 35px;
 }
 /*info end*/
 .submit{
