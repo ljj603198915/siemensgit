@@ -97,7 +97,8 @@ function stat(qid) {
 $(".logo .fa").click(function () {
     var value = $(this).parents(".logo").find(".inp-search").val();
     // console.log(value);
-    var data = {"search": value, "problem_type": 1}
+    var idx = $('.tabs').find('.active').index() + 1;
+    var data = {"search": value, "problem_type": idx}
     getQs(data)
 })
 
