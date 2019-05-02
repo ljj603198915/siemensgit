@@ -77,8 +77,10 @@ class ServiceMenuController extends HomeController
         if (!empty($type)) {
             $where['problem_type'] = $type;
         }
+
         $where['is_use'] = 1;
         $problemData = D("problem")->where($where)->select();
+        //echo D("problem")->_sql();die;
 //        foreach ($problemData as $k => $v) {
 //            $problemData[$k]['answer'] = htmlentities($problemData[$k]['answer']);
 //        }
@@ -239,7 +241,7 @@ class ServiceMenuController extends HomeController
         $data['type'] = $type;
         $data['date_time'] = date("Y-m-d");
         $data['created_time'] = date("Y-m-d H:i:s");
-        $data['$problem_id'] = $problem_id;
+        $data['problem_id'] = $problem_id;
         D("service_statis")->add($data);
     }
 }
