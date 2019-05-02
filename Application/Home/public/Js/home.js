@@ -20,3 +20,7 @@ function putData(data) {
         }
     })
 }
+
+// $('#video').click(function () {
+//     alert("暂未开放，敬请期待！")
+// })
