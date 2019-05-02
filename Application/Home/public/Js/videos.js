@@ -8,10 +8,10 @@
 //
 // })
 $(".con-player").each(function (idx, ele) {
-    var vid=$(ele).attr("data-id");
-    var modId=$(ele).attr("id");
-    var imgurl=$(ele).attr("data-img");
-    initPlayer(vid,modId,imgurl,idx)
+    var vid = $(ele).attr("data-id");
+    var modId = $(ele).attr("id");
+    var imgurl = $(ele).attr("data-img");
+    initPlayer(vid, modId, imgurl, idx)
 })
 
 // function startPlay(player) {
@@ -19,7 +19,7 @@ $(".con-player").each(function (idx, ele) {
 // }
 $(this).parents(".con-img").find(".cover").hide();
 $(this).parents(".con-img").find(".icon").hide();
-function initPlayer(vid, modId,imgurl,idx) {
+function initPlayer(vid, modId, imgurl, idx) {
     tvp.$.getScript('https://m.v.qq.com/tvp/setting.js?t=' + (+new Date()), function () {
 
         var video = new tvp.VideoInfo();
@@ -32,13 +32,18 @@ function initPlayer(vid, modId,imgurl,idx) {
             playerType: 'html5',
             modId: modId,
             autoplay: 0,
-            isiPhoneShowPlaysinline:1,
+            isiPhoneShowPlaysinline: 1,
             // isHtml5UseAirPlay:1,
             isHtml5ShowPlayBtnOnPause: 1,
             isHtml5ShowPosterOnStart: true,
-            pic:'../../../Application/Home/public/Images/'+imgurl,
-            oninited : function(){
-                var videos=document.getElementsByTagName('video');
+            pic: '../../../Application/Home/public/Images/' + imgurl,
+            oninited: function () {
+                var videos = document.getElementsByTagName('video');
+                videos[idx].removeAttribute('webkit-playsinline');
+                videos[idx].removeAttribute('playsinline');
+            },
+            onfullscreen: function () {
+                var videos = document.getElementsByTagName('video');
                 videos[idx].removeAttribute('webkit-playsinline');
                 videos[idx].removeAttribute('playsinline');
             }
@@ -73,7 +78,7 @@ function initPlayer(vid, modId,imgurl,idx) {
 
 
 }
-$('video').each(function (idx,ele) {
+$('video').each(function (idx, ele) {
     $(ele).removeAttr("webkit-playsinline").removeAttr("playsinline")
 })
 
