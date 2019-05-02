@@ -82,6 +82,14 @@ $('video').each(function (idx, ele) {
     $(ele).removeAttr("webkit-playsinline").removeAttr("playsinline")
 })
 
+//设置con-player高度
+// $('.con-player').each(function (idx, ele) {
+//     var height=$(ele).height();
+//     var width=height*1.722;
+//     $(ele).width(width);
+//
+// })
+
 // initPlayer('f0752boa23k','player9')
 // function initPlayer(vid,modId) {
 //     var video = new tvp.VideoInfo();

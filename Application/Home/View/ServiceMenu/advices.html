@@ -41,7 +41,7 @@
     <div class="info-container">
         <div class="line ul">
             <span class="label cus-kind">*客&nbsp户&nbsp类&nbsp型</span>
-            <input type="text" class="cus-kind" disabled>
+            <input type="text" class="cus-kind" readonly>
             <span class="i-con"><i class="fa fa-caret-down fa-lg"></i></span>
             <ul>
                 <li data-id="1">消&nbsp费&nbsp者</li>
@@ -63,7 +63,7 @@
         </div>
         <div class="line ul">
             <span class="label com-kind">*投&nbsp诉&nbsp类&nbsp别</span>
-            <input type="text" class="com-kind" disabled>
+            <input type="text" class="com-kind" readonly>
             <span class="i-con"><i class="fa fa-caret-down fa-lg"></i></span>
             <ul>
                 <li data-id="1">服&nbsp&nbsp务</li>
