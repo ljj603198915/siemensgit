@@ -44,12 +44,6 @@ function initPlayer(vid, modId,imgurl,idx) {
             }
         });
 
-        // $('video').each(function (idx,ele) {
-        //     $(ele).removeAttr("webkit-playsinline").removeAttr("playsinline")
-        // })
-
-
-
         // player.onplaying = function () {
         //     var videoDom = document.getElementsByTagName('video')[0];
         //     // alert('a')
@@ -79,6 +73,9 @@ function initPlayer(vid, modId,imgurl,idx) {
 
 
 }
+$('video').each(function (idx,ele) {
+    $(ele).removeAttr("webkit-playsinline").removeAttr("playsinline")
+})
 
 // initPlayer('f0752boa23k','player9')
 // function initPlayer(vid,modId) {

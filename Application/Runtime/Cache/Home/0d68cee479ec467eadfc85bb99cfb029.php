@@ -74,14 +74,16 @@
             </ul>
         </div>
 
-        <div class="line">
-            <span class="label photo" style="float: left;">&nbsp上&nbsp传&nbsp图&nbsp片</span>
+        <div class="line" style="position:relative;min-height: 60px;">
+            <span class="label photo" style="float: left;top: 7.5px;position: absolute;">&nbsp上&nbsp传&nbsp图&nbsp片</span>
             <!--dom结构部分-->
             <div style="float: left;width: 60%;" id="filePicker" id="uploader-container">
                 <!--用来存放item-->
                 <div class="webUploader-picker"><img src="<?php echo Homessy;?>/../Images/photo.jpg" alt="上传"></div>
                 <!--<div class="webUploader-picker1">确认上传</div>-->
-                <div id="fileList" class="uploader-list"></div>
+                <div id="fileList" class="uploader-list">
+                    <div style="clear: both"></div>
+                </div>
 
 
             </div>

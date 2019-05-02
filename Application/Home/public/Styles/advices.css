@@ -1,3 +1,9 @@
+
+/*去除ios移动端触摸阴影*/
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent;
+}
 body{
     background-color: #ffffff;
 }
@@ -43,6 +49,9 @@ div.logo img {
     .info-container .line textarea{
         width: 60%;
     }
+    .webuploader-container{
+        margin-left: calc(34% + 10px);
+    }
 }
 @media screen and (min-width: 321px){
     .label{
@@ -54,6 +63,9 @@ div.logo img {
     .info-container .line textarea{
         width: 65%;
     }
+    .webuploader-container{
+        margin-left: calc(30% + 10px);
+    }
 }
 .label{
     margin-right: 10px;
@@ -61,9 +73,9 @@ div.logo img {
     display: inline-block;
     color: #fff;
     text-align: justify;
-    height: 30px;
+    height: 35px;
     border-radius: 9px;
-    line-height: 30px;
+    line-height: 35px;
     padding: 0 10px 0 10px;
     box-sizing: border-box;
     text-align: center;
@@ -138,7 +150,7 @@ div.logo img {
 
 .info-container .line input,.info-container .line select{
 
-    height: 30px;
+    height: 35px;
 
 }
 

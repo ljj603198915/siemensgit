@@ -55,7 +55,7 @@
                 <!---->
                 <!--</span>-->
             </div>
-            <div class="text">
+            <div class="text" style="margin-left: -45%;">
                 <p class="chi">产品验真</p>
                 <p class="eng">Product verification</p>
             </div>
@@ -123,7 +123,7 @@
     </div>
     <div class="item9 item">
         <a id="400help" href="tel://400-616-2020">
-            <div class="icon"><i class="fa fa-volume-control-phone fa-lg"></i></div>
+            <div class="icon" style="font-size: 25px;right: 14px;"><i class="fa fa-volume-control-phone fa-lg"></i></div>
             <div class="text">
                 <p class="chi">400关爱热线</p>
                 <p class="eng">400 Care Hotline</p>
@@ -162,7 +162,7 @@
     <div class="item12 item">
         <a id="video" href="./videos.html">
             <div class="icon"><i class="fa fa-play-circle-o fa-lg"></i></div>
-            <div class="text">
+            <div class="text" style="margin-left: -45%;">
                 <p class="chi">观看视频</p>
                 <p class="eng">Watch videos</p>
             </div>
