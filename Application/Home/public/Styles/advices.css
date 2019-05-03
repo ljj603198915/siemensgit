@@ -1,14 +1,15 @@
-
 /*去除ios移动端触摸阴影*/
-*{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color:transparent;
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
-body{
+
+body {
     background-color: #ffffff;
 }
+
 /*logo*/
-.logo-container{
+.logo-container {
     padding: 6%;
     height: 10%;
     box-sizing: border-box;
@@ -21,53 +22,65 @@ div.logo {
 div.logo img {
     width: 30%;
 }
+
 /*logo end*/
-.hr{
+.hr {
     width: 90%;
     height: 1px;
     background-color: #94a0a3;
     margin: 0 auto;
 }
+
 /*info*/
-.info-container{
+.info-container {
     width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 30px;
 }
-.info-container .line{
+
+.info-container .line {
     min-height: 40px;
     margin: 10px 0;
     position: relative;
 }
+
 @media screen and (max-width: 320px) {
-    .label{
+    .label {
         width: 34%;
     }
-    .info-container .line input{
+
+    .info-container .line input {
         width: 60%;
     }
-    .info-container .line textarea{
+
+    .info-container .line textarea {
         width: 60%;
     }
-    .webuploader-container{
+
+    .webuploader-container {
         margin-left: calc(34% + 10px);
     }
 }
-@media screen and (min-width: 321px){
-    .label{
+
+@media screen and (min-width: 321px) {
+    .label {
         width: 30%;
     }
-    .info-container .line input{
+
+    .info-container .line input {
         width: 65%;
     }
-    .info-container .line textarea{
+
+    .info-container .line textarea {
         width: 65%;
     }
-    .webuploader-container{
+
+    .webuploader-container {
         margin-left: calc(30% + 10px);
     }
 }
-.label{
+
+.label {
     margin-right: 10px;
     background-color: #686868;
     display: inline-block;
@@ -80,18 +93,18 @@ div.logo img {
     box-sizing: border-box;
     text-align: center;
     font-size: 14px;
-    font-weight:700;
+    font-weight: 700;
 }
 
 /*.label:after{*/
-    /*content:'.';*/
-    /*width: 100%;*/
-    /*display: inline-block;*/
-    /*overflow: hidden;*/
-    /*height: 0;*/
+/*content:'.';*/
+/*width: 100%;*/
+/*display: inline-block;*/
+/*overflow: hidden;*/
+/*height: 0;*/
 /*}*/
 
-.line ul{
+.line ul {
     display: none;
     width: 80px;
     box-shadow: 2px 2px 2px #95a0a2;
@@ -107,69 +120,70 @@ div.logo img {
     background-color: #ffffff;
     z-index: 1000;
 }
+
 .line ul li {
     height: 40px;
     line-height: 40px;
 }
 
-.line ul li:nth-of-type(n+2){
+.line ul li:nth-of-type(n+2) {
     border-top: 1px solid #94a0a3;
 }
 
-
-
-
-
-.info-container .line input,.info-container select,
-.info-container textarea{
+.info-container .line input, .info-container select,
+.info-container textarea {
     background-color: #f1f2f4;
     border-radius: 10px;
     box-shadow: 0 0 0 0;
-    border:none;
-    outline:0;
-    padding:0 10px 0 10px;
+    border: none;
+    outline: 0;
+    padding: 0 10px 0 10px;
     box-sizing: border-box;
     vertical-align: top;
     color: #000;
     font-size: 14px;
 }
 
-.line input[disabled]{
-    background-color: #e7e8ec;
+.line input:disabled,.line input[disabled] {
+    /*background-color: #e7e8ec;*/
+    background-color: #f1f2f4;
     border-radius: 10px;
     box-shadow: 0 0 0 0;
-    border:none;
-    outline:0;
-    padding:0 10px 0 10px;
+    border: none;
+    outline: 0;
+    padding: 0 10px 0 10px;
     box-sizing: border-box;
     vertical-align: top;
     color: #000;
+    -webkit-text-fill-color: #000;
+    -webkit-opacity:1;
+    opacity: 1;
     font-size: 14px;
 }
 
-
-.info-container .line input,.info-container .line select{
+.info-container .line input, .info-container .line select {
 
     height: 35px;
 
 }
 
-.info-container .line textarea{
+.info-container .line textarea {
     height: 150px;
-    font-size: 12px;
+    font-size: 14px;
     padding: 20px;
     box-sizing: border-box;
 }
 
-.info-container .i-con{
+.info-container .i-con {
     color: #686868;
     position: absolute;
     right: 20px;
-    top:0;
+    top: 0;
     line-height: 30px;
 }
+
 /*info end*/
-.submit{
+.submit {
     width: 100px;
     height: 40px;
     background-color: #95a0a2;
@@ -179,18 +193,19 @@ div.logo img {
     color: #fff;
     display: block;
     margin: 10px auto;
-    outline:none;
+    outline: none;
 }
 
-.sub-mar{
+.sub-mar {
     margin-top: 20px;
 }
 
 /*webuploader*/
-.webUploader-picker img{
+.webUploader-picker img {
     width: 50px;
     height: 50px;
     z-index: 1000;
     display: inline-block;
 }
+
 /*webuploaderpicker end*/

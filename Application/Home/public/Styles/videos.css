@@ -185,4 +185,37 @@ div.logo img {
     top: 0;
 }
 
+/*.con-player *{*/
+    /*background-color: #fff !important;*/
+/*}*/
+
+.com-player *{
+    border:1px solid #fff;
+}
+.tvp_overlay_play, .tvp_overlay_play_try, .tvp_overlay_replay{
+    width: 64px !important;
+    height: 64px !important;
+    -webkit-border-radius:40px !important;
+    border-radius: 40px !important;
+    border:2px solid #fff !important;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+.tvp_overlay_play .tvp_button_play, .tvp_overlay_play_try .tvp_button_play{
+    left:23px !important;
+    top:17px !important;
+}
+
+/*视频白色背景*/
+/*.tvp_poster_img{*/
+    /*background-color: #fff !important;*/
+/*}*/
+
+/*.tvp_video{*/
+    /*background-color: #fff !important;*/
+/*}*/
+/*video{*/
+    /*background-color: #fff !important;*/
+/*}*/
+
 /*videos end*/
