@@ -4,14 +4,8 @@
     <list default="true" id="677c0e9d-e5c2-4ed9-9bc6-f2c04a84205e" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/0d68cee479ec467eadfc85bb99cfb029.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/3afda64dab0e4ba8ac1043f1c56b6772.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/4e13ac6f7eccaee9ad6a9bee40e7bcb7.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/7384047cf8e1eb02e9011a0336c4abaa.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_01.log" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_02.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Problem/add.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Problem/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Problem/edit.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Problem/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" />
     </list>
     <ignored path="siemens.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="videos.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="videos.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/videos.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -47,17 +41,27 @@
       <file leaf-file-name="videos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+            <state relative-caret-position="22">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceMenuController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="videos.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/public/Styles/videos.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceMenuController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
+            <state relative-caret-position="660">
               <caret line="82" column="10" lean-forward="false" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
               <folding />
             </state>
@@ -68,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/Application/Admin/View/Problem/add.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" column="111" lean-forward="true" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="111" />
+              <caret line="6" column="111" lean-forward="false" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="111" />
               <folding>
                 <element signature="n#style#0;n#sup#0;n#label#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -101,9 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.search_one input</find>
-      <find>input</find>
-      <find>debug</find>
       <find>产品</find>
       <find>admin</find>
       <find>ans</find>
@@ -131,6 +132,9 @@
       <find>videoEnd</find>
       <find>initPlayer</find>
       <find>tvp_fileszie</find>
+      <find>modId</find>
+      <find>con-player</find>
+      <find>tvp_poster_img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/tjjiaocaidaan.com.conf" />
         <option value="$USER_HOME$/Desktop/product_img.conf" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/JBController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/SelectController.class.php" />
@@ -185,11 +188,12 @@
         <option value="$PROJECT_DIR$/Application/Admin/Controller/JoinInController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/AdviceController.class.php" />
         <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" />
         <option value="$PROJECT_DIR$/Application/Home/public/Js/videos.js" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Problem/add.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Problem/edit.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/public/Styles/videos.css" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" />
       </list>
     </option>
   </component>
@@ -252,24 +256,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -548,7 +534,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1117619000" />
+    <option name="totallyTimeSpent" value="1119501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="0" />
@@ -616,13 +602,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Lowshop/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3190">
-          <caret line="145" column="36" lean-forward="false" selection-start-line="145" selection-start-column="22" selection-end-line="145" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/public/utf8-php/php/Uploader.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -946,28 +925,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/videos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Problem/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="111" lean-forward="true" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="111" />
+          <caret line="6" column="111" lean-forward="false" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="111" />
           <folding>
             <element signature="n#style#0;n#sup#0;n#label#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -986,11 +947,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/public/Styles/videos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
+        <state relative-caret-position="660">
           <caret line="82" column="10" lean-forward="false" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/videos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
