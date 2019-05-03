@@ -86,12 +86,12 @@ div.logo img {
     overflow: hidden;
     margin: 20px 0;
     text-align: center;
-    height: calc((100% - 80px) / 3);
-    /*border: 1px solid white;*/
+    /*height: calc((100% - 80px) / 3);*/
+    height: 240px;
 }
 
 .videos-con:nth-of-type(2) .line.videos .one {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     height: 100%;
     position: relative;
