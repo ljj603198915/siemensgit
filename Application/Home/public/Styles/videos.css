@@ -184,6 +184,8 @@ div.logo img {
     /*left: 0;*/
     /*top: 0;*/
     margin:auto;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 /*.con-player *{*/
