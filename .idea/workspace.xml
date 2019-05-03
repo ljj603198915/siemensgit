@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="677c0e9d-e5c2-4ed9-9bc6-f2c04a84205e" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/0d68cee479ec467eadfc85bb99cfb029.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/3afda64dab0e4ba8ac1043f1c56b6772.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/5f99c42ae5441c35c590b85b78090399.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_02.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_03.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="siemens.iws" />
@@ -26,70 +27,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="advices.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/advices.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="85" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="joinus.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/joinus.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding>
+                <element signature="e#921#927#0" expanded="true" />
+                <element signature="e#1060#1066#0" expanded="true" />
+                <element signature="e#1194#1200#0" expanded="true" />
+                <element signature="e#3364#3370#0" expanded="true" />
+                <element signature="e#3676#3682#0" expanded="true" />
+                <element signature="e#3683#3689#0" expanded="true" />
+                <element signature="e#3690#3696#0" expanded="true" />
+                <element signature="e#3697#3703#0" expanded="true" />
+                <element signature="e#3704#3710#0" expanded="true" />
+                <element signature="e#3711#3717#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="joinus.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/public/Styles/joinus.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="videos.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/videos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="videos.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="242">
+              <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videos.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/public/Styles/videos.css">
+      <file leaf-file-name="advices.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/public/Styles/advices.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="-418">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceMenuController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="82" column="10" lean-forward="false" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Problem/add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="111" lean-forward="false" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="111" />
-              <folding>
-                <element signature="n#style#0;n#sup#0;n#label#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#sup#0;n#label#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Problem/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="6" column="113" lean-forward="false" selection-start-line="6" selection-start-column="113" selection-end-line="6" selection-end-column="113" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#DIV#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -105,7 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>产品</find>
       <find>admin</find>
       <find>ans</find>
       <find>status</find>
@@ -127,14 +120,15 @@
       <find>$files</find>
       <find>filePickerwebUploader-picker1</find>
       <find>222</find>
-      <find>img</find>
       <find>ques</find>
       <find>videoEnd</find>
-      <find>initPlayer</find>
       <find>tvp_fileszie</find>
-      <find>modId</find>
       <find>con-player</find>
+      <find>img</find>
+      <find>modId</find>
+      <find>time</find>
       <find>tvp_poster_img</find>
+      <find>initPlayer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,8 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/product_img.conf" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/JBController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/SelectController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Product/ssy_product.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/Select/product_size.html" />
@@ -188,12 +180,14 @@
         <option value="$PROJECT_DIR$/Application/Admin/Controller/JoinInController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/AdviceController.class.php" />
         <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
-        <option value="$PROJECT_DIR$/Application/Home/public/Js/videos.js" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Problem/add.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Problem/edit.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/public/Styles/videos.css" />
         <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/joinus.html" />
+        <option value="$PROJECT_DIR$/Application/Home/public/Styles/joinus.css" />
+        <option value="$PROJECT_DIR$/Application/Home/public/Js/videos.js" />
       </list>
     </option>
   </component>
@@ -534,7 +528,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1119501000" />
+    <option name="totallyTimeSpent" value="1122052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="0" />
@@ -602,42 +596,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Admin/public/utf8-php/php/Uploader.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/add.html" />
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="6" column="77" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/questions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-737">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/public/utf8-php/third-party/webuploader/webuploader.withoutimage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2529">
-          <caret line="732" column="12" lean-forward="false" selection-start-line="732" selection-start-column="12" selection-end-line="732" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/webuploader.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="0" column="4498" lean-forward="false" selection-start-line="0" selection-start-column="4498" selection-end-line="0" selection-end-column="4498" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/webuploader.custom.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1628">
@@ -676,13 +634,6 @@
     <entry file="file://$PROJECT_DIR$/Public/Uploads/Advice/1556426797.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/advices.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1234">
-          <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="85" selection-end-column="18" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ProductController.class.php">
@@ -947,14 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/public/Styles/videos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -963,21 +906,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/public/Styles/videos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="110">
+          <caret line="46" column="27" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/public/Images/vi-jiaju.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/public/Images/vi-ruiyi.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/public/Images/vi-fazhanshi.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/public/Styles/advices.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/advices.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="85" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/joinus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="e#921#927#0" expanded="true" />
+            <element signature="e#1060#1066#0" expanded="true" />
+            <element signature="e#1194#1200#0" expanded="true" />
+            <element signature="e#3364#3370#0" expanded="true" />
+            <element signature="e#3676#3682#0" expanded="true" />
+            <element signature="e#3683#3689#0" expanded="true" />
+            <element signature="e#3690#3696#0" expanded="true" />
+            <element signature="e#3697#3703#0" expanded="true" />
+            <element signature="e#3704#3710#0" expanded="true" />
+            <element signature="e#3711#3717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/public/Styles/joinus.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/videos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
