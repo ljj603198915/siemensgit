@@ -196,8 +196,8 @@ div.logo img {
 .tvp_overlay_play, .tvp_overlay_play_try, .tvp_overlay_replay{
     width: 56px !important;
     height: 56px !important;
-    -webkit-border-radius:40px !important;
-    border-radius: 40px !important;
+    -webkit-border-radius:28px !important;
+    border-radius: 28px !important;
     border:2px solid #fff !important;
     background-color: rgba(0,0,0,0.5) !important;
 }
