@@ -186,7 +186,13 @@ div.logo img {
     margin:auto;
     border-radius: 20px;
     overflow: hidden;
+    -webkit-appearance: none;
+
 }
+
+/*.con-player *{*/
+    /*border: 1px solid rgba(255,255,255,0) !important;*/
+/*}*/
 
 /*.con-player *{*/
     /*background-color: #fff !important;*/
@@ -217,7 +223,21 @@ div.logo img {
 .tvp_video{
     background-color: #fff !important;
 }
-/*video{*/
+#player1 video{
+    background-color: #fff !important;
+}
+
+.con-player .tvp_overlay_poster,
+.con-player .tvp_container
+
+{
+    background-color: #fff !important;
+}
+
+/*#player10 .tvp_overlay_poster,#player10 .tvp_poster_img,*/
+/*#player10 .tvp_container*/
+
+/*{*/
     /*background-color: #fff !important;*/
 /*}*/
 
