@@ -106,9 +106,40 @@ div.logo img {
     height: 14%;
 }
 
-/*产品视频*/
+/*产品视频-一列*/
 .videos-con:nth-of-type(3) {
-    /*display: none;*/
+    height: calc(100% - 35px);
+    border: 1px solid white;
+}
+
+.videos-con:nth-of-type(3) .line.videos {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    text-align: center;
+    /*height: calc((100% - 80px) / 3);*/
+    height: 240px;
+}
+
+.videos-con:nth-of-type(3) .line.videos .one {
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+
+}
+/*视频容器*/
+.videos-con:nth-of-type(3) .con-player {
+    /*width: 100%;*/
+    height: 86%;
+}
+.videos-con:nth-of-type(3) .video-des{
+    height: 14%;
+}
+
+/*产品视频-两列*/
+/*.videos-con:nth-of-type(3) {
+    
     height: calc(100% - 35px);
     border: 1px solid white;
 }
@@ -134,7 +165,7 @@ div.logo img {
 }
 .videos-con:nth-of-type(3) .video-des{
     height: 39%;
-}
+}*/
 
 /*@media screen and (max-width: )*/
 .videos-con .line.videos .one video {

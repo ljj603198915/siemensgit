@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677c0e9d-e5c2-4ed9-9bc6-f2c04a84205e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/481594c64ae06cb95d3b4646639e3099.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/5f99c42ae5441c35c590b85b78090399.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/899619ec51b46a1f2c4a1b333284a9b0.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_03.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_04.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/ProblemModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/ProblemModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Problem/add.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Problem/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Problem/edit.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Problem/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Problem/lst.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Problem/lst.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" afterPath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" afterPath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/public/Styles/videos.css" afterPath="$PROJECT_DIR$/Application/Home/public/Styles/videos.css" />
     </list>
     <ignored path="siemens.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
-              <caret line="133" column="31" lean-forward="true" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
+              <caret line="133" column="31" lean-forward="false" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -80,8 +72,12 @@
         <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="219">
-              <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="41" />
-              <folding />
+              <caret line="75" column="41" lean-forward="false" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="38" />
+              <folding>
+                <marker date="1557069900041" expanded="true" signature="5940:7940" ph="..." />
+                <marker date="1557069900041" expanded="true" signature="5942:6803" ph="//..." />
+                <marker date="1557069900041" expanded="true" signature="6806:7931" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -558,7 +554,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1127666000" />
+    <option name="totallyTimeSpent" value="1127789000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="0" />
@@ -1017,15 +1013,19 @@
     <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
-          <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="41" />
-          <folding />
+          <caret line="75" column="41" lean-forward="false" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="38" />
+          <folding>
+            <marker date="1557069900041" expanded="true" signature="5940:7940" ph="..." />
+            <marker date="1557069900041" expanded="true" signature="5942:6803" ph="//..." />
+            <marker date="1557069900041" expanded="true" signature="6806:7931" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="133" column="31" lean-forward="true" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
+          <caret line="133" column="31" lean-forward="false" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
           <folding />
         </state>
       </provider>
