@@ -73,9 +73,12 @@
             <div class="one">
                 <div class="con-player" id="player1" data-id="x0861oqbnf5" data-img="vi-ruizhi.jpg"></div>
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-ruizhi.jpg" alt="">-->
-                <p class="video-des">睿智系列</p>
+                <p class="video-des">睿致系列</p>
             </div>
-            <div class="one">
+           
+        </div>
+        <div class="line videos">
+             <div class="one">
                 <div class="con-player" id="player2" data-id="v0859ji2vs3" data-img="vi-haorui.jpg"></div>
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-haorui.jpg" alt="">-->
                 <p class="video-des">皓睿系列</p>
@@ -88,36 +91,47 @@
                 <!--<div class="icon"><i class="fa fa-play-circle-o fa-lg "></i></div>-->
                 <p class="video-des">睿绎系列</p>
             </div>
+            
+        </div>
+        <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player4" data-id="b0856gjjxae" data-img="vi-lingyun.jpg"></div>
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-lingyun.jpg" alt="">-->
                 <p class="video-des">灵蕴系列</p>
             </div>
         </div>
+        
         <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player5" data-id="j0859xhotuw" data-img="vi-X1.jpg"></div>
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-X1.jpg" alt="">-->
                 <p class="video-des">风逸X1系列插线板</p>
             </div>
+            
+        </div>
+        <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player6" data-id="u0718i4n37m" data-img="vi-xirui.jpg"></div>
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-xirui.jpg" alt="">-->
                 <p class="video-des">西睿空气检测仪</p>
             </div>
         </div>
+       
         <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player7" data-id="j0859zvpp6p" data-img="vi-60.jpg"></div>
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-60.jpg" alt="">-->
                 <p class="video-des">绿色断路器系列(60s)</p>
             </div>
-            <div class="one">
+            
+        </div>
+         <div class="line videos">
+             <div class="one">
                 <div class="con-player" id="player8" data-id="s0727b4moy8" data-img="vi-180.jpg"></div>
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-180.jpg" alt="">-->
                 <p class="video-des">绿色断路器系列(180s)</p>
             </div>
-        </div>
+         </div>
     </div>
 </div>
 
