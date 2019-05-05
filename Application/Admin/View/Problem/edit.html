@@ -18,8 +18,13 @@
             </div>
         </div>
         <div class="control-group">
-            <label class="laber_from">题干名称<sup style="color: red;">*</sup></label>
+            <label class="laber_from">答案<sup style="color: red;">*</sup></label>
             <div class="controls"><textarea name="answer" id="myEditor">{$data.answer}</textarea></div>
+        </div>
+        <div class="control-group">
+            <label class="laber_from">顺序<sup style="color: red;">*</sup></label>
+            <div class="controls"><input class="input_from" name="sort" type='text' style="width:50px" value="<?php echo $data['sort'];?>" >
+                <P class=help-block></P></div>
         </div>
         <div class="control-group">
             <label class="laber_from">状态<sup style="color: red;">*</sup></label>

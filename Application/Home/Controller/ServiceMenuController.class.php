@@ -79,7 +79,7 @@ class ServiceMenuController extends HomeController
         }
 
         $where['is_use'] = 1;
-        $problemData = D("problem")->where($where)->select();
+        $problemData = D("problem")->order('sort')->where($where)->select();
         //echo D("problem")->_sql();die;
 //        foreach ($problemData as $k => $v) {
 //            $problemData[$k]['answer'] = htmlentities($problemData[$k]['answer']);
@@ -182,12 +182,12 @@ class ServiceMenuController extends HomeController
             echo jsonToData(400, "加*项为必填", null);
             exit;
         }
-        if (!empty($data['email'])) {
-            if (!preg_match($this->preg_email, $data['email'])) {
-                echo jsonToData(400, "请填写正确的电子邮箱");
-                exit;
-            }
-        }
+//        if (!empty($data['email'])) {
+//            if (!preg_match($this->preg_email, $data['email'])) {
+//                echo jsonToData(400, "请填写正确的电子邮箱");
+//                exit;
+//            }
+//        }
         $data['status'] = 1;
         $data['created_time'] = date(("Y-m-d H:i:s"));
 
