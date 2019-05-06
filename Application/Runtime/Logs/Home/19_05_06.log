@@ -1,0 +1,5 @@
+[ 2019-05-06T08:32:39+08:00 ] ::1 /index.php/Home/Servicemenu/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -151,7 +151,6 @@
     left: 22px;
     top: 6px;
     font-size: 33px;
-    color: #cfcfcf;
 "></i>
             </div>
             <div class="text">
