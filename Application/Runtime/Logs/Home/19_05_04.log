@@ -328,3 +328,8 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
 
+[ 2019-05-04T22:22:46+08:00 ] 192.168.2.100 /index.php/Home/ServiceMenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
