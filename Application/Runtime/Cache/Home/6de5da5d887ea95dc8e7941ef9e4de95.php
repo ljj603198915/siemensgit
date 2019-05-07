@@ -75,13 +75,13 @@
         <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player11" data-id="d0859xcdgya" data-img="vi-fazhanshi.jpg">
-                    <video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"
-                           poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">
-                        您的浏览器不支持 video 标签。
-                    </video>
+                    <!--<video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"-->
+                           <!--poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">-->
+                        <!--您的浏览器不支持 video 标签。-->
+                    <!--</video>-->
                 </div>
-                <img class="cover" src="<?php echo HomeImgUrl;?>/vi-fazhanshi.jpg" alt="">
-                <div class="icon"><i class="fa fa-play-circle-o fa-lg"></i></div>
+                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-fazhanshi.jpg" alt="">-->
+                <!--<div class="icon"><i class="fa fa-play-circle-o fa-lg"></i></div>-->
                 <p class="video-des">西门子中国发展史</p>
             </div>
         </div>
@@ -98,12 +98,12 @@
         </div>
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player2" data-id="v0859ji2vs3" data-img="vi-haorui.jpg">
-                    <video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"
-                           poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">
-                        您的浏览器不支持 video 标签。
-                    </video>
-                </div>
+                <!--<div class="con-player" id="player2" data-id="v0859ji2vs3" data-img="vi-haorui.jpg">-->
+                    <!--<video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"-->
+                           <!--poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">-->
+                        <!--您的浏览器不支持 video 标签。-->
+                    <!--</video>-->
+                <!--</div>-->
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-haorui.jpg" alt="">-->
                 <p class="video-des">皓睿系列</p>
             </div>
@@ -111,10 +111,10 @@
         <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player3" data-id="z08247ooc1o" data-img="vi-ruiyi.jpg">
-                    <video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"
-                           poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">
-                        您的浏览器不支持 video 标签。
-                    </video>
+                    <!--<video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"-->
+                           <!--poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">-->
+                        <!--您的浏览器不支持 video 标签。-->
+                    <!--</video>-->
                 </div>
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-ruiyi.jpg" alt="">-->
                 <!--<div class="icon"><i class="fa fa-play-circle-o fa-lg "></i></div>-->
@@ -125,10 +125,10 @@
         <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player4" data-id="b0856gjjxae" data-img="vi-lingyun.jpg">
-                    <video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"
-                           poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">
-                        您的浏览器不支持 video 标签。
-                    </video>
+                    <!--<video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"-->
+                           <!--poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">-->
+                        <!--您的浏览器不支持 video 标签。-->
+                    <!--</video>-->
                 </div>
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-lingyun.jpg" alt="">-->
                 <p class="video-des">灵蕴系列</p>
@@ -138,10 +138,10 @@
         <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player5" data-id="j0859xhotuw" data-img="vi-X1.jpg">
-                    <video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"
-                           poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">
-                        您的浏览器不支持 video 标签。
-                    </video>
+                    <!--<video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"-->
+                           <!--poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">-->
+                        <!--您的浏览器不支持 video 标签。-->
+                    <!--</video>-->
                 </div>
                 <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-X1.jpg" alt="">-->
                 <p class="video-des">风逸X1系列插线板</p>

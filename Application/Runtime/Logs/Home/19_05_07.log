@@ -313,3 +313,33 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
 
+[ 2019-05-07T23:34:25+08:00 ] ::1 /index.php/Home/Brandstory/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+
+[ 2019-05-07T23:34:36+08:00 ] ::1 /index.php/Home/Servicemenu/videos1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001135s ]
+
+[ 2019-05-07T23:34:46+08:00 ] ::1 /index.php/Home/Servicemenu/videos1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+
+[ 2019-05-07T23:34:55+08:00 ] ::1 /index.php/Home/Servicemenu/videos1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2019-05-07T23:35:09+08:00 ] ::1 /index.php/Home/Servicemenu/videos1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+
+[ 2019-05-07T23:35:33+08:00 ] 192.168.2.103 /index.php/Home/Servicemenu/videos1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
