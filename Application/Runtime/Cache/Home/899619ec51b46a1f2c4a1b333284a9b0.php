@@ -6,13 +6,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0"/>
     <title>观看视频</title>
-    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/reset.css" />
-    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/font-awesome.min.css" />
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/reset.css"/>
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/font-awesome.min.css"/>
     <!-- <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/aa.css" /> -->
-    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/videos.css" />
-    <script language="javascript" src="http://imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="<?php echo HomeCssUrl;?>/videos.css"/>
     <script type="text/javascript" src="<?php echo HomeJsUrl;?>/jquery-3.1.1.min.js"></script>
     <style>
 
@@ -23,8 +22,9 @@
             }
         }
 
-
-
+        /*div[pseudo="-internal-media-controls-button-panel"] {*/
+        /*display: none;*/
+        /*}*/
 
 
     </style>
@@ -44,26 +44,41 @@
     </div>
     <div class="videos-con">
         <div class="line videos">
-            <div class="one">
-                    <div class="con-player" id="player9" data-id="f0752boa23k" data-img="vi-jiaju.jpg"></div>
-                    <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-jiaju.jpg" alt="">-->
-                    <!--<div class="icon"><i class="fa fa-play-circle-o fa-lg"></i></div>-->
+            <div class="one" id="output">
+                <div class="con-player" id="player9" data-id="f0752boa23k" data-vid="西门子家居电气宣传片.mp4"
+                     data-img="vi-jiaju.jpg">
+                    <!--<video id="video" src="http://www.wawechat.siemens.com.cn:8080/Public/v1.mp4"-->
+                    <!--poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg"></video>-->
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-jiaju.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
                 <p class="video-des">家居电气宣传片</p>
             </div>
+
         </div>
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player10" data-id="v0194ehhp7d" data-img="vi-diya.jpg"></div>
-                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-diya.jpg" alt="">-->
-                <!--<div class="icon"><i class="fa fa-play-circle-o fa-lg"></i></div>-->
+                <div class="con-player" id="player10" data-id="v0194ehhp7d" data-img="vi-diya.jpg"
+                     data-vid="test-v.mp4">
+                    <!--<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=f0752boa23k" allowFullScreen="true"></iframe>-->
+
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-diya.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
                 <p class="video-des">西门子低压电气发展史</p>
             </div>
         </div>
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player11" data-id="d0859xcdgya" data-img="vi-fazhanshi.jpg"></div>
-                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-fazhanshi.jpg" alt="">-->
-                <!--<div class="icon"><i class="fa fa-play-circle-o fa-lg"></i></div>-->
+                <div class="con-player" id="player11" data-id="d0859xcdgya" data-img="vi-fazhanshi.jpg"
+                     data-vid="西门子中国发展史.mp4">
+                    <!--<video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"-->
+                    <!--poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">-->
+                    <!--您的浏览器不支持 video 标签。-->
+                    <!--</video>-->
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-fazhanshi.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
                 <p class="video-des">西门子中国发展史</p>
             </div>
         </div>
@@ -71,133 +86,130 @@
     <div class="videos-con">
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player1" data-id="x0861oqbnf5" data-img="vi-ruizhi.jpg"></div>
-                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-ruizhi.jpg" alt="">-->
+                <div class="con-player" id="player1" data-id="x0861oqbnf5" data-img="vi-ruizhi.jpg"
+                     data-vid="睿致系列.mp4">
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-ruizhi.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
                 <p class="video-des">睿致系列</p>
             </div>
-           
+
+
         </div>
         <div class="line videos">
-             <div class="one">
-                <div class="con-player" id="player2" data-id="v0859ji2vs3" data-img="vi-haorui.jpg"></div>
-                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-haorui.jpg" alt="">-->
+            <div class="one">
+                <div class="con-player" id="player2" data-id="v0859ji2vs3" data-img="vi-haorui.jpg" data-vid="皓睿系列.mp4">
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-haorui.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
+
                 <p class="video-des">皓睿系列</p>
             </div>
         </div>
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player3" data-id="z08247ooc1o" data-img="vi-ruiyi.jpg"></div>
-                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-ruiyi.jpg" alt="">-->
-                <!--<div class="icon"><i class="fa fa-play-circle-o fa-lg "></i></div>-->
+                <div class="con-player" id="player3" data-id="z08247ooc1o" data-img="vi-ruiyi.jpg"
+                     data-vid="睿绎系列.mp4">
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-ruiyi.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
+
                 <p class="video-des">睿绎系列</p>
             </div>
-            
+
         </div>
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player4" data-id="b0856gjjxae" data-img="vi-lingyun.jpg"></div>
-                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-lingyun.jpg" alt="">-->
+                <div class="con-player" id="player4" data-id="b0856gjjxae" data-img="vi-lingyun.jpg"
+                     data-vid="ly.mp4">
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-lingyun.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
+
                 <p class="video-des">灵蕴系列</p>
             </div>
         </div>
-        
+
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player5" data-id="j0859xhotuw" data-img="vi-X1.jpg"></div>
-                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-X1.jpg" alt="">-->
+                <div class="con-player" id="player5" data-id="j0859xhotuw" data-img="vi-X1.jpg" data-vid="风逸X1系列插线板.mov">
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-X1.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
+
                 <p class="video-des">风逸X1系列插线板</p>
             </div>
-            
+
         </div>
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player6" data-id="u0718i4n37m" data-img="vi-xirui.jpg"></div>
-                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-xirui.jpg" alt="">-->
+                <div class="con-player" id="player6" data-id="u0718i4n37m" data-img="vi-xirui.jpg"
+                     data-vid="西睿空气检测仪.mp44">
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-xirui.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
                 <p class="video-des">西睿空气检测仪</p>
             </div>
         </div>
-       
+
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player7" data-id="j0859zvpp6p" data-img="vi-60.jpg"></div>
-                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-60.jpg" alt="">-->
+                <div class="con-player" id="player7" data-id="j0859zvpp6p" data-img="vi-60.jpg" data-vid="绿色断路器系列（60s）.mov">
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-60.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
+
                 <p class="video-des">绿色断路器系列(60s)</p>
             </div>
-            
+
         </div>
-         <div class="line videos">
-             <div class="one">
-                <div class="con-player" id="player8" data-id="s0727b4moy8" data-img="vi-180.jpg"></div>
-                <!--<img class="cover" src="<?php echo HomeImgUrl;?>/vi-180.jpg" alt="">-->
+        <div class="line videos">
+            <div class="one">
+                <div class="con-player" id="player8" data-id="s0727b4moy8" data-img="vi-180.jpg" data-vid="绿色断路器系列（180s）.mp4">
+                    <img class="cover" src="<?php echo HomeImgUrl;?>/vi-180.jpg" alt="">
+                    <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                </div>
                 <p class="video-des">绿色断路器系列(180s)</p>
             </div>
-         </div>
+        </div>
     </div>
 </div>
 
-<!--<script type="text/javascript" src="<?php echo HomeJsUrl;?>/jquery-3.1.1.min.js"></script>-->
 
-<script type="text/javascript" src="<?php echo HomeJsUrl;?>/videos.js"></script>
 <script type="text/javascript">
-//    tvp.$.getScript('https://m.v.qq.com/tvp/setting.js?t=' + (+new Date()), function () {
-//window.onload=function(){
-//    var video = new tvp.VideoInfo();
-//    video.setVid('f0752boa23k');
-//    var player = new tvp.Player();
-//    player.create({
-//        width: 144,
-//        height: 80,
-//        video: video,
-//        playerType: 'html5',
-//        modId: 'player9',
-//        autoplay: 0,
-//        isHtml5ShowPosterOnStart: true
-        // pic:'http://m.qpic.cn/psb?/V11PpG8F27FnBO/XnpjNxPwcljUr6N*envv.B34qXBcaeNb5yYEC6c0Yng!/b/dFMBAAAAAAAA&bo=gwJoAQAAAAARF8g!&rf=viewer_4&t=5'
-//        });
-//    })
-//    player.onwrite = function () {
-//        player.play()
-//    }
-//    function player9() {
-//        var player9=document.getElementById('player9')
-//        var video2=player9.getElementsByTagName('video');
-//        video2.play()
-//    }
+    //    设置con-player高度
+    $('.videos-con .con-player').each(function (idx, ele) {
+        var height = $(ele).height();
+        var width = $(ele).width();
+        if (height > width / 1.79) {
+            $(ele).height(width / 1.78);
+        } else {
+            $(ele).width(height * 1.78);
+        }
+    })
+    $('.videos-con:eq(1)').hide();
+    // 点击tabs
+    $(".tabs .title").click(function () {
+        $(this).siblings(".title").removeClass("active");
+        $(this).addClass("active");
+
+        var idx = $(this).index()
+// console.log($(this).index())
+        $(".videos-con").hide()
+        $(".videos-con").eq(idx).show()
+    })
+
+    $(".con-player").on("click", ".icon", function () {
+        var vidurl = $(this).parents(".con-player").attr("data-vid");
+        var imgurl = $(this).parents(".con-player").attr("data-img");
+        var _html = '<video src="http://www.wawechat.siemens.com.cn:8081/'+vidurl+'" poster="<?php echo HomeImgUrl;?>/' + imgurl + '"></video>'
+        $(this).parents(".con-player").append(_html);
+        $(this).hide()
+        $(this).parents(".con-player").find("img").hide()
+        $(this).parents(".con-player").find("video")[0].play()
+    })
 
 
-//     player.onwrite = function () {
-//         player.play();
-//     }
-//    player.oninit = function () {
-//        player.play();
-//    }
-//}
-//var player9=document.getElementById('player9')
-//var video2=player9.getElementsByTagName('video');
-//video2.play()
-//    (function(){
-//        var video, output;
-//        var scale = 0.8;
-//        var initialize = function() {
-//            output = document.getElementById("output");
-//            video = document.getElementById("video");
-//            video.addEventListener('loadeddata',captureImage);
-//        };
-//
-//        var captureImage = function() {
-//            var canvas = document.createElement("canvas");
-//            canvas.width = video.videoWidth * scale;
-//            canvas.height = video.videoHeight * scale;
-//            canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
-//
-//            var img = document.createElement("img");
-//            img.crossOrigin="anonymous";
-//            img.src = canvas.toDataURL("image/png");
-//            output.appendChild(img);
-//        };
-//
-//        initialize();
-//    })();
 </script>
 </body>
 

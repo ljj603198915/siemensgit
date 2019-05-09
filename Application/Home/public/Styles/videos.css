@@ -1,14 +1,17 @@
 body, html {
     height: 100%;
 }
-body{
+
+body {
     background-color: #ffffff;
 }
+
 /*去除ios移动端触摸阴影*/
-*{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color:transparent;
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
+
 /*logo*/
 .logo-container {
     padding: 6%;
@@ -97,13 +100,44 @@ div.logo img {
     position: relative;
 
 }
+
 /*视频容器*/
 .videos-con:nth-of-type(2) .con-player {
     /*width: 100%;*/
     height: 86%;
 }
-.videos-con:nth-of-type(2) .video-des{
+
+.videos-con:nth-of-type(2) .video-des {
     height: 14%;
+}
+
+.con-player .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -25px;
+    width: 55px;
+    height: 55px;
+    z-index: 2000;
+    border-radius: 40px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.con-player>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*播放按钮*/
+.icon img{
+    width: 34px;
+    height: 55px;
+    margin-left: 4px;
 }
 
 /*产品视频-一列*/
@@ -128,12 +162,14 @@ div.logo img {
     position: relative;
 
 }
+
 /*视频容器*/
 .videos-con:nth-of-type(3) .con-player {
     /*width: 100%;*/
     height: 86%;
 }
-.videos-con:nth-of-type(3) .video-des{
+
+.videos-con:nth-of-type(3) .video-des {
     height: 14%;
 }
 
@@ -170,9 +206,8 @@ div.logo img {
 /*@media screen and (max-width: )*/
 .videos-con .line.videos .one video {
     width: 100%;
+    height: 100%;
 }
-
-
 
 /*文字描述*/
 .video-des {
@@ -181,8 +216,8 @@ div.logo img {
     bottom: 0;
     font-size: 14px;
     width: 100%;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     display: -webkit-flex;
 }
 
@@ -214,54 +249,55 @@ div.logo img {
     /*position: absolute;*/
     /*left: 0;*/
     /*top: 0;*/
-    margin:auto;
-    border-radius: 20px;
+    margin: auto;
+    border-radius: 30px;
     overflow: hidden;
     -webkit-appearance: none;
+    position: relative;
 
 }
 
 /*.con-player *{*/
-    /*border: 1px solid rgba(255,255,255,0) !important;*/
+/*border: 1px solid rgba(255,255,255,0) !important;*/
 /*}*/
 
 /*.con-player *{*/
-    /*background-color: #fff !important;*/
+/*background-color: #fff !important;*/
 /*}*/
 
-.com-player *{
-    border:1px solid #fff;
+.com-player * {
+    border: 1px solid #fff;
 }
-.tvp_overlay_play, .tvp_overlay_play_try, .tvp_overlay_replay{
+
+.tvp_overlay_play, .tvp_overlay_play_try, .tvp_overlay_replay {
     width: 56px !important;
     height: 56px !important;
-    -webkit-border-radius:28px !important;
+    -webkit-border-radius: 28px !important;
     border-radius: 28px !important;
-    border:2px solid #fff !important;
-    background-color: rgba(0,0,0,0.5) !important;
+    border: 2px solid #fff !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.tvp_overlay_play .tvp_button_play, .tvp_overlay_play_try .tvp_button_play{
-    left:19px !important;
-    top:14px !important;
+.tvp_overlay_play .tvp_button_play, .tvp_overlay_play_try .tvp_button_play {
+    left: 19px !important;
+    top: 14px !important;
 }
 
 /*视频白色背景*/
-.tvp_poster_img{
+.tvp_poster_img {
     background-color: #fff !important;
 }
 
-.tvp_video{
+.tvp_video {
     background-color: #fff !important;
 }
-#player1 video{
+
+#player1 video {
     background-color: #fff !important;
 }
 
 .con-player .tvp_overlay_poster,
-.con-player .tvp_container
-
-{
+.con-player .tvp_container {
     background-color: #fff !important;
 }
 
@@ -269,7 +305,7 @@ div.logo img {
 /*#player10 .tvp_container*/
 
 /*{*/
-    /*background-color: #fff !important;*/
+/*background-color: #fff !important;*/
 /*}*/
 
 /*videos end*/
