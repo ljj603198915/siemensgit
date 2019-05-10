@@ -14,6 +14,7 @@
 				<option value="">请选择</option>
 				<option value="1" <?php if(I('get.shop_type')==1)echo 'selected';?>>旗舰店</option>
 				<option value="2" <?php if(I('get.shop_type')==2)echo 'selected';?>>专卖店</option>
+				<option value="3" <?php if(I('get.shop_type')==3)echo 'selected';?>>形象店</option>
 			</select>
 		</p>
 		<p><input type="submit" value=" 搜索 " class="button btn-primary" /></p>
@@ -49,6 +50,7 @@
 				<td>
 					<if condition="$v['shop_type'] eq 1">旗舰店
 						<elseif condition="$v['shop_type'] eq 2" />专卖店
+						<elseif condition="$v['shop_type'] eq 3" />形象店
 					</if>
 					</td>
 				<td>
