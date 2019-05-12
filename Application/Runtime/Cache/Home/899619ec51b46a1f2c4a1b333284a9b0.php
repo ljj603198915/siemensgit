@@ -59,7 +59,7 @@
         <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player10" data-id="v0194ehhp7d" data-img="vi-diya.jpg"
-                     data-vid="test-v.mp4">
+                     data-vid="fazhanshi.mp4">
                     <!--<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=f0752boa23k" allowFullScreen="true"></iframe>-->
 
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-diya.jpg" alt="">
@@ -132,7 +132,7 @@
 
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player5" data-id="j0859xhotuw" data-img="vi-X1.jpg" data-vid="风逸X1系列插线板.mov">
+                <div class="con-player" id="player5" data-id="j0859xhotuw" data-img="vi-X1.jpg" data-vid="风逸X1系列插线板.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-X1.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                 </div>
@@ -144,7 +144,7 @@
         <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player6" data-id="u0718i4n37m" data-img="vi-xirui.jpg"
-                     data-vid="西睿空气检测仪.mp44">
+                     data-vid="西睿空气检测仪.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-xirui.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                 </div>
@@ -154,7 +154,7 @@
 
         <div class="line videos">
             <div class="one">
-                <div class="con-player" id="player7" data-id="j0859zvpp6p" data-img="vi-60.jpg" data-vid="绿色断路器系列（60s）.mov">
+                <div class="con-player" id="player7" data-id="j0859zvpp6p" data-img="vi-60.jpg" data-vid="绿色断路器系列（60s）.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-60.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                 </div>
@@ -206,8 +206,36 @@
         $(this).parents(".con-player").append(_html);
         $(this).hide()
         $(this).parents(".con-player").find("img").hide()
+        bindVideos();
         $(this).parents(".con-player").find("video")[0].play()
     })
+
+
+    function bindVideos() {
+        var videos=document.getElementsByTagName("video");
+        for(var i=0;i<videos.length;i++){
+            videos[i].onclick=null;
+            videos[i].onclick=function () {
+                if(this.paused){
+                    this.play();
+                }else{
+                    this.parentNode.children[1].style.display="block"
+                    this.parentNode.children[1].children[0].style.display="inline-block"
+                    this.pause();
+                }
+            }
+            videos[i].onpause=function () {
+                this.parentNode.children[1].style.display="block"
+                this.parentNode.children[1].children[0].style.display="inline-block"
+            }
+        }
+    }
+//    $(".con-player").on("click","video",function () {
+//        $(this).pause()
+//    })
+//    $(".con-player").on("pause","video",function () {
+//        $(this).siblings(".icon").show()
+//    })
 
 
 </script>
