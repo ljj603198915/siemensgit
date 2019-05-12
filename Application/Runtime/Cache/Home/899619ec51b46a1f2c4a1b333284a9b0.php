@@ -216,9 +216,7 @@
         for(var i=0;i<videos.length;i++){
             videos[i].onclick=null;
             videos[i].onclick=function () {
-                if(this.paused){
-                    this.play();
-                }else{
+                if(!this.paused){
                     this.parentNode.children[1].style.display="block"
                     this.parentNode.children[1].children[0].style.display="inline-block"
                     this.pause();
@@ -230,12 +228,6 @@
             }
         }
     }
-//    $(".con-player").on("click","video",function () {
-//        $(this).pause()
-//    })
-//    $(".con-player").on("pause","video",function () {
-//        $(this).siblings(".icon").show()
-//    })
 
 
 </script>
