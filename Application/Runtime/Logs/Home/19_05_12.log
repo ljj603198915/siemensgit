@@ -173,3 +173,13 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
 
+[ 2019-05-12T19:01:51+08:00 ] ::1 /index.php/Home/Servicemenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+
+[ 2019-05-12T19:02:02+08:00 ] ::1 /index.php/Home/Servicemenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
