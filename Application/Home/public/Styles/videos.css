@@ -173,6 +173,20 @@ div.logo img {
     height: 14%;
 }
 
+.videos-con .loading{
+    display: none;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 30px;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    z-index: 99999;
+}
+
 /*产品视频-两列*/
 /*.videos-con:nth-of-type(3) {
     
