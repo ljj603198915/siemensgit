@@ -249,6 +249,7 @@
             videos[i].onpause=function () {
                 this.parentNode.children[1].style.display="block"
                 this.parentNode.children[1].children[0].style.display="inline-block"
+                this.parentNode.children[0].style.display="block"
             }
 
         }

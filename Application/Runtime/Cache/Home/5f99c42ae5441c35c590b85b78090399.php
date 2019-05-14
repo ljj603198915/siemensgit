@@ -36,8 +36,8 @@
         <img src="<?php echo Homessy;?>/logo.png" alt="SIEMENS">
     </div>
 </div>
-<video src="http://www.wawechat.siemens.com.cn:8081/睿绎系列.mp4" poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg"
-style="width: 100%"></video>
+<!--<video src="http://www.wawechat.siemens.com.cn:8081/睿绎系列.mp4" poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg"-->
+<!--style="width: 100%"></video>-->
 <div class="videos-container">
     <div class="tabs">
         <div class="title active">品牌</div>
@@ -249,6 +249,7 @@ style="width: 100%"></video>
             videos[i].onpause=function () {
                 this.parentNode.children[1].style.display="block"
                 this.parentNode.children[1].children[0].style.display="inline-block"
+                this.parentNode.children[0].style.display="block"
             }
 
         }
