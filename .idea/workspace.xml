@@ -2,9 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677c0e9d-e5c2-4ed9-9bc6-f2c04a84205e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/Common/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/Conf/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/Conf/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/Controller/FootballBaseController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/Controller/IndexController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/View/Index/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Common/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Conf/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Conf/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Controller/GameController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Controller/TeamController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Model/GameModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Model/TeamModel.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Game/add.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Game/changeResults.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Game/edit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Game/lst.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Team/add.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Team/edit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Team/lst.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/echarts.simple.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/js.KinerCode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/messages_zh.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/myEcharts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/region_select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/tendina.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/add.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_444444_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_555555_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_777620_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_777777_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_cc0000_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/templatemo_style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/utilLib/fonts/font_awesome/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/utilLib/fonts/font_awesome/fontawesome-webfontd41d.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/utilLib/fonts/font_awesome/fontawesome-webfontf77b.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/utilLib/fonts/font_awesome/fontawesome-webfontf77b.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/utilLib/fonts/font_awesome/fontawesome-webfontf77b.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home.rar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/6de5da5d887ea95dc8e7941ef9e4de95.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/899619ec51b46a1f2c4a1b333284a9b0.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_07.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_08.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_09.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_12.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" afterPath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" />
     </list>
     <ignored path="siemens.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +81,30 @@
     <favorites_list name="siemens" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CheckproductController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2794">
+              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <folding>
+                <marker date="1557822476513" expanded="true" signature="2067:2184" ph="select * fro... si_img_product" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Weichat.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Org/Util/Weichat.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3344">
+              <caret line="157" column="20" lean-forward="false" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,8 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>filePicker</find>
-      <find>确认</find>
       <find>dupliacate</find>
       <find>addButton</find>
       <find>picker1</find>
@@ -51,7 +129,6 @@
       <find>ques</find>
       <find>videoEnd</find>
       <find>tvp_fileszie</find>
-      <find>con-player</find>
       <find>img</find>
       <find>modId</find>
       <find>time</find>
@@ -65,6 +142,9 @@
       <find>on_activity</find>
       <find>shop_type</find>
       <find>listen</find>
+      <find>data-vid</find>
+      <find>icon</find>
+      <find>con-player</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -84,7 +164,6 @@
         <option value="$PROJECT_DIR$/Application/Admin/Controller/ServiceStatisController.class.php" />
         <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/OnshopController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/NearshopController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Index/index.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/ServiceMenu/lst.html" />
@@ -114,16 +193,17 @@
         <option value="$PROJECT_DIR$/Application/Admin/View/Problem/edit.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/ProblemModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" />
         <option value="$PROJECT_DIR$/../test/test.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos1.html" />
-        <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" />
         <option value="$PROJECT_DIR$/Application/Home/public/Js/videos.js" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Lowshop/add.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Lowshop/edit.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Lowshop/lst.html" />
         <option value="$USER_HOME$/Desktop/product_img.conf" />
         <option value="$USER_HOME$/Desktop/video.conf" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php" />
       </list>
     </option>
   </component>
@@ -142,7 +222,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="829" />
+    <option name="height" value="828" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -162,8 +242,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -176,22 +254,10 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -460,18 +526,19 @@
       <workItem from="1556364055965" duration="11445000" />
       <workItem from="1556379686138" duration="21162000" />
       <workItem from="1556505754308" duration="6302000" />
-      <workItem from="1557362528891" duration="1650000" />
+      <workItem from="1557362528891" duration="3350000" />
+      <workItem from="1557794407837" duration="3383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1138114000" />
+    <option name="totallyTimeSpent" value="1143197000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="828" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24097222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24097222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2820513" sideWeight="0.10834553" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -533,20 +600,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPExcel/Classes/PHPExcel/Style/Alignment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Product/lst.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -733,18 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="e#921#927#0" expanded="false" />
-            <element signature="e#1060#1066#0" expanded="false" />
-            <element signature="e#1194#1200#0" expanded="false" />
-            <element signature="e#3364#3370#0" expanded="false" />
-            <element signature="e#3676#3682#0" expanded="false" />
-            <element signature="e#3683#3689#0" expanded="false" />
-            <element signature="e#3690#3696#0" expanded="false" />
-            <element signature="e#3697#3703#0" expanded="false" />
-            <element signature="e#3704#3710#0" expanded="false" />
-            <element signature="e#3711#3717#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,10 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="26" column="98" lean-forward="false" selection-start-line="26" selection-start-column="98" selection-end-line="26" selection-end-column="98" />
-          <folding>
-            <element signature="n#style#0;n#sup#0;n#label#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -770,9 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="25" column="98" lean-forward="false" selection-start-line="25" selection-start-column="98" selection-end-line="25" selection-end-column="98" />
-          <folding>
-            <element signature="n#style#0;n#sup#0;n#label#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -780,13 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-574">
           <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="133" column="31" lean-forward="false" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -814,19 +841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/public/Js/videos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="689">
           <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="219" column="16" lean-forward="false" selection-start-line="219" selection-start-column="16" selection-end-line="219" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="34" column="50" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="35" column="68" lean-forward="false" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="52" column="69" lean-forward="false" selection-start-line="52" selection-start-column="69" selection-end-line="52" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,14 +891,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/product_img.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/product_img.conf" />
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/NearshopController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -900,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,15 +913,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
           <caret line="52" column="11" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="57" column="17" lean-forward="true" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        <state relative-caret-position="1254">
+          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="163" column="34" lean-forward="false" selection-start-line="163" selection-start-column="34" selection-end-line="163" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="204" column="27" lean-forward="true" selection-start-line="204" selection-start-column="27" selection-end-line="204" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Org/Util/Weichat.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3344">
+          <caret line="157" column="20" lean-forward="false" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2794">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <marker date="1557822476513" expanded="true" signature="2067:2184" ph="select * fro... si_img_product" />
+          </folding>
         </state>
       </provider>
     </entry>
