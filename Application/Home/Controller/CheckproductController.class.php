@@ -48,6 +48,7 @@ class CheckproductController extends HomeController
         } else {
             $url .= '&fromtype=0';
         }
+        //记录次数和人数
         $ip = $this->getRealIp();
         \Think\Log::record("客户端ip" . $ip, 'DEBUG');
         $url .= "&ip=" . $ip;
