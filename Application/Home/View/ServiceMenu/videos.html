@@ -36,6 +36,8 @@
         <img src="<?php echo Homessy;?>/logo.png" alt="SIEMENS">
     </div>
 </div>
+<video src="http://www.wawechat.siemens.com.cn:8081/睿绎系列.mp4" poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg"
+style="width: 100%"></video>
 <div class="videos-container">
     <div class="tabs">
         <div class="title active">品牌</div>
@@ -51,6 +53,7 @@
                     <!--poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg"></video>-->
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-jiaju.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
                 <p class="video-des">家居电气宣传片</p>
             </div>
@@ -64,6 +67,7 @@
 
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-diya.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
                 <p class="video-des">西门子低压电气发展史</p>
             </div>
@@ -78,6 +82,7 @@
                     <!--</video>-->
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-fazhanshi.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
                 <p class="video-des">西门子中国发展史</p>
             </div>
@@ -90,6 +95,7 @@
                      data-vid="睿致系列.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-ruizhi.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
                 <p class="video-des">睿致系列</p>
             </div>
@@ -101,6 +107,7 @@
                 <div class="con-player" id="player2" data-id="v0859ji2vs3" data-img="vi-haorui.jpg" data-vid="皓睿系列.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-haorui.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
 
                 <p class="video-des">皓睿系列</p>
@@ -112,6 +119,7 @@
                      data-vid="睿绎系列.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-ruiyi.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
 
                 <p class="video-des">睿绎系列</p>
@@ -124,6 +132,7 @@
                      data-vid="ly.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-lingyun.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
 
                 <p class="video-des">灵蕴系列</p>
@@ -135,6 +144,7 @@
                 <div class="con-player" id="player5" data-id="j0859xhotuw" data-img="vi-X1.jpg" data-vid="风逸X1系列插线板.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-X1.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
 
                 <p class="video-des">风逸X1系列插线板</p>
@@ -147,6 +157,7 @@
                      data-vid="西睿空气检测仪.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-xirui.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
                 <p class="video-des">西睿空气检测仪</p>
             </div>
@@ -157,6 +168,7 @@
                 <div class="con-player" id="player7" data-id="j0859zvpp6p" data-img="vi-60.jpg" data-vid="绿色断路器系列（60s）.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-60.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
 
                 <p class="video-des">绿色断路器系列(60s)</p>
@@ -168,6 +180,7 @@
                 <div class="con-player" id="player8" data-id="s0727b4moy8" data-img="vi-180.jpg" data-vid="绿色断路器系列（180s）.mp4">
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-180.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
+                    <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
                 <p class="video-des">绿色断路器系列(180s)</p>
             </div>
@@ -222,10 +235,34 @@
                     this.pause();
                 }
             }
+            //加载数据
+            videos[i].onwaiting=function (el) {
+//                fullScreen(el)
+                this.parentNode.children[2].style.display="block"
+            }
+            //开始播放
+            videos[i].oncanplay=function () {
+//                alert("开始播放")
+                this.parentNode.children[2].style.display="none"
+            }
+            //暂停
             videos[i].onpause=function () {
                 this.parentNode.children[1].style.display="block"
                 this.parentNode.children[1].children[0].style.display="inline-block"
             }
+
+        }
+    }
+
+    function fullScreen(el) {
+        var isFullscreen=document.fullScreen||document.mozFullScreen||document.webkitIsFullScreen;
+        if(!isFullscreen){
+            //进入全屏,多重短路表达式
+            el.requestFullscreen
+//            (el.requestFullscreen&&el.requestFullscreen())||
+//            (el.mozRequestFullScreen&&el.mozRequestFullScreen())||
+//            (el.webkitRequestFullscreen&&el.webkitRequestFullscreen())||(el.msRequestFullscreen&&el.msRequestFullscreen());
+
         }
     }
 
