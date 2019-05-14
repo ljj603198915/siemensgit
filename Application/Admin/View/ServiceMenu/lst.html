@@ -4,14 +4,18 @@
 <div class="list-div" id="listDiv">
     <table cellpadding="3" cellspacing="1" class="table">
         <tr>
-            <th width="50%">菜单名称</th>
-            <th width="50%">访问数量</th>
+            <th width="40%">菜单名称</th>
+            <th width="20%">点击次数</th>
+            <th width="20%">点击人数</th>
+            <th width="20%">详情</th>
         </tr>
         <foreach name="data" item="v">
 
             <tr class="tron">
                 <td>{$v.name}</td>
                 <td>{$v.count}</td>
+                <td>{$v.uVcount}</td>
+                <td> <a href="<?php echo U('info?type='.$v['type']); ?>" title="详情">详情</a></td>
             </tr>
         </foreach>
     </table>

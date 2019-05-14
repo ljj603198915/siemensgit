@@ -2,65 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677c0e9d-e5c2-4ed9-9bc6-f2c04a84205e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/Common/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/Conf/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/Conf/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/Controller/FootballBaseController.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/Controller/IndexController.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/View/Index/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Football/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Common/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Conf/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Conf/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Controller/GameController.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Controller/TeamController.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Model/GameModel.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/Model/TeamModel.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Game/add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Game/changeResults.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Game/edit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Game/lst.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Team/add.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Team/edit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/Team/lst.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/View/layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/echarts.simple.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/js.KinerCode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/messages_zh.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/myEcharts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/region_select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Js/tendina.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/add.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_444444_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_555555_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_777620_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_777777_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_cc0000_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/images/ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/Styles/templatemo_style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/utilLib/fonts/font_awesome/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/utilLib/fonts/font_awesome/fontawesome-webfontd41d.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/utilLib/fonts/font_awesome/fontawesome-webfontf77b.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/utilLib/fonts/font_awesome/fontawesome-webfontf77b.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/FootballAdmin/public/utilLib/fonts/font_awesome/fontawesome-webfontf77b.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/6de5da5d887ea95dc8e7941ef9e4de95.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/899619ec51b46a1f2c4a1b333284a9b0.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_08.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_09.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_12.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ProblemController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ProblemController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ServiceMenuController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ServiceMenuController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/ServiceMenu/lst.html" afterPath="$PROJECT_DIR$/Application/Admin/View/ServiceMenu/lst.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Statistical/fan_source.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Statistical/fan_source.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" afterPath="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" />
     </list>
     <ignored path="siemens.iws" />
@@ -82,23 +29,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CheckproductController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php">
+      <file leaf-file-name="ServiceMenuController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2794">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="634">
+              <caret line="246" column="40" lean-forward="false" selection-start-line="236" selection-start-column="8" selection-end-line="246" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceMenuController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ServiceMenuController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="56" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="17" selection-end-column="56" />
               <folding>
-                <marker date="1557822476513" expanded="true" signature="2067:2184" ph="select * fro... si_img_product" />
+                <marker date="1557845011274" expanded="true" signature="648:718" ph="select count... si_service_statis" />
+                <marker date="1557845011274" expanded="true" signature="648:724" ph="select count... si_service_statis" />
+                <marker date="1557845011274" expanded="true" signature="648:725" ph="select count... si_service_statis" />
+                <marker date="1557845011274" expanded="true" signature="2878:3087" ph="SELECT date_... si_service_statis" />
+                <marker date="1557845011274" expanded="true" signature="3169:3356" ph="SELECT date_... si_service_statis" />
+                <marker date="1557845011274" expanded="true" signature="3438:3623" ph="SELECT date_... si_service_statis" />
+                <marker date="1557845011274" expanded="true" signature="3661:3794" ph="SELECT date_... si_service_statis" />
+                <marker date="1557845011274" expanded="true" signature="3661:3859" ph="SELECT date_... si_service_statis" />
+                <marker date="1557845011274" expanded="true" signature="3661:3910" ph="SELECT date_... si_service_statis" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Weichat.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Org/Util/Weichat.class.php">
+      <file leaf-file-name="ProblemController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ProblemController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3344">
-              <caret line="157" column="20" lean-forward="false" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
+            <state relative-caret-position="313">
+              <caret line="76" column="56" lean-forward="false" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
+              <folding>
+                <marker date="1557847555819" expanded="true" signature="2036:2124" ph="select count... si_service_statis" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/ServiceMenu/info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1672">
+              <caret line="76" column="15" lean-forward="false" selection-start-line="70" selection-start-column="14" selection-end-line="76" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fan_source.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Statistical/fan_source.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="946">
+              <caret line="43" column="80" lean-forward="false" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#a#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lst.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/ServiceMenu/lst.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="71" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -115,10 +126,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dupliacate</find>
-      <find>addButton</find>
-      <find>picker1</find>
-      <find>webUploader-picker</find>
       <find>before</find>
       <find>webUploader-picker1</find>
       <find>成功</find>
@@ -145,6 +152,10 @@
       <find>data-vid</find>
       <find>icon</find>
       <find>con-player</find>
+      <find>uv</find>
+      <find>iframe</find>
+      <find>menu</find>
+      <find>datepicker</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,8 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/httpd.conf" />
-        <option value="$PROJECT_DIR$/Application/Home/View/Checkproduct/logistics1.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/Brandstory/story_1.html" />
         <option value="$PROJECT_DIR$/Application/Home/public/Styles/logistics.css" />
         <option value="$PROJECT_DIR$/Application/Home/View/Checkproduct/logistics.html" />
@@ -166,9 +175,7 @@
         <option value="$PROJECT_DIR$/Application/Home/Controller/OnshopController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/NearshopController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Index/index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/ServiceMenu/lst.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/ServiceMenuController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Home/public/Js/webuploader.custom.min.js" />
         <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/advices.html" />
@@ -178,7 +185,6 @@
         <option value="$PROJECT_DIR$/Application/Admin/Model/JoinInModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/public/Js/advices.js" />
         <option value="$PROJECT_DIR$/Application/Admin/public/utf8-php/php/config.json" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/ProblemController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Advice/lst.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/AdviceModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/JoinIn/lst.html" />
@@ -192,7 +198,6 @@
         <option value="$PROJECT_DIR$/Application/Admin/View/Problem/add.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Problem/edit.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/ProblemModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" />
         <option value="$PROJECT_DIR$/../test/test.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos1.html" />
         <option value="$PROJECT_DIR$/Application/Home/public/Js/videos.js" />
@@ -201,9 +206,15 @@
         <option value="$PROJECT_DIR$/Application/Admin/View/Lowshop/lst.html" />
         <option value="$USER_HOME$/Desktop/product_img.conf" />
         <option value="$USER_HOME$/Desktop/video.conf" />
-        <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Statistical/fan_source.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/ServiceMenu/lst.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/ServiceMenuController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/ServiceMenu/info.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/ProblemController.class.php" />
       </list>
     </option>
   </component>
@@ -254,6 +265,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="siemensgit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="siemensgit" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -269,15 +294,15 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Application/Admin/public" />
-      <recent name="$PROJECT_DIR$/Application/Home/View/SeiviceMenu" />
-      <recent name="$PROJECT_DIR$/Application/Admin/View/ServiceMenu" />
-      <recent name="$PROJECT_DIR$/Application/Admin/View/Advice" />
-      <recent name="$PROJECT_DIR$/Application/Admin/Controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\phpStudy\WWW\siemens\Application\Football\Controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Application/Admin/View/ServiceMenu" />
+      <recent name="$PROJECT_DIR$/Application/Admin/public" />
+      <recent name="$PROJECT_DIR$/Application/Home/View/SeiviceMenu" />
+      <recent name="$PROJECT_DIR$/Application/Admin/View/Advice" />
+      <recent name="$PROJECT_DIR$/Application/Admin/Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -527,18 +552,18 @@
       <workItem from="1556379686138" duration="21162000" />
       <workItem from="1556505754308" duration="6302000" />
       <workItem from="1557362528891" duration="3350000" />
-      <workItem from="1557794407837" duration="3383000" />
+      <workItem from="1557794407837" duration="9992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1143197000" />
+    <option name="totallyTimeSpent" value="1149806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24097222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24097222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2820513" sideWeight="0.10834553" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -595,82 +620,11 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Product/lst.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="59" column="67" lean-forward="true" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ServiceMenuController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/AdviceModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/JoinInModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/public/utf8-php/php/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Advice/lst.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/JoinIn/lst.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/JoinInController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/AdviceController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="76" column="37" lean-forward="false" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ServiceHandleController.class.php" />
-    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
@@ -810,29 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Problem/lst.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-574">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ProblemController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-679">
-          <caret line="190" column="23" lean-forward="false" selection-start-line="190" selection-start-column="23" selection-end-line="190" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../test/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -924,14 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="163" column="34" lean-forward="false" selection-start-line="163" selection-start-column="34" selection-end-line="163" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/videos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
@@ -948,12 +871,167 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Tools/HomeController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/WeChatController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/WeixinController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="117" column="18" lean-forward="false" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="18" />
+          <folding>
+            <marker date="1555386947346" expanded="true" signature="6702:7003" ph="..." />
+            <marker date="1555386947346" expanded="true" signature="7384:7413" ph="..." />
+            <marker date="1555386947346" expanded="true" signature="7815:8289" ph="..." />
+            <marker date="1555386947346" expanded="true" signature="8576:8835" ph="..." />
+            <marker date="1555386947346" expanded="true" signature="9821:10080" ph="..." />
+            <marker date="1555386947346" expanded="true" signature="10541:10842" ph="..." />
+            <marker date="1555386947346" expanded="true" signature="11161:11190" ph="..." />
+            <marker date="1555386947346" expanded="true" signature="11604:12080" ph="..." />
+            <marker date="1555386947346" expanded="true" signature="12395:12654" ph="..." />
+            <marker date="1555386947346" expanded="true" signature="12961:13220" ph="..." />
+            <marker date="1555386947346" expanded="true" signature="14209:14468" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Index/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Index/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2666">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="246" column="40" lean-forward="false" selection-start-line="236" selection-start-column="8" selection-end-line="246" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Statistical/fan_source.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/CheckproductController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2794">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="106">
+          <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
           <folding>
-            <marker date="1557822476513" expanded="true" signature="2067:2184" ph="select * fro... si_img_product" />
+            <marker date="1557840406783" expanded="true" signature="2092:2209" ph="select * fro... si_img_product" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/StatisticalController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <marker date="1555386947090" expanded="true" signature="610:741" ph="SELECT * FRO... si_statistical" />
+            <marker date="1555386947090" expanded="true" signature="888:1039" ph="SELECT datet... " />
+            <marker date="1555386947090" expanded="true" signature="1236:1413" ph="SELECT datet... " />
+            <marker date="1555386947090" expanded="true" signature="2519:2591" ph="select sourc... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Problem/lst.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/ServiceMenu/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="76" column="15" lean-forward="false" selection-start-line="70" selection-start-column="14" selection-end-line="76" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/ServiceMenu/lst.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="71" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/ServiceMenu/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="43" column="80" lean-forward="false" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#a#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ServiceMenuController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="56" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="17" selection-end-column="56" />
+          <folding>
+            <marker date="1557845011274" expanded="true" signature="648:718" ph="select count... si_service_statis" />
+            <marker date="1557845011274" expanded="true" signature="648:724" ph="select count... si_service_statis" />
+            <marker date="1557845011274" expanded="true" signature="648:725" ph="select count... si_service_statis" />
+            <marker date="1557845011274" expanded="true" signature="2878:3087" ph="SELECT date_... si_service_statis" />
+            <marker date="1557845011274" expanded="true" signature="3169:3356" ph="SELECT date_... si_service_statis" />
+            <marker date="1557845011274" expanded="true" signature="3438:3623" ph="SELECT date_... si_service_statis" />
+            <marker date="1557845011274" expanded="true" signature="3661:3794" ph="SELECT date_... si_service_statis" />
+            <marker date="1557845011274" expanded="true" signature="3661:3859" ph="SELECT date_... si_service_statis" />
+            <marker date="1557845011274" expanded="true" signature="3661:3910" ph="SELECT date_... si_service_statis" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ProblemController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="76" column="56" lean-forward="false" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
+          <folding>
+            <marker date="1557847555819" expanded="true" signature="2036:2124" ph="select count... si_service_statis" />
           </folding>
         </state>
       </provider>

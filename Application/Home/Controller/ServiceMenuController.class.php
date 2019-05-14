@@ -177,8 +177,9 @@ class ServiceMenuController extends HomeController
         $data['email'] = I("email");
         $data['advice_type'] = I("advice_type");
         $data['advice_content'] = I("advice_content");
-        if(empty($data['customer_type'])||empty($data['advice_name'])||empty($data['phone'])
-        ||empty($data['advice_type'])||empty($data['advice_content'])){
+        if (empty($data['customer_type']) || empty($data['advice_name']) || empty($data['phone'])
+            || empty($data['advice_type']) || empty($data['advice_content'])
+        ) {
             echo jsonToData(400, "加*项为必填", null);
             exit;
         }
@@ -239,9 +240,26 @@ class ServiceMenuController extends HomeController
             $problem_id = 0;
         }
         $data['type'] = $type;
+        $data['ip'] = $this->getRealIp();
         $data['date_time'] = date("Y-m-d");
         $data['created_time'] = date("Y-m-d H:i:s");
         $data['problem_id'] = $problem_id;
         D("service_statis")->add($data);
+    }
+
+    private function getRealIp()
+    {
+        if (getenv("HTTP_CLIENT_IP") && strcasecmp(getenv("HTTP_CLIENT_IP"), "unknown"))
+            $ip = getenv("HTTP_CLIENT_IP");
+        else if (getenv("HTTP_X_FORWARDED_FOR") && strcasecmp(getenv("HTTP_X_FORWARDED_FOR"), "unknown"))
+            $ip = getenv("HTTP_X_FORWARDED_FOR");
+        else if (getenv("REMOTE_ADDR") && strcasecmp(getenv("REMOTE_ADDR"), "unknown"))
+            $ip = getenv("REMOTE_ADDR");
+        else if (isset($_SERVER['REMOTE_ADDR']) && $_SERVER['REMOTE_ADDR'] && strcasecmp($_SERVER['REMOTE_ADDR'], "unknown"))
+            $ip = $_SERVER['REMOTE_ADDR'];
+        else
+            $ip = "unknown";
+        return $ip;
+
     }
 }

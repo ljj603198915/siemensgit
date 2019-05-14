@@ -72,6 +72,9 @@ class ProblemController extends AdminController
             $where['problem_id'] = $v['id'];
             $count = D("service_statis")->where($where)->count();
             $data['data'][$k]['count'] = $count;
+            $sql = "select count(distinct ip)as total from si_service_statis where `problem_id`='{$v['id']}'";
+            $uVcount = D("service_statis")->query($sql);
+            $data['data'][$k]['uv'] = $uVcount[0]['total'];
         }
         //pp($data['data']);die;
         $this->assign(array(

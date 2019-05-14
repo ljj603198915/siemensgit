@@ -49,6 +49,7 @@ class CheckproductController extends HomeController
             $url .= '&fromtype=0';
         }
         //记录次数和人数
+        $this->statis();
         $ip = $this->getRealIp();
         \Think\Log::record("客户端ip" . $ip, 'DEBUG');
         $url .= "&ip=" . $ip;
@@ -169,5 +170,16 @@ class CheckproductController extends HomeController
         $res = https_request($url, $data);
         var_dump($res);
         echo $res;
+    }
+
+    public function statis(){
+        $type = "check";
+        $problem_id = 0;
+        $data['type'] = $type;
+        $data['ip'] = $this->getRealIp();
+        $data['date_time'] = date("Y-m-d");
+        $data['created_time'] = date("Y-m-d H:i:s");
+        $data['problem_id'] = $problem_id;
+        D("service_statis")->add($data);
     }
 }
