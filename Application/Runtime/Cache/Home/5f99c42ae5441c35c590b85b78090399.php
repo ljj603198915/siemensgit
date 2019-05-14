@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 
 <head>
@@ -36,8 +36,8 @@
         <img src="<?php echo Homessy;?>/logo.png" alt="SIEMENS">
     </div>
 </div>
-<!--<video src="http://www.wawechat.siemens.com.cn:8081/睿绎系列.mp4" poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg"-->
-<!--style="width: 100%"></video>-->
+<video src="http://www.wawechat.siemens.com.cn:8081/睿绎系列.mp4" poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg"
+style="width: 100%"></video>
 <div class="videos-container">
     <div class="tabs">
         <div class="title active">品牌</div>
