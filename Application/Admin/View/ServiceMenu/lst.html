@@ -1,5 +1,22 @@
 <layout name="layout"/>
+<script type="text/javascript" src="<?php echo AdminJsUrl;?>jquery-ui.min.js"></script>
 
+<div class="form-div search_form_div">
+    <div class="form-contain">
+        <form action="__ACTION__" method="GET" name="search_form">
+            <p>
+                开始时间
+                <input type="text" class="input_from inp-date" name="startTime" value="<?php echo I('get.startTime'); ?>" id="from"/>
+            </p>
+            <p>
+                结束时间
+                <input type="text" class="input_from inp-date" name="endTime" value="<?php echo I('get.endTime'); ?>"id="to"/>
+            </p>
+            <input type="hidden"  name="type" value="<?php echo I('get.type'); ?>"/>
+            <p><input type="submit" value=" 搜索 " class="button btn-primary"/></p>
+        </form>
+    </div>
+</div>
 <!-- 列表 -->
 <div class="list-div" id="listDiv">
     <table cellpadding="3" cellspacing="1" class="table">
@@ -7,7 +24,7 @@
             <th width="40%">菜单名称</th>
             <th width="20%">点击次数</th>
             <th width="20%">点击人数</th>
-            <th width="20%">详情</th>
+            <!--<th width="20%">详情</th>-->
         </tr>
         <foreach name="data" item="v">
 
@@ -15,13 +32,48 @@
                 <td>{$v.name}</td>
                 <td>{$v.count}</td>
                 <td>{$v.uVcount}</td>
-                <td> <a href="<?php echo U('info?type='.$v['type']); ?>" title="详情">详情</a></td>
+                <!--<td> <a href="<?php echo U('info?type='.$v['type']); ?>" title="详情">详情</a></td>-->
             </tr>
         </foreach>
     </table>
 </div>
-
 <script>
+    $(function () {
+        fansOri_update();
+        var fromDate = '';
+        var toDate = '';
+        $("#from").datepicker({
+            // minDate: "-30D",
+            maxDate: "-1",
+            dateFormat: "yy-mm-dd",
+            changeMonth: true,
+            numberOfMonths: 1,
+//            onClose: function (selectedDate, defaultDate) {
+//                if (selectedDate == '')return;
+//                $("#to").datepicker("option", "minDate", selectedDate);
+//                // var maxDate=$("#from").datepicker("option", "defaultDate");
+//                var maxDate = new Date(new Date(selectedDate).getTime() + (5 * 24 * 3600 * 1000));
+//                fromDate = selectedDate;
+//                var yesterday = new Date().getTime() - (1 * 24 * 3600 * 1000);
+//                if (maxDate.getTime() > yesterday) {
+//                    maxDate = yesterday
+//                }
+//                $("#to").datepicker("option", "maxDate", new Date(maxDate));
+//            }
+        });
+        $("#to").datepicker({
+            defaultDate: "+1D",
+            maxDate: "-1",
+            changeMonth: true,
+            numberOfMonths: 1,
+            dateFormat: "yy-mm-dd",
+//            onClose: function (selectedDate) {
+//                if (selectedDate == '')return;
+//                $("#from").datepicker("option", "maxDate", selectedDate);
+//                var minDate = new Date(new Date(selectedDate).getTime() - (5 * 24 * 3600 * 1000));
+//                toDate = selectedDate;
+//                $("#from").datepicker("option", "minDate", minDate);
+//            }
+        });
+    })
 </script>
-
-<script src="__PUBLIC__/Admin/Js/tron.js"></script>
