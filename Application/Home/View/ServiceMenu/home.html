@@ -170,11 +170,11 @@
         </a>
     </div>
     <div class="item13 item">
-        <a id="book" href="videos1.html">
-            <div class="icon"><i class="fa fa-play-circle-o fa-lg"></i></div>
+        <a id="book" href="http://site.0000park.com/book/?from=groupmessage&isappinstalled=0">
+            <div class="icon"><i class="fa fa-book fa-lg"></i></div>
             <div class="text" style="margin-left: -45%;">
                 <p class="chi">百科全书</p>
-                <p class="eng">Watch videos</p>
+                <p class="eng">Cyclopaedia</p>
             </div>
         </a>
     </div>
