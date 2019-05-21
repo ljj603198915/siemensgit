@@ -78,7 +78,7 @@ div.logo img {
 .item2{
     grid-column-start: 2;
     grid-column-end: 4;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     -ms-grid-row: 1;
     -ms-grid-column-span: 2;
 }
