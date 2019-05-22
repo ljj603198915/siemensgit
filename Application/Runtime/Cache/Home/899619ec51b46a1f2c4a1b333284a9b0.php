@@ -55,7 +55,7 @@
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
-                <p class="video-des">家居电气宣传片</p>
+                <p class="video-des">家居电气宣传片<a href="http://www.wawechat.siemens.com.cn:8081/西门子家居电气宣传片.mp4" download="西门子家居电气宣传片">下载</a></p>
             </div>
 
         </div>
@@ -215,7 +215,7 @@
     $(".con-player").on("click", ".icon", function () {
         var vidurl = $(this).parents(".con-player").attr("data-vid");
         var imgurl = $(this).parents(".con-player").attr("data-img");
-        var _html = '<video src="http://www.wawechat.siemens.com.cn:8081/'+vidurl+'" poster="<?php echo HomeImgUrl;?>/' + imgurl + '"></video>'
+        var _html = '<video src="http://www.wawechat.siemens.com.cn:8081/'+vidurl+'" poster="<?php echo HomeImgUrl;?>/' + imgurl + '" controls></video>'
         $(this).parents(".con-player").append(_html);
         $(this).hide()
         $(this).parents(".con-player").find("img").hide()
