@@ -262,4 +262,19 @@ class ServiceMenuController extends HomeController
         return $ip;
 
     }
+
+    public function download()
+    {
+        $file = I("file");
+        if (empty($file)) {
+            $exits = substr(strrchr($file, '.'), 1);
+            ob_start();
+            $date = date("Ymd-H:i:m");
+            header("Content-type:   application/octet-stream ");
+            header("Accept-Ranges:   bytes ");
+            header("Content-Disposition:   attachment;   filename= {$date}.$exits");
+            $size = readfile($file);
+            header("Accept-Length: " . $size);
+        }
+    }
 }

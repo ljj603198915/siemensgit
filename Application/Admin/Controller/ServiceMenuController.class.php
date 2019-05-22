@@ -10,21 +10,20 @@ class ServiceMenuController extends AdminController
         $startTime = I("startTime");
         $endTime = I("endTime");
         $menuArr = array("prodesc", "checkproduct", "nearshop", "onshop", "logistics ", "joinus",
-            "advice", "electric", "400help", "jingcai", "video", "problem", "check");
+            "advice", "electric", "400help", "jingcai", "video", "problem", "check","cyclopaedia");
         foreach ($menuArr as $k => $v) {
             $res[$k]['type'] = $v;
             if (empty($startTime) && empty($endTime)) {
-                $sql = "SELECT count(*) as uv,count(distinct ip) as pv FROM `si_service_statis` WHERE  UNIX_TIMESTAMP(date_time) >= UNIX_TIMESTAMP(DATE_SUB(CURDATE(), INTERVAL 30 DAY))and `type`='{$type}' GROUP BY date_time";
+                $sql = "SELECT count(*) as uv,count(distinct ip) as pv FROM `si_service_statis` WHERE  `type`='{$v}'";
             } elseif (!empty($startTime) && empty($endTime)) {
-                $sql = "SELECT count(*) as uv,count(distinct ip) as pv FROM `si_service_statis` WHERE  UNIX_TIMESTAMP(date_time) >= UNIX_TIMESTAMP('{$startTime}')and `type`='{$type}' GROUP BY date_time";
+                $sql = "SELECT count(*) as uv,count(distinct ip) as pv FROM `si_service_statis` WHERE  UNIX_TIMESTAMP(date_time) >= UNIX_TIMESTAMP('{$startTime}')and `type`='{$v}'";
             } elseif (empty($startTime) && !empty($endTime)) {
-                $sql = "SELECT count(*) as uv,count(distinct ip) as pv FROM `si_service_statis` WHERE  UNIX_TIMESTAMP(date_time) <= UNIX_TIMESTAMP('{$endTime}')and `type`='{$type}' GROUP BY date_time";
+                $sql = "SELECT count(*) as uv,count(distinct ip) as pv FROM `si_service_statis` WHERE  UNIX_TIMESTAMP(date_time) <= UNIX_TIMESTAMP('{$endTime}')and `type`='{$v}'";
             }else{
-                $sql = "SELECT count(*) as uv,count(distinct ip) as pv FROM `si_service_statis` WHERE  UNIX_TIMESTAMP(date_time) >= UNIX_TIMESTAMP('{$startTime}') and UNIX_TIMESTAMP(date_time) <= UNIX_TIMESTAMP('{$endTime}')and `type`='{$type}' GROUP BY date_time";
+                $sql = "SELECT count(*) as uv,count(distinct ip) as pv FROM `si_service_statis` WHERE  UNIX_TIMESTAMP(date_time) >= UNIX_TIMESTAMP('{$startTime}') and UNIX_TIMESTAMP(date_time) <= UNIX_TIMESTAMP('{$endTime}')and `type`='{$v}'";
             }
 
             $count = D('service_statis')->query($sql);
-           // pp($count);die;
             $res[$k]['count'] = $count[0]['uv'];
             $res[$k]['uVcount'] = $count[0]['pv'];
 //            $count = D("service_statis")->where(array("type" => $v))->count();
@@ -71,6 +70,9 @@ class ServiceMenuController extends AdminController
                     break;
                 case "check":
                     $res[$k]['name'] = "产品验真查询";
+                    break;
+                case "cyclopaedia":
+                    $res[$k]['name'] = "百科全书";
                     break;
                 default:
                     break;
