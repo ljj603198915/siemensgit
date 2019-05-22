@@ -55,7 +55,7 @@
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
-                <p class="video-des">家居电气宣传片<span class="down" href="#" onclick="downloadvi('http://www.wawechat.siemens.com.cn:8081/西门子家居电气宣传片.mp4')"><i class="fa fa-download  "></i></span></p>
+                <p class="video-des">家居电气宣传片<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?http://www.wawechat.siemens.com.cn:8081/西门子家居电气宣传片.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
 
         </div>
@@ -69,7 +69,7 @@
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
-                <p class="video-des">西门子低压电气发展史<span class="down" href="#" onclick="downloadvi('http://www.wawechat.siemens.com.cn:8081/西门子家居电气宣传片.mp4')"><i class="fa fa-download  "></i></span></p>
+                <p class="video-des">西门子低压电气发展史<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?http://www.wawechat.siemens.com.cn:8081/fazhanshi.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
         </div>
         <div class="line videos">
@@ -281,10 +281,10 @@
         }
     }
     if(pc){
-        alert("pc端")
+//        alert("pc端")
         $(".down").show()
     }else {
-        alert("移动端")
+//        alert("移动端")
     }
 
     var u = window.navigator.userAgent;
