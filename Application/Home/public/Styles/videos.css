@@ -315,6 +315,18 @@ div.logo img {
     background-color: #fff !important;
 }
 
+/*下载*/
+.down{
+    display: none;
+    text-decoration: none;
+    /*position: absolute;*/
+    /*right: 5%;*/
+    margin-left: 20px;
+}
+.down:active,.down:link,.down:visited{
+    color: #333333;
+}
+/*下载 end*/
 /*#player10 .tvp_overlay_poster,#player10 .tvp_poster_img,*/
 /*#player10 .tvp_container*/
 

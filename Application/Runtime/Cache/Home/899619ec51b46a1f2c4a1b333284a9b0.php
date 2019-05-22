@@ -55,7 +55,7 @@
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
-                <p class="video-des">家居电气宣传片<a href="http://www.wawechat.siemens.com.cn:8081/西门子家居电气宣传片.mp4" download="西门子家居电气宣传片">下载</a></p>
+                <p class="video-des">家居电气宣传片<a class="down" download="西门子家居电气" href="http://www.wawechat.siemens.com.cn:8081/西门子家居电气宣传片.mp4"><i class="fa fa-download  "></i></a></p>
             </div>
 
         </div>
@@ -215,7 +215,7 @@
     $(".con-player").on("click", ".icon", function () {
         var vidurl = $(this).parents(".con-player").attr("data-vid");
         var imgurl = $(this).parents(".con-player").attr("data-img");
-        var _html = '<video src="http://www.wawechat.siemens.com.cn:8081/'+vidurl+'" poster="<?php echo HomeImgUrl;?>/' + imgurl + '" controls></video>'
+        var _html = '<video src="http://www.wawechat.siemens.com.cn:8081/'+vidurl+'" poster="<?php echo HomeImgUrl;?>/' + imgurl + '"></video>'
         $(this).parents(".con-player").append(_html);
         $(this).hide()
         $(this).parents(".con-player").find("img").hide()
@@ -266,6 +266,31 @@
 
         }
     }
+
+    //判断终端
+    var pc=true;
+    var userAgentInfo = navigator.userAgent.toLowerCase();
+    var Agents = ["android", "iphone",
+        "symbianos", "windows phone",
+        "ipad", "ipod"];
+//    var ly=document.referrer;  //返回导航到当前网页的超链接所在网页的URL
+
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) >= 0) {
+            var pc = false;
+        }
+    }
+    if(pc){
+        alert("pc端")
+        $(".down").show()
+    }else {
+        alert("移动端")
+    }
+
+    var u = window.navigator.userAgent;
+//    console.log(u)
+    alert(u)
+
 
 
 </script>
