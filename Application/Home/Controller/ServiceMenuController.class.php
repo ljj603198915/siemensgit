@@ -266,8 +266,9 @@ class ServiceMenuController extends HomeController
     public function download()
     {
         $file = I("file");
-        if (empty($file)) {
+        if (!empty($file)) {
             $exits = substr(strrchr($file, '.'), 1);
+//            echo $exits;die;
             ob_start();
             $date = date("Ymd-H:i:m");
             header("Content-type:   application/octet-stream ");
