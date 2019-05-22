@@ -29,7 +29,7 @@ div.logo img {
 /*logo end*/
 /*gird布局*/
 .wrapper{
-    display: grid;
+    /*display: grid;*/
     width: 100%;
     height: 89%;
     grid-template-columns: repeat(3,33.3333%);
@@ -44,6 +44,10 @@ div.logo img {
     box-shadow: 2px 2px 1px #888888;
     margin: 3px;
     background-color: #cfcfcf;
+    width: 31.5%;
+    height: 19%;
+    float: left;
+    box-sizing: border-box;;
 }
 
 @font-face {
@@ -81,6 +85,7 @@ div.logo img {
     -ms-grid-column: 2;
     -ms-grid-row: 1;
     -ms-grid-column-span: 2;
+    width: calc(63% + 6px) !important;
 }
 .item3{
     -ms-grid-column: 1;
@@ -125,6 +130,7 @@ div.logo img {
     -ms-grid-column: 1;
     -ms-grid-row: 5;
     -ms-grid-column-span: 2;
+    width: calc(63% + 6px) !important;
 }
 .item13{
     grid-row-start: 5;
