@@ -38,6 +38,7 @@
 </div>
 <!--<video src="http://www.wawechat.siemens.com.cn:8081/睿绎系列.mp4" poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg"-->
 <!--style="width: 100%"></video>-->
+<div class="wait" style="display: none">下载约需10s,请耐心等待...</div>
 <div class="videos-container">
     <div class="tabs">
         <div class="title active">品牌</div>
@@ -49,13 +50,11 @@
             <div class="one" id="output">
                 <div class="con-player" id="player9" data-id="f0752boa23k" data-vid="西门子家居电气宣传片.mp4"
                      data-img="vi-jiaju.jpg">
-                    <!--<video id="video" src="http://www.wawechat.siemens.com.cn:8080/Public/v1.mp4"-->
-                    <!--poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg"></video>-->
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-jiaju.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
-                <p class="video-des">家居电气宣传片<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?http://www.wawechat.siemens.com.cn:8081/西门子家居电气宣传片.mp4')"><i class="fa fa-download  "></i></span></p>
+                <p class="video-des">家居电气宣传片<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/西门子家居电气宣传片.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
 
         </div>
@@ -63,28 +62,22 @@
             <div class="one">
                 <div class="con-player" id="player10" data-id="v0194ehhp7d" data-img="vi-diya.jpg"
                      data-vid="fazhanshi.mp4">
-                    <!--<iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=f0752boa23k" allowFullScreen="true"></iframe>-->
-
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-diya.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
-                <p class="video-des">西门子低压电气发展史<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?http://www.wawechat.siemens.com.cn:8081/fazhanshi.mp4')"><i class="fa fa-download  "></i></span></p>
+                <p class="video-des">西门子低压电气发展史<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/fazhanshi.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
         </div>
         <div class="line videos">
             <div class="one">
                 <div class="con-player" id="player11" data-id="d0859xcdgya" data-img="vi-fazhanshi.jpg"
                      data-vid="西门子中国发展史.mp4">
-                    <!--<video controls src="<?php echo HomeImgUrl;?>/test-v.mp4"-->
-                    <!--poster="<?php echo HomeImgUrl;?>/vi-jiaju.jpg">-->
-                    <!--您的浏览器不支持 video 标签。-->
-                    <!--</video>-->
                     <img class="cover" src="<?php echo HomeImgUrl;?>/vi-fazhanshi.jpg" alt="">
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
-                <p class="video-des">西门子中国发展史</p>
+                <p class="video-des">西门子中国发展史<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/西门子中国发展史.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
         </div>
     </div>
@@ -97,7 +90,7 @@
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
-                <p class="video-des">睿致系列</p>
+                <p class="video-des">睿致系列<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/睿致系列.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
 
 
@@ -110,7 +103,7 @@
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
 
-                <p class="video-des">皓睿系列</p>
+                <p class="video-des">皓睿系列<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/皓睿系列.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
         </div>
         <div class="line videos">
@@ -122,7 +115,7 @@
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
 
-                <p class="video-des">睿绎系列</p>
+                <p class="video-des">睿绎系列<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/睿绎系列.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
 
         </div>
@@ -135,7 +128,7 @@
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
 
-                <p class="video-des">灵蕴系列</p>
+                <p class="video-des">灵蕴系列<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/ly.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
         </div>
 
@@ -147,7 +140,7 @@
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
 
-                <p class="video-des">风逸X1系列插线板</p>
+                <p class="video-des">风逸X1系列插线板<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/风逸X1系列插线板.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
 
         </div>
@@ -159,7 +152,7 @@
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
-                <p class="video-des">西睿空气检测仪</p>
+                <p class="video-des">西睿空气检测仪<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/西睿空气检测仪.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
         </div>
 
@@ -171,7 +164,7 @@
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
 
-                <p class="video-des">绿色断路器系列(60s)</p>
+                <p class="video-des">绿色断路器系列(60s)<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/绿色断路器系列（60s）.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
 
         </div>
@@ -182,7 +175,7 @@
                     <div class="icon"><img src="<?php echo HomeImgUrl;?>/play.svg" alt=""></div>
                     <p class="loading"><i class="fa fa-spinner fa-pulse "></i></p>
                 </div>
-                <p class="video-des">绿色断路器系列(180s)</p>
+                <p class="video-des">绿色断路器系列(180s)<span class="down" href="#" onclick="window.open('/index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/绿色断路器系列（180s）.mp4')"><i class="fa fa-download  "></i></span></p>
             </div>
         </div>
     </div>
@@ -215,7 +208,7 @@
     $(".con-player").on("click", ".icon", function () {
         var vidurl = $(this).parents(".con-player").attr("data-vid");
         var imgurl = $(this).parents(".con-player").attr("data-img");
-        var _html = '<video src="http://www.wawechat.siemens.com.cn:8081/'+vidurl+'" poster="<?php echo HomeImgUrl;?>/' + imgurl + '"></video>'
+        var _html = '<video src="http://www.wawechat.siemens.com.cn:8081/'+vidurl+'" poster="<?php echo HomeImgUrl;?>/' + imgurl + '" controls></video>'
         $(this).parents(".con-player").append(_html);
         $(this).hide()
         $(this).parents(".con-player").find("img").hide()
@@ -290,21 +283,13 @@
     var u = window.navigator.userAgent;
 //    console.log(u)
 //    alert(u)
-function downloadvi(url) {
-    $.ajax({
-        url: "/index.php/Home/ServiceMenu/download",
-        type: 'post',
-        data: url,
-        success: function (data) {
+    //下载等待
+    $('.down').click(function () {
+        $('.wait').fadeIn(300);
+        setTimeout(function(){$('.wait').fadeOut()},10000)
 
-        },
-        error:function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
     })
-}
+
 
 
 </script>

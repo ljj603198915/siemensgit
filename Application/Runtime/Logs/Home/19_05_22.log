@@ -898,3 +898,43 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
 
+[ 2019-05-22T23:45:46+08:00 ] 192.168.2.106 /index.php/Home/Servicemenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2019-05-22T23:45:49+08:00 ] 192.168.2.106 /index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/%E8%A5%BF%E9%97%A8%E5%AD%90%E5%AE%B6%E5%B1%85%E7%94%B5%E6%B0%94%E5%AE%A3%E4%BC%A0%E7%89%87.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2019-05-22T23:45:56+08:00 ] 192.168.2.106 /index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/%E8%A5%BF%E9%97%A8%E5%AD%90%E5%AE%B6%E5%B1%85%E7%94%B5%E6%B0%94%E5%AE%A3%E4%BC%A0%E7%89%87.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2019-05-22T23:46:00+08:00 ] 192.168.2.106 /index.php/Home/Servicemenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2019-05-22T23:46:03+08:00 ] 192.168.2.106 /index.php/Home/Servicemenu/videos
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2019-05-22T23:46:05+08:00 ] 192.168.2.106 /index.php/Home/ServiceMenu/download?file=http://www.wawechat.siemens.com.cn:8081/%E8%A5%BF%E9%97%A8%E5%AD%90%E5%AE%B6%E5%B1%85%E7%94%B5%E6%B0%94%E5%AE%A3%E4%BC%A0%E7%89%87.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+
+[ 2019-05-22T23:46:09+08:00 ] 192.168.2.106 /index.php/Home/ServiceMenu/download?http://www.wawechat.siemens.com.cn:8081/fazhanshi.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2019-05-22T23:46:09+08:00 ] 192.168.2.106 /index.php/Home/ServiceMenu/download?http://www.wawechat.siemens.com.cn:8081/fazhanshi.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+

@@ -335,3 +335,19 @@ div.logo img {
 /*}*/
 
 /*videos end*/
+.wait{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -75px;
+    margin-left: -100px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 16px;
+    background-color: rgba(144, 138, 138,0.9);
+    border-radius: 30px;
+    color: #FFFFFF;
+    z-index: 10000;
+}
