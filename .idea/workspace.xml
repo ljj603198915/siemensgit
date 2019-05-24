@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677c0e9d-e5c2-4ed9-9bc6-f2c04a84205e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/899619ec51b46a1f2c4a1b333284a9b0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_22.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_22.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/19_05_22.log" />
     </list>
     <ignored path="siemens.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Admin/View/Index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="1364">
               <caret line="62" column="56" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="56" />
               <folding />
             </state>
@@ -38,7 +38,7 @@
       <file leaf-file-name="ServiceMenuController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
+            <state relative-caret-position="351">
               <caret line="270" column="0" lean-forward="false" selection-start-line="270" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
               <folding />
             </state>
@@ -48,7 +48,7 @@
       <file leaf-file-name="ProductModel.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
+            <state relative-caret-position="2794">
               <caret line="128" column="29" lean-forward="false" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="29" />
               <folding />
             </state>
@@ -173,7 +173,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -194,6 +194,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,27 +221,8 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siemensgit" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -513,15 +495,16 @@
       <workItem from="1557794407837" duration="11098000" />
       <workItem from="1557923862067" duration="2269000" />
       <workItem from="1558447695532" duration="2917000" />
-      <workItem from="1558507265810" duration="2315000" />
+      <workItem from="1558507265810" duration="2463000" />
+      <workItem from="1558662313642" duration="43000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1158413000" />
+    <option name="totallyTimeSpent" value="1158604000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="824" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="831" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24097222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -860,9 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1144">
           <caret line="52" column="77" lean-forward="false" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="77" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#3;n#form#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1716">
           <caret line="78" column="9" lean-forward="false" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="79" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,9 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3256">
           <caret line="164" column="18" lean-forward="false" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#a#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,23 +885,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="73" column="33" lean-forward="false" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
-          <folding>
-            <marker date="1558452352126" expanded="true" signature="573:665" ph="SELECT date_... si_service_statis" />
-            <marker date="1558452352126" expanded="true" signature="755:910" ph="SELECT count... si_service_statis" />
-            <marker date="1558452352126" expanded="true" signature="1000:1153" ph="SELECT count... si_service_statis" />
-            <marker date="1558452352126" expanded="true" signature="1199:1416" ph="SELECT count... si_service_statis" />
-            <marker date="1558452352126" expanded="true" signature="1734:1810" ph="select count... si_service_statis" />
-            <marker date="1558452352126" expanded="true" signature="4078:4287" ph="SELECT date_... si_service_statis" />
-            <marker date="1558452352126" expanded="true" signature="4369:4556" ph="SELECT date_... si_service_statis" />
-            <marker date="1558452352126" expanded="true" signature="4638:4823" ph="SELECT date_... si_service_statis" />
-            <marker date="1558452352126" expanded="true" signature="4861:5110" ph="SELECT date_... si_service_statis" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="1364">
           <caret line="62" column="56" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="56" />
           <folding />
         </state>
@@ -935,7 +898,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
+        <state relative-caret-position="2794">
           <caret line="128" column="29" lean-forward="false" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="29" />
           <folding />
         </state>
@@ -943,7 +906,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ServiceMenuController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
+        <state relative-caret-position="351">
           <caret line="270" column="0" lean-forward="false" selection-start-line="270" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
           <folding />
         </state>
